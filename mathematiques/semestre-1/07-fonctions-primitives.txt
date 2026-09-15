@@ -1,0 +1,131 @@
+---
+## Section: Semestre 1 (Cours et Exercices)
+Titre: Fonctions primitives - Cours
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Définition d’une fonction primitive d’une fonction sur un intervalle $I$
+
+### II- Théorème fondamental
+
+### III- Primitives des fonctions usuelles
+
+### IV- Opérations sur les fonctions primitives
+
+### V- Primitives vérifiant une condition initiale
+
+### VI- Exercices
+#### 6-1/ Exercice 1
+#### 6-2/ Exercice 2
+#### 6-3/ Exercice 3
+#### 6-4/ Exercice 4
+#### 6-5/ Exercice 5
+#### 6-6/ Exercice 6
+
+---
+
+### I- Définition d’une fonction primitive d’une fonction sur un intervalle $I$
+
+Soit $f$ une fonction définie sur un intervalle $I$.
+On appelle primitive de $f$ sur $I$ toute fonction $F$ dérivable sur $I$ telle que pour tout $x \in I$ :
+$$F'(x) = f(x)$$
+
+---
+
+### II- Théorème fondamental
+
+- Théorème d'existence : Toute fonction continue sur un intervalle $I$ admet des primitives sur $I$.
+- Propriété : Si $F$ est une primitive de $f$ sur $I$, alors l'ensemble des primitives de $f$ sur $I$ sont les fonctions de la forme :
+$$x \mapsto F(x) + c \quad (c \in \mathbb{R})$$
+- Théorème d'unicité sous condition initiale : Soit $x_0 \in I$ et $y_0 \in \mathbb{R}$. Il existe une unique primitive $F_0$ de $f$ sur $I$ vérifiant la condition initiale :
+$$F_0(x_0) = y_0$$
+
+---
+
+### III- Primitives des fonctions usuelles
+
+| Fonction $f(x)$ | Primitive $F(x)$ | Intervalle de validité |
+| :--- | :--- | :--- |
+| $a$ (constante) | $ax + c$ | $\mathbb{R}$ |
+| $x^n$ ($n \in \mathbb{N}^*$) | $\frac{x^{n+1}}{n+1} + c$ | $\mathbb{R}$ |
+| $x^r$ ($r \in \mathbb{Q} \setminus \{-1\}$) | $\frac{x^{r+1}}{r+1} + c$ | $]0, +\infty[$ |
+| $\frac{1}{x^2}$ | $-\frac{1}{x} + c$ | $]-\infty, 0[$ ou $]0, +\infty[$ |
+| $\frac{1}{\sqrt{x}}$ | $2\sqrt{x} + c$ | $]0, +\infty[$ |
+| $\sin(x)$ | $-\cos(x) + c$ | $\mathbb{R}$ |
+| $\cos(x)$ | $\sin(x) + c$ | $\mathbb{R}$ |
+| $1 + \tan^2(x) = \frac{1}{\cos^2(x)}$ | $\tan(x) + c$ | $]-\frac{\pi}{2} + k\pi, \frac{\pi}{2} + k\pi[$ |
+| $\sin(ax+b)$ ($a \ne 0$) | $-\frac{1}{a} \cos(ax+b) + c$ | $\mathbb{R}$ |
+| $\cos(ax+b)$ ($a \ne 0$) | $\frac{1}{a} \sin(ax+b) + c$ | $\mathbb{R}$ |
+
+![](https://www.alloschool.com/files/premium/maths/2bac-spc/s7/img1.jpg)
+
+---
+
+### IV- Opérations sur les fonctions primitives
+
+| Forme de la fonction $f$ | Une primitive $F$ | Conditions |
+| :--- | :--- | :--- |
+| $u' + v'$ | $u + v$ | |
+| $k \cdot u'$ | $k \cdot u$ | $k \in \mathbb{R}$ |
+| $u' \cdot u^n$ ($n \in \mathbb{N}^*$) | $\frac{u^{n+1}}{n+1}$ | |
+| $u' \cdot u^r$ ($r \in \mathbb{Q} \setminus \{-1\}$) | $\frac{u^{r+1}}{r+1}$ | $u > 0$ |
+| $\frac{u'}{u^2}$ | $-\frac{1}{u}$ | $u(x) \ne 0$ |
+| $\frac{u'}{\sqrt{u}}$ | $2\sqrt{u}$ | $u(x) > 0$ |
+| $u' \cdot (v' \circ u)$ | $v \circ u$ | |
+
+![](https://www.alloschool.com/files/premium/maths/2bac-spc/s7/img2.jpg)
+
+---
+
+### V- Primitives vérifiant une condition initiale
+
+Pour trouver l'unique primitive $F$ d'une fonction $f$ vérifiant $F(x_0) = y_0$ :
+1. Déterminer la forme générale des primitives : $F(x) = F_1(x) + c$.
+2. Résoudre l'équation $F_1(x_0) + c = y_0$ pour trouver la valeur unique de la constante $c$.
+
+---
+
+### VI- Exercices
+
+#### 6-1/ Exercice 1
+Déterminer une fonction primitive de chacune des fonctions suivantes sur l'intervalle $I$ :
+1. $f(x) = 3x^2 - 4x + 5$ sur $\mathbb{R}$
+2. $f(x) = x^4 - 2x^3 + \frac{1}{2}x$ sur $\mathbb{R}$
+3. $f(x) = \frac{2}{x^3} + \frac{1}{x^2}$ sur $]0, +\infty[$
+4. $f(x) = 3\sqrt{x} + \frac{1}{2\sqrt{x}}$ sur $]0, +\infty[$
+5. $f(x) = \cos(3x) + \sin(2x)$ sur $\mathbb{R}$
+
+#### 6-2/ Exercice 2
+Déterminer les primitives des fonctions suivantes sur l'intervalle $I$ :
+1. $f(x) = (2x+1)(x^2+x-3)^4$ sur $\mathbb{R}$
+2. $f(x) = \frac{2x+3}{(x^2+3x+1)^2}$ sur un intervalle où $x^2+3x+1 \ne 0$
+3. $f(x) = \frac{x}{\sqrt{x^2+1}}$ sur $\mathbb{R}$
+4. $f(x) = \frac{x^2}{\sqrt[3]{x^3+1}}$ sur $]-1, +\infty[$
+5. $f(x) = \sin(x) \cos^3(x)$ sur $\mathbb{R}$
+
+#### 6-3/ Exercice 3
+Dans chacun des cas suivants, déterminer l’unique primitive $F$ de $f$ sur l’intervalle $I$ vérifiant la condition donnée :
+1. $f(x) = 2x - 3$ sur $\mathbb{R}$, avec $F(1) = 2$.
+2. $f(x) = 3x^2 - 4x + 1$ sur $\mathbb{R}$, avec $F(0) = -1$.
+3. $f(x) = \frac{1}{(2x+1)^2}$ sur $]-\frac{1}{2}, +\infty[$, avec $F(0) = 1$.
+4. $f(x) = \cos(2x - \frac{\pi}{4})$ sur $\mathbb{R}$, avec $F(\frac{\pi}{4}) = 0$.
+
+#### 6-4/ Exercice 4
+Soit la fonction $f$ définie sur $\mathbb{R} \setminus \{-1\}$ par : $f(x) = \frac{2x^2+3x+2}{(x+1)^2}$.
+1. Déterminer les réels $a$, $b$ et $c$ tels que pour tout $x \ne -1$ :
+$$f(x) = a + \frac{b}{x+1} + \frac{c}{(x+1)^2}$$
+2. En déduire les primitives de $f$ sur l'intervalle $]-1, +\infty[$.
+
+#### 6-5/ Exercice 5
+1. Montrer que pour tout $x \in \mathbb{R}$ : $\cos^2(x) = \frac{1 + \cos(2x)}{2}$ et $\sin^2(x) = \frac{1 - \cos(2x)}{2}$.
+2. En déduire les primitives sur $\mathbb{R}$ des fonctions :
+   - $f(x) = \cos^2(x)$
+   - $g(x) = \sin^2(x)$
+   - $h(x) = \cos^4(x)$
+
+#### 6-6/ Exercice 6
+Soit la fonction $f$ définie sur $[0, +\infty[$ par : $f(x) = \frac{x}{\sqrt{x+1}}$.
+1. Vérifier que pour tout $x \ge 0$ : $f(x) = \sqrt{x+1} - \frac{1}{\sqrt{x+1}}$.
+2. En déduire la primitive $F$ de $f$ sur $[0, +\infty[$ s'annulant en $0$.

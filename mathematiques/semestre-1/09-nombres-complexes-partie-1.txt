@@ -1,0 +1,214 @@
+---
+## Section: Semestre 1 (Cours et Exercices)
+Titre: Nombres complexes (Partie 1) - Cours
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Ensemble des nombres complexes $\mathbb{C}$
+#### 1-1/ Définition et forme algébrique
+#### 1-2/ Égalité de deux nombres complexes
+
+### II- Représentation géométrique d’un nombre complexe
+#### 2-1/ Affixe d’un point et affixe d’un vecteur
+#### 2-2/ Affixe du barycentre et du milieu
+
+### III- Conjugué d’un nombre complexe
+#### 3-1/ Définition
+#### 3-2/ Propriétés du conjugué
+
+### IV- Module d’un nombre complexe
+#### 4-1/ Définition
+#### 4-2/ Propriétés du module
+
+### V- Forme trigonométrique d’un nombre complexe
+#### 5-1/ Argument d’un nombre complexe non nul
+#### 5-2/ Écriture trigonométrique
+#### 5-3/ Propriétés des arguments
+
+### VI- Forme exponentielle d’un nombre complexe
+#### 6-1/ Définition (Notation d'Euler)
+#### 6-2/ Propriétés
+
+### VII- Formules d’Euler et formule de Moivre
+#### 7-1/ Formule de Moivre
+#### 7-2/ Formules d’Euler et linéarisation
+
+### IIX- Exercices
+#### 8-1/ Exercice 1
+#### 8-2/ Exercice 2
+#### 8-3/ Exercice 3
+#### 8-4/ Exercice 4
+#### 8-5/ Exercice 5
+#### 8-6/ Exercice 6
+
+---
+
+### I- Ensemble des nombres complexes $\mathbb{C}$
+
+#### 1-1/ Définition et forme algébrique
+Il existe un ensemble noté $\mathbb{C}$ contenant $\mathbb{R}$ tel que :
+- Il contient un élément noté $i$ vérifiant $i^2 = -1$.
+- Tout élément $z \in \mathbb{C}$ s'écrit de manière unique sous la forme :
+$$z = a + ib \quad (a, b \in \mathbb{R})$$
+Cette écriture est appelée forme algébrique du nombre complexe $z$.
+- $a = \text{Re}(z)$ est la partie réelle de $z$.
+- $b = \text{Im}(z)$ est la partie imaginaire de $z$.
+- Si $b = 0$, $z = a \in \mathbb{R}$ est un nombre réel.
+- Si $a = 0$, $z = ib$ est un nombre imaginaire pur (l'ensemble des imaginaires purs est noté $i\mathbb{R}$).
+
+#### 1-2/ Égalité de deux nombres complexes
+Pour tous $a, b, a', b' \in \mathbb{R}$ :
+$$a + ib = a' + ib' \iff \begin{cases} a = a' \\ b = b' \end{cases}$$
+En particulier : $a + ib = 0 \iff a = 0$ et $b = 0$.
+
+---
+
+### II- Représentation géométrique d’un nombre complexe
+
+#### 2-1/ Affixe d’un point et affixe d’un vecteur
+Le plan est muni d'un repère orthonormé direct $(O, \vec{u}, \vec{v})$.
+- À tout nombre complexe $z = a + ib$, on associe le point unique $M(a, b)$, appelé image de $z$. On dit que $z$ est l'affixe du point $M$, noté $z_M$ ou $M(z)$.
+- À tout vecteur $\vec{w}(a, b)$, on associe l'affixe $z_{\vec{w}} = a + ib$.
+- Pour deux points $A(z_A)$ et $B(z_B)$ : l'affixe du vecteur $\vec{AB}$ est $z_{\vec{AB}} = z_B - z_A$.
+- Distance : $AB = \|\vec{AB}\| = |z_B - z_A|$.
+
+#### 2-2/ Affixe du barycentre et du milieu
+- Milieu $I$ du segment $[AB]$ : $z_I = \frac{z_A + z_B}{2}$.
+- Barycentre $G$ du système pondéré $\{(A, \alpha), (B, \beta)\}$ (avec $\alpha + \beta \ne 0$) :
+$$z_G = \frac{\alpha z_A + \beta z_B}{\alpha + \beta}$$
+
+---
+
+### III- Conjugué d’un nombre complexe
+
+#### 3-1/ Définition
+Soit $z = a + ib$ ($a, b \in \mathbb{R}$). On appelle conjugué de $z$ le nombre complexe noté $\overline{z}$ défini par :
+$$\overline{z} = a - ib$$
+Géométriquement, les points d'affixes $z$ et $\overline{z}$ sont symétriques par rapport à l'axe des abscisses.
+
+#### 3-2/ Propriétés du conjugué
+- $\overline{\overline{z}} = z$
+- $z + \overline{z} = 2a = 2\text{Re}(z) \in \mathbb{R}$
+- $z - \overline{z} = 2ib = 2i\text{Im}(z) \in i\mathbb{R}$
+- $z \times \overline{z} = a^2 + b^2 \ge 0$
+- $z \in \mathbb{R} \iff \overline{z} = z$
+- $z \in i\mathbb{R} \iff \overline{z} = -z$
+- $\overline{z + z'} = \overline{z} + \overline{z'}$
+- $\overline{z \times z'} = \overline{z} \times \overline{z'}$
+- $\overline{\left(\frac{1}{z}\right)} = \frac{1}{\overline{z}}$ et $\overline{\left(\frac{z}{z'}\right)} = \frac{\overline{z}}{\overline{z'}}$ ($z' \ne 0$)
+- $\overline{z^n} = (\overline{z})^n$ ($n \in \mathbb{Z}$)
+
+---
+
+### IV- Module d’un nombre complexe
+
+#### 4-1/ Définition
+Le module d’un nombre complexe $z = a + ib$ ($a, b \in \mathbb{R}$) est le réel positif noté $|z|$ défini par :
+$$|z| = \sqrt{z \times \overline{z}} = \sqrt{a^2 + b^2}$$
+Géométriquement, si $M$ est le point d'affixe $z$, alors $|z| = OM$.
+
+#### 4-2/ Propriétés du module
+- $|z| \ge 0$ et $|z| = 0 \iff z = 0$
+- $|-z| = |\overline{z}| = |-\overline{z}| = |z|$
+- $|z \times z'| = |z| \times |z'|$
+- $|z^n| = |z|^n$ ($n \in \mathbb{Z}$)
+- $\left|\frac{1}{z}\right| = \frac{1}{|z|}$ et $\left|\frac{z}{z'}\right| = \frac{|z|}{|z'|}$ ($z' \ne 0$)
+- Inégalité triangulaire : $|z + z'| \le |z| + |z'|$
+
+---
+
+### V- Forme trigonométrique d’un nombre complexe
+
+#### 5-1/ Argument d’un nombre complexe non nul
+Soit $z \in \mathbb{C}^*$ d'image $M$.
+On appelle argument de $z$, noté $\arg(z)$, toute mesure en radians de l'angle orienté $(\vec{u}, \vec{OM})$ :
+$$\arg(z) \equiv (\vec{u}, \vec{OM}) \pmod{2\pi}$$
+
+#### 5-2/ Écriture trigonométrique
+Tout nombre complexe non nul $z$ peut s'écrire sous la forme trigonométrique :
+$$z = r(\cos \theta + i\sin \theta) = [r, \theta]$$
+où $r = |z| > 0$ et $\theta \equiv \arg(z) \pmod{2\pi}$ avec :
+$$\cos \theta = \frac{\text{Re}(z)}{|z|} = \frac{a}{r} \quad \text{et} \quad \sin \theta = \frac{\text{Im}(z)}{|z|} = \frac{b}{r}$$
+
+#### 5-3/ Propriétés des arguments
+Pour tous $z, z' \in \mathbb{C}^*$ :
+- $\arg(z \times z') \equiv \arg(z) + \arg(z') \pmod{2\pi}$
+- $\arg\left(\frac{1}{z}\right) \equiv -\arg(z) \pmod{2\pi}$
+- $\arg\left(\frac{z}{z'}\right) \equiv \arg(z) - \arg(z') \pmod{2\pi}$
+- $\arg(z^n) \equiv n \arg(z) \pmod{2\pi}$ ($n \in \mathbb{Z}$)
+- $\arg(\overline{z}) \equiv -\arg(z) \pmod{2\pi}$
+- $\arg(-z) \equiv \arg(z) + \pi \pmod{2\pi}$
+
+---
+
+### VI- Forme exponentielle d’un nombre complexe
+
+#### 6-1/ Définition (Notation d'Euler)
+Pour tout réel $\theta$, on pose :
+$$e^{i\theta} = \cos \theta + i\sin \theta$$
+Tout nombre complexe non nul $z = [r, \theta]$ s'écrit sous la forme exponentielle :
+$$z = r e^{i\theta} \quad (r = |z| > 0, \ \theta \equiv \arg(z) \pmod{2\pi})$$
+
+#### 6-2/ Propriétés
+- $e^{i\theta} \times e^{i\theta'} = e^{i(\theta+\theta')}$
+- $\frac{1}{e^{i\theta}} = e^{-i\theta} = \overline{e^{i\theta}}$
+- $\frac{e^{i\theta}}{e^{i\theta'}} = e^{i(\theta-\theta')}$
+- $(e^{i\theta})^n = e^{in\theta}$ ($n \in \mathbb{Z}$)
+
+---
+
+### VII- Formules d’Euler et formule de Moivre
+
+#### 7-1/ Formule de Moivre
+Pour tout $\theta \in \mathbb{R}$ et tout $n \in \mathbb{Z}$ :
+$$(\cos \theta + i\sin \theta)^n = \cos(n\theta) + i\sin(n\theta)$$
+
+#### 7-2/ Formules d’Euler et linéarisation
+Pour tout $\theta \in \mathbb{R}$ :
+$$\cos \theta = \frac{e^{i\theta} + e^{-i\theta}}{2} \quad \text{et} \quad \sin \theta = \frac{e^{i\theta} - e^{-i\theta}}{2i}$$
+
+---
+
+### IIX- Exercices
+
+#### 8-1/ Exercice 1
+Donner la forme algébrique des nombres complexes suivants :
+1. $z_1 = (2 - 3i)(1 + 4i)$
+2. $z_2 = (1 + 2i)^3$
+3. $z_3 = \frac{3 - 2i}{1 + i}$
+4. $z_4 = \frac{(1+i)^2}{2-i}$
+
+#### 8-2/ Exercice 2
+Déterminer le module et un argument des nombres complexes suivants, puis donner leur forme trigonométrique et exponentielle :
+1. $z_1 = 1 + i\sqrt{3}$
+2. $z_2 = -2 + 2i$
+3. $z_3 = -\sqrt{3} - i$
+4. $z_4 = 1 - i$
+5. $z_5 = -5$
+6. $z_6 = 3i$
+
+#### 8-3/ Exercice 3
+Soient $z_1 = 1 + i$ et $z_2 = \sqrt{3} + i$.
+1. Écrire $z_1$ et $z_2$ sous forme trigonométrique.
+2. Déterminer la forme algébrique puis la forme trigonométrique de $Z = \frac{z_1}{z_2}$.
+3. En déduire les valeurs exactes de $\cos\left(-\frac{\pi}{12}\right)$ et $\sin\left(-\frac{\pi}{12}\right)$, puis celles de $\cos\left(\frac{\pi}{12}\right)$ et $\sin\left(\frac{\pi}{12}\right)$.
+
+#### 8-4/ Exercice 4
+À l'aide de la formule de Moivre, calculer :
+1. $(1 + i\sqrt{3})^{12}$
+2. $\left(\frac{1+i}{\sqrt{2}}\right)^{2024}$
+3. Exprimer $\cos(3x)$ en fonction de $\cos(x)$.
+
+#### 8-5/ Exercice 5
+À l'aide des formules d'Euler, linéariser :
+1. $\cos^3(x)$
+2. $\sin^4(x)$
+3. $\cos^2(x)\sin^2(x)$
+
+#### 8-6/ Exercice 6
+Dans le plan complexe rapporté à un repère orthonormé direct $(O, \vec{u}, \vec{v})$, on considère les points $A(2+i)$, $B(4+3i)$ et $C(1+4i)$.
+1. Placer les points $A$, $B$ et $C$.
+2. Calculer $\frac{z_C - z_A}{z_B - z_A}$.
+3. En déduire la nature du triangle $ABC$.

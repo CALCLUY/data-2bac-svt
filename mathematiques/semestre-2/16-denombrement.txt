@@ -1,0 +1,162 @@
+---
+## Section: Semestre 2 (Cours et Exercices)
+Titre: Dénombrement - Cours
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Principes fondamentaux du dénombrement
+#### 1-1/ Principe additif (Principe de la somme)
+#### 1-2/ Principe multiplicatif (Principe du produit)
+
+### II- Notion d'ensemble fini et cardinal
+#### 2-1/ Définition du cardinal
+#### 2-2/ Propriétés du cardinal d’une réunion
+
+### III- $p$-listes (ou $p$-uplets) d'éléments d'un ensemble fini
+#### 3-1/ Définition et nombre de tirages avec remise
+#### 3-2/ Nombre de $p$-listes ($n^p$)
+
+### IV- Arrangements sans répétition
+#### 4-1/ Définition et tirages successifs sans remise
+#### 4-2/ Formule du nombre d'arrangements $A_n^p$
+
+### V- Permutations et factorielle d'un entier
+#### 5-1/ Définition et factorielle $n!$
+#### 5-2/ Permutations avec répétition
+
+### VI- Combinaisons
+#### 6-1/ Définition et tirages simultanés
+#### 6-2/ Formule du nombre de combinaisons $C_n^p$
+#### 6-3/ Propriétés des combinaisons (Formule de Pascal)
+
+### VII- Formule du binôme de Newton
+
+### IIX- Exercices
+#### 8-1/ Exercice 1
+#### 8-2/ Exercice 2
+#### 8-3/ Exercice 3
+#### 8-4/ Exercice 4
+
+---
+
+### I- Principes fondamentaux du dénombrement
+
+#### 1-1/ Principe additif (Principe de la somme)
+Si une action peut être réalisée soit par une méthode $A$ ayant $n_1$ issues possibles, soit par une méthode $B$ ayant $n_2$ issues possibles, et que $A$ et $B$ sont disjointes (ne peuvent être réalisées en même temps), alors le nombre total de façons de réaliser cette action est :
+$$N = n_1 + n_2$$
+
+#### 1-2/ Principe multiplicatif (Principe du produit)
+Si une procédure se décompose en deux étapes indépendantes, la première étape ayant $n_1$ choix possibles et la seconde ayant $n_2$ choix possibles quel que soit le résultat de la première, alors le nombre total de façons d'effectuer la procédure est :
+$$N = n_1 \times n_2$$
+Généralisation à $k$ étapes : $N = n_1 \times n_2 \times \dots \times n_k$.
+
+---
+
+### II- Notion d'ensemble fini et cardinal
+
+#### 2-1/ Définition du cardinal
+Le nombre d'éléments d'un ensemble fini $E$ est appelé le cardinal de $E$, noté $\text{Card}(E)$.
+- $\text{Card}(\emptyset) = 0$.
+
+#### 2-2/ Propriétés
+Pour tous sous-ensembles finis $A$ et $B$ d'un ensemble fini $E$ :
+- $\text{Card}(A \cup B) = \text{Card}(A) + \text{Card}(B) - \text{Card}(A \cap B)$
+- Si $A \cap B = \emptyset$ : $\text{Card}(A \cup B) = \text{Card}(A) + \text{Card}(B)$.
+- Si $\overline{A}$ est le complémentaire de $A$ dans $E$ : $\text{Card}(\overline{A}) = \text{Card}(E) - \text{Card}(A)$.
+
+---
+
+### III- $p$-listes (ou $p$-uplets) d'éléments d'un ensemble fini
+
+#### 3-1/ Définition et modèle de tirage
+Une $p$-liste d'éléments d'un ensemble $E$ à $n$ éléments est une suite ordonnée de $p$ éléments où les répétitions sont autorisées.
+Modèle concret : Tirages successifs avec remise de $p$ boules parmi $n$.
+
+#### 3-2/ Nombre de $p$-listes
+Le nombre de $p$-listes d'éléments d'un ensemble à $n$ éléments est :
+$$n^p$$
+
+---
+
+### IV- Arrangements sans répétition
+
+#### 4-1/ Définition et modèle de tirage
+Un arrangement de $p$ éléments parmi $n$ ($p \le n$) est une suite ordonnée de $p$ éléments distincts choisis parmi les $n$ éléments de $E$.
+Modèle concret : Tirages successifs sans remise de $p$ boules parmi $n$.
+
+#### 4-2/ Formule du nombre d'arrangements
+Le nombre d'arrangements de $p$ éléments parmi $n$ est noté $A_n^p$ :
+$$A_n^p = n(n-1)(n-2)\dots(n-p+1) = \frac{n!}{(n-p)!}$$
+
+---
+
+### V- Permutations et factorielle d'un entier
+
+#### 5-1/ Définition et factorielle $n!$
+Une permutation de $n$ éléments est un arrangement de tous les $n$ éléments ($p = n$).
+Le nombre de permutations de $n$ éléments est noté $n!$ (factorielle $n$) :
+$$n! = n \times (n-1) \times (n-2) \times \dots \times 2 \times 1$$
+Par convention : $0! = 1$.
+
+#### 5-2/ Permutations avec répétition
+Le nombre d'anagrammes distincts d'un mot formé de $n$ lettres où certaines lettres sont répétées $n_1, n_2, \dots, n_k$ fois (avec $n_1 + \dots + n_k = n$) est :
+$$N = \frac{n!}{n_1! \times n_2! \times \dots \times n_k!}$$
+
+---
+
+### VI- Combinaisons
+
+#### 6-1/ Définition et modèle de tirage
+Une combinaison de $p$ éléments parmi $n$ ($0 \le p \le n$) est un sous-ensemble (non ordonné) de $p$ éléments distincts choisis parmi les $n$ éléments de $E$.
+Modèle concret : Tirage simultané de $p$ boules parmi $n$.
+
+#### 6-2/ Formule du nombre de combinaisons
+Le nombre de combinaisons de $p$ éléments parmi $n$ est noté $C_n^p$ (ou $\binom{n}{p}$) :
+$$C_n^p = \frac{A_n^p}{p!} = \frac{n!}{p!(n-p)!}$$
+
+#### 6-3/ Propriétés des combinaisons
+- $C_n^0 = 1$ et $C_n^n = 1$
+- $C_n^1 = n$
+- Symétrie : $C_n^p = C_n^{n-p}$
+- Formule de Pascal : $C_n^p = C_{n-1}^p + C_{n-1}^{p-1}$ ($1 \le p \le n-1$)
+
+---
+
+### VII- Formule du binôme de Newton
+
+Pour tous réels $a$ et $b$ et tout entier $n \in \mathbb{N}^*$ :
+$$(a + b)^n = \sum_{k=0}^n C_n^k a^{n-k} b^k = C_n^0 a^n + C_n^1 a^{n-1}b + C_n^2 a^{n-2}b^2 + \dots + C_n^n b^n$$
+En posant $a = b = 1$ : $\sum_{k=0}^n C_n^k = 2^n$ (nombre de parties d'un ensemble à $n$ éléments).
+
+---
+
+### IIX- Exercices
+
+#### 8-1/ Exercice 1
+1. Calculer : $A_5^3$, $C_7^3$, $C_8^2$, $4!$, $6!$.
+2. Résoudre dans $\mathbb{N}$ les équations :
+   - $A_n^2 = 56$
+   - $C_n^2 = 21$
+   - $2 C_n^2 = C_{n+1}^2$
+
+#### 8-2/ Exercice 2
+Une urne contient 4 boules rouges, 3 boules vertes et 2 boules blanches (indiscernables au toucher). On tire 3 boules de l'urne.
+Calculer le nombre de tirages possibles dans chacun des cas suivants :
+1. Les tirages se font simultanément.
+2. Les tirages se font successivement sans remise.
+3. Les tirages se font successivement avec remise.
+4. Dans le cas d'un tirage simultané, déterminer le nombre de tirages contenant :
+   a. 3 boules de même couleur.
+   b. 3 boules de couleurs différentes.
+   c. Au moins une boule rouge.
+
+#### 8-3/ Exercice 3
+1. Combien de nombres de 4 chiffres distincts peut-on former avec les chiffres $\{1, 2, 3, 4, 5, 6\}$ ?
+2. Combien de ces nombres sont pairs ?
+3. Déterminer le nombre d'anagrammes distincts du mot "MAROC", puis du mot "EXCELLENCE".
+
+#### 8-4/ Exercice 4
+1. Développer l'expression $(2x - 3)^4$ en utilisant la formule du binôme de Newton.
+2. Déterminer le coefficient de $x^3$ dans le développement de $(x + 2)^7$.

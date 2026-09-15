@@ -1,0 +1,34 @@
+---
+## Section: Devoirs corrigés
+Titre: Math 2Bac SPC - Semestre 2 Devoir 2 Modèle 1
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+### Exercice 1 (4 pts)
+1. Calculer les intégrales suivantes :
+$$I = \int_0^1 (2x+1)e^{x^2+x} \, dx$$
+$$J = \int_1^e \frac{(\ln x)^2}{x} \, dx$$
+2. En utilisant l'intégration par parties, calculer :
+$$K = \int_0^1 (2x-1)e^x \, dx$$
+$$L = \int_1^e x^2 \ln(x) \, dx$$
+
+---
+
+### Exercice 2 (6 pts)
+Dans l'espace rapporté à un repère orthonormé $(O, \vec{i}, \vec{j}, \vec{k})$, on considère les points $A(1, 0, 1)$, $B(2, -1, 0)$ et $C(0, 1, 2)$.
+1. Calculer $\vec{AB} \wedge \vec{AC}$ et en déduire que les points $A, B$ et $C$ forment un plan.
+2. Montrer qu'une équation cartésienne du plan $(ABC)$ est : $x + y + z - 2 = 0$.
+3. Soit la sphère $(S)$ d'équation : $x^2 + y^2 + z^2 - 2x + 4y - 6z + 5 = 0$.
+   a. Déterminer le centre $\Omega$ et le rayon $R$ de la sphère $(S)$.
+   b. Calculer la distance $d(\Omega, (ABC))$.
+   c. En déduire la position relative de $(S)$ et $(ABC)$.
+
+---
+
+### Exercice 3 (10 pts)
+Soit la fonction $f$ définie sur $[0, +\infty[$ par :
+$$f(x) = \frac{e^x - 1}{x e^x + 1}$$
+1. Montrer que $f$ est continue et dérivable sur $[0, +\infty[$.
+2. Calculer $\lim_{x \to +\infty} f(x)$ et interpréter graphiquement.
+3. Dresser le tableau de variations de $f$.
+4. Calculer l'aire du domaine délimité par $(C_f)$, l'axe des abscisses et les droites $x = 0$ et $x = 1$.

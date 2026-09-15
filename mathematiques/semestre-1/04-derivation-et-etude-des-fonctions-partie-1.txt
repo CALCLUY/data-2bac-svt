@@ -1,0 +1,179 @@
+---
+## Section: Semestre 1 (Cours et Exercices)
+Titre: Séance 4 - Dérivation et étude des fonctions (Partie 1)
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Dérivabilité à droite – Dérivabilité à gauche en un point $x_0$
+#### 1-1/ Dérivabilité à droite en un point $x_0$
+#### 1-2/ Dérivabilité à gauche en un point $x_0$
+#### 1-3/ Dérivabilité en un point $x_0$
+
+### II- Interprétation géométrique
+#### 2-1/ La droite tangente
+#### 2-2/ Les demi-tangentes
+
+### III- Dérivabilité sur un intervalle
+
+### IV- Dérivée d’une fonction composée
+
+### V- Dérivée de la fonction réciproque
+#### 5-1/ Théorème
+#### 5-2/ Formule générale
+#### 5-3/ Dérivée de la fonction racine $n^{\text{ième}}$
+
+### VI- Dérivées successives d’une fonction
+
+### VII- Concavité d’une courbe – Points d’inflexion
+
+### IIX- Branches infinies
+#### 8-1/ Les asymptotes
+#### 8-2/ Branches paraboliques
+
+### IX- Exercices
+#### 9-1/ Exercice 1
+#### 9-2/ Exercice 2
+#### 9-3/ Exercice 3
+#### 9-4/ Exercice 4
+#### 9-5/ Exercice 5
+#### 9-6/ Exercice 6
+
+---
+
+### I- Dérivabilité à droite – Dérivabilité à gauche en un point $x_0$
+
+#### 1-1/ Dérivabilité à droite en un point $x_0$
+Soit $f$ une fonction définie sur un intervalle de type $[x_0, x_0 + r[$.
+$f$ est dérivable à droite en $x_0$ si :
+$$\lim_{x \to x_0^+} \frac{f(x) - f(x_0)}{x - x_0} = l_d \in \mathbb{R}$$
+Le nombre $l_d$ est appelé le nombre dérivé à droite de $f$ en $x_0$, noté $f'_d(x_0)$.
+
+#### 1-2/ Dérivabilité à gauche en un point $x_0$
+Soit $f$ une fonction définie sur un intervalle de type $]x_0 - r, x_0]$.
+$f$ est dérivable à gauche en $x_0$ si :
+$$\lim_{x \to x_0^-} \frac{f(x) - f(x_0)}{x - x_0} = l_g \in \mathbb{R}$$
+Le nombre $l_g$ est appelé le nombre dérivé à gauche de $f$ en $x_0$, noté $f'_g(x_0)$.
+
+#### 1-3/ Dérivabilité en un point $x_0$
+$f$ est dérivable en $x_0$ si et seulement si elle est dérivable à droite et à gauche en $x_0$ et $f'_d(x_0) = f'_g(x_0)$.
+Si $f'_d(x_0) \ne f'_g(x_0)$, le point $A(x_0, f(x_0))$ est un point anguleux.
+
+---
+
+### II- Interprétation géométrique
+
+#### 2-1/ La droite tangente
+Si $f$ est dérivable en $x_0$, alors $(C_f)$ admet au point $A(x_0, f(x_0))$ une tangente d’équation :
+$$(T): y = f'(x_0)(x - x_0) + f(x_0)$$
+
+#### 2-2/ Les demi-tangentes
+- Tangente horizontale : si $f'(x_0) = 0$, la tangente est parallèle à l'axe des abscisses ($y = f(x_0)$).
+- Demi-tangente verticale : si $\lim_{x \to x_0^\pm} \frac{f(x) - f(x_0)}{x - x_0} = \pm \infty$, la courbe admet une demi-tangente verticale en $A(x_0, f(x_0))$.
+  - $\lim_{x \to x_0^+} \frac{f(x)-f(x_0)}{x-x_0} = +\infty$ : demi-tangente verticale dirigée vers le haut.
+  - $\lim_{x \to x_0^+} \frac{f(x)-f(x_0)}{x-x_0} = -\infty$ : demi-tangente verticale dirigée vers le bas.
+  - $\lim_{x \to x_0^-} \frac{f(x)-f(x_0)}{x-x_0} = +\infty$ : demi-tangente verticale dirigée vers le bas.
+  - $\lim_{x \to x_0^-} \frac{f(x)-f(x_0)}{x-x_0} = -\infty$ : demi-tangente verticale dirigée vers le haut.
+
+---
+
+### III- Dérivabilité sur un intervalle
+- $f$ est dérivable sur $]a, b[$ si elle est dérivable en tout $x \in ]a, b[$.
+- $f$ est dérivable sur $[a, b]$ si elle est dérivable sur $]a, b[$, dérivable à droite en $a$ et dérivable à gauche en $b$.
+
+---
+
+### IV- Dérivée d’une fonction composée
+Si $u$ est dérivable sur un intervalle $I$ et $v$ est dérivable sur un intervalle $J$ avec $u(I) \subset J$, alors la fonction $f = v \circ u$ est dérivable sur $I$, et :
+$$\forall x \in I : \quad (v \circ u)'(x) = u'(x) \times v'(u(x))$$
+
+---
+
+### V- Dérivée de la fonction réciproque
+
+#### 5-1/ Théorème
+Soit $f$ une fonction continue et strictement monotone sur un intervalle $I$.
+Soit $x_0 \in I$. Si $f$ est dérivable en $x_0$ et $f'(x_0) \ne 0$, alors sa fonction réciproque $f^{-1}$ est dérivable en $y_0 = f(x_0)$, et :
+$$(f^{-1})'(y_0) = \frac{1}{f'(x_0)} = \frac{1}{f'(f^{-1}(y_0))}$$
+
+#### 5-2/ Formule générale
+Si $f$ est dérivable sur $I$ et pour tout $x \in I$, $f'(x) \ne 0$, alors $f^{-1}$ est dérivable sur $J = f(I)$, et :
+$$\forall x \in J : \quad (f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}$$
+
+#### 5-3/ Dérivée de la fonction racine $n^{\text{ième}}$
+La fonction $x \mapsto \sqrt[n]{x}$ est dérivable sur $]0, +\infty[$ et :
+$$(\sqrt[n]{x})' = \frac{1}{n \sqrt[n]{x^{n-1}}} = \frac{1}{n} x^{\frac{1}{n}-1}$$
+Si $u$ est une fonction strictement positive et dérivable sur un intervalle $I$ :
+$$(\sqrt[n]{u(x)})' = \frac{u'(x)}{n \sqrt[n]{(u(x))^{n-1}}}$$
+
+---
+
+### VI- Dérivées successives d’une fonction
+Soit $f$ une fonction dérivable sur un intervalle $I$. Si sa dérivée $f'$ est dérivable sur $I$, sa dérivée $(f')'$ est appelée dérivée seconde de $f$ et notée $f''$ ou $f^{(2)}$.
+Par récurrence, on définit pour tout $n \in \mathbb{N}^*$ la dérivée $n^{\text{ième}}$ notée $f^{(n)}$.
+
+---
+
+### VII- Concavité d’une courbe – Points d’inflexion
+Soit $f$ une fonction deux fois dérivable sur un intervalle $I$ :
+- Si $f''(x) \ge 0$ pour tout $x \in I$, alors la courbe $(C_f)$ est convexe (tournée vers le haut : $\cup$).
+- Si $f''(x) \le 0$ pour tout $x \in I$, alors la courbe $(C_f)$ est concave (tournée vers le bas : $\cap$).
+- Si la dérivée seconde $f''$ s'annule en $x_0$ en changeant de signe, alors le point $I(x_0, f(x_0))$ est un point d’inflexion de $(C_f)$.
+
+---
+
+### IIX- Branches infinies
+
+#### 8-1/ Les asymptotes
+1. Asymptote verticale : $\lim_{x \to a} f(x) = \pm \infty \implies (D): x = a$ est asymptote verticale.
+2. Asymptote horizontale : $\lim_{x \to \pm \infty} f(x) = b \implies (D): y = b$ est asymptote horizontale en $\pm \infty$.
+3. Asymptote oblique : $\lim_{x \to \pm \infty} [f(x) - (ax+b)] = 0 \implies (D): y = ax+b$ est asymptote oblique en $\pm \infty$.
+
+#### 8-2/ Branches paraboliques
+Pour la limite en $\pm \infty$, si $\lim_{x \to \pm \infty} f(x) = \pm \infty$ :
+1. Si $\lim_{x \to \pm \infty} \frac{f(x)}{x} = 0$ : branche parabolique de direction l'axe des abscisses $(Ox)$.
+2. Si $\lim_{x \to \pm \infty} \frac{f(x)}{x} = \pm \infty$ : branche parabolique de direction l'axe des ordonnées $(Oy)$.
+3. Si $\lim_{x \to \pm \infty} \frac{f(x)}{x} = a \ne 0$ :
+   - Si $\lim_{x \to \pm \infty} [f(x) - ax] = b$ : asymptote oblique d'équation $y = ax+b$.
+   - Si $\lim_{x \to \pm \infty} [f(x) - ax] = \pm \infty$ : branche parabolique de direction la droite d'équation $y = ax$.
+
+---
+
+### IX- Exercices
+
+#### 9-1/ Exercice 1
+Soit la fonction numérique définie par :
+$$f(x) = \begin{cases} \frac{2x}{x-1} & \text{si } x \le 0 \\ x^2 - 2x & \text{si } x > 0 \end{cases}$$
+1. Étudier la continuité de $f$ en $0$.
+2. Étudier la dérivabilité de $f$ en $0$ et donner une interprétation géométrique des résultats obtenus.
+
+#### 9-2/ Exercice 2
+Soit $f$ la fonction numérique définie par : $f(x) = x\sqrt{\frac{x-1}{x+1}}$.
+1. Déterminer l'ensemble de définition $D_f$.
+2. Étudier la dérivabilité de $f$ à droite en $1$, puis interpréter géométriquement le résultat.
+3. Étudier la dérivabilité de $f$ à gauche en $-1$, puis interpréter géométriquement le résultat.
+
+#### 9-3/ Exercice 3
+Soit $f$ la fonction définie par : $f(x) = x^3 + x - 1$.
+1. Montrer que $f$ est une bijection de $\mathbb{R}$ sur $\mathbb{R}$.
+2. Montrer que sa réciproque $f^{-1}$ est dérivable en $1$ et calculer $(f^{-1})'(1)$.
+3. Calculer $(f^{-1})'(-1)$.
+
+#### 9-4/ Exercice 4
+Calculer la dérivée des fonctions suivantes :
+1. $f(x) = \sqrt[3]{x^2+1}$
+2. $f(x) = \sqrt[4]{x^3-2x}$
+3. $f(x) = (2x^2-3x+1)^5$
+4. $f(x) = \frac{\sqrt[3]{x}}{x+1}$
+
+#### 9-5/ Exercice 5
+Étudier la concavité de la courbe $(C_f)$ et déterminer les coordonnées des éventuels points d'inflexion pour :
+1. $f(x) = x^4 - 6x^2 + 2x - 1$
+2. $f(x) = \frac{x^2-1}{x^2+1}$
+
+#### 9-6/ Exercice 6
+Déterminer la nature des branches infinies de la courbe $(C_f)$ pour les fonctions suivantes :
+1. $f(x) = \frac{2x^2+3x-1}{x-1}$
+2. $f(x) = \sqrt{x^2-4x+3}$
+3. $f(x) = x + \sqrt{x}$

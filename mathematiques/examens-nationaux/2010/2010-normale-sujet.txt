@@ -1,0 +1,90 @@
+---
+Type: Examen National
+Année: 2010
+Session: Normale
+Nature: Sujet
+Source: 
+---
+
+## Exercice 1 (3 points)
+
+L’espace est rapporté à un repère orthonormé direct $(O, \vec{i}, \vec{j}, \vec{k})$.
+On considère les points $A(-1, 0, 3)$, $B(3, 0, 0)$ et $C(7, 1, -3)$, et $(S)$ la sphère d’équation :
+$$x^2 + y^2 + z^2 - 6x - 2y - 15 = 0$$
+
+1) Montrer que $\vec{AB} \wedge \vec{AC} = 3\vec{i} + 4\vec{k}$ et en déduire que $3x + 4z - 9 = 0$ est une équation cartésienne du plan $(ABC)$.
+2) Montrer que $(S)$ est la sphère de centre $\Omega(3, 1, 0)$ et de rayon $R = 5$.
+3) Soit $(D)$ la droite passant par $\Omega$ et perpendiculaire au plan $(ABC)$.
+a) Montrer que :
+$$\begin{cases} x = 3 + 3t \\ y = 1 \\ z = 4t \end{cases} \quad (t \in \mathbb{R})$$
+est une représentation paramétrique de la droite $(D)$.
+b) Montrer que la droite $(D)$ coupe la sphère $(S)$ aux deux points $E(6, 1, 4)$ et $F(0, 1, -4)$.
+
+## Exercice 2 (3 points)
+
+1) Résoudre dans $\mathbb{C}$ l’équation :
+$$z^2 - 6z + 10 = 0$$
+
+2) Dans le plan complexe rapporté à un repère orthonormé direct $(O, \vec{u}, \vec{v})$, on considère les points $A$, $B$ et $C$ d’affixes respectives :
+$$a = 3 - i, \quad b = 3 + i, \quad c = 7 - 3i$$
+Soit $z$ l’affixe d'un point $M$ du plan et $z'$ l’affixe du point $M'$ image de $M$ par la rotation $R$ de centre $A$ et d’angle $\frac{\pi}{2}$.
+a) Montrer que : $z' = iz + 2 - 4i$.
+b) Vérifier que l’affixe du point $C'$ image du point $C$ par la rotation $R$ est $c' = 5 + 3i$.
+c) Montrer que : $\frac{c'-b}{c-b} = \frac{1}{2}i$, puis en déduire que le triangle $BCC'$ est rectangle en $B$ et que $BC = 2BC'$.
+
+## Exercice 3 (3 points)
+
+Une caisse contient dix boules : 5 boules blanches, 3 boules rouges et 2 boules noires (indiscernables au toucher).
+On tire au hasard et simultanément quatre boules de la caisse.
+
+1) On considère les deux événements :
+- $A$ : « Obtenir une seule boule rouge »
+- $B$ : « Obtenir une boule blanche au moins »
+Montrer que $p(A) = \frac{1}{2}$ et $p(B) = \frac{41}{42}$.
+
+2) Soit $X$ la variable aléatoire qui à chaque tirage associe le nombre de boules rouges tirées.
+a) Vérifier que les valeurs prises par $X$ sont $0, 1, 2, 3$.
+b) Montrer que $p(X = 0) = \frac{1}{6}$ et $p(X = 2) = \frac{3}{10}$.
+c) Déterminer la loi de probabilité de la variable aléatoire $X$.
+
+## Exercice 4 (3 points)
+
+On considère la suite numérique $(u_n)$ définie par :
+$$u_0 = 2 \quad \text{et} \quad u_{n+1} = \frac{3u_n - 1}{2u_n} \quad \text{pour tout } n \in \mathbb{N}$$
+
+1) Montrer que pour tout $n \in \mathbb{N}$ : $u_n - 1 > 0$.
+2) Soit $(v_n)$ la suite définie par :
+$$v_n = \frac{u_n - 1}{2u_n - 1} \quad \text{pour tout } n \in \mathbb{N}$$
+a) Montrer que $(v_n)$ est une suite géométrique de raison $\frac{1}{2}$ et en déduire que $v_n = \frac{1}{3}\left(\frac{1}{2}\right)^n$ pour tout $n \in \mathbb{N}$.
+b) Montrer que : $u_n = \frac{v_n - 1}{2v_n - 1}$ pour tout $n \in \mathbb{N}$, puis en déduire que $\lim_{n\to +\infty} u_n = 1$.
+3) Calculer $\lim_{n\to +\infty} w_n$ telle que $(w_n)$ est la suite définie par : $w_n = \ln(u_n)$ pour tout $n \in \mathbb{N}$.
+
+## Problème (8 points)
+
+### Partie I
+
+On considère la fonction numérique $g$ définie sur $\mathbb{R}$ par :
+$$g(x) = 1 + 4xe^{2x}$$
+
+1) Montrer que $g'(x) = 4(2x+1)e^{2x}$ pour tout $x \in \mathbb{R}$.
+2) Montrer que $g$ est croissante sur $[-\frac{1}{2}, +\infty[$ et décroissante sur $]-\infty, -\frac{1}{2}]$.
+3) a) Montrer que $g(-\frac{1}{2}) = 1 - \frac{2}{e}$ et vérifier que $g(-\frac{1}{2}) > 0$.
+b) En déduire que pour tout $x \in \mathbb{R}$, $g(x) > 0$.
+
+### Partie II
+
+On considère la fonction numérique $f$ définie sur $\mathbb{R}$ par :
+$$f(x) = (2x-1)e^{2x} + x + 1$$
+Soit $(C_f)$ sa courbe représentative dans un repère orthonormé $(O, \vec{i}, \vec{j})$ (unité : $2\text{ cm}$).
+
+1) Calculer $\lim_{x\to +\infty} f(x)$ et montrer que $\lim_{x\to -\infty} f(x) = -\infty$ (on rappelle que $\lim_{x\to -\infty} xe^x = 0$).
+2) Montrer que $f'(x) = g(x)$ pour tout $x \in \mathbb{R}$, puis en déduire que la fonction $f$ est strictement croissante sur $\mathbb{R}$.
+3) a) Calculer $\lim_{x\to +\infty} \frac{f(x)}{x}$ et en déduire que la courbe $(C_f)$ admet au voisinage de $+\infty$ une branche parabolique de direction l’axe des ordonnées.
+b) Calculer $\lim_{x\to -\infty} [f(x) - (x+1)]$ et en déduire que la droite $(D)$ d’équation $y = x + 1$ est asymptote à $(C_f)$ au voisinage de $-\infty$.
+c) Déterminer les coordonnées du point d’intersection de la droite $(D)$ et la courbe $(C_f)$, puis montrer que la courbe $(C_f)$ est en dessous de la droite $(D)$ sur l’intervalle $]-\infty, \frac{1}{2}]$ et qu’elle est au-dessus de $(D)$ sur l’intervalle $[\frac{1}{2}, +\infty[$.
+4) a) Montrer que $y = x$ est une équation cartésienne de la droite $(T)$ tangente à la courbe $(C_f)$ au point $O$.
+b) Montrer que la courbe $(C_f)$ possède un point d’inflexion d’abscisse $-\frac{1}{2}$.
+5) Construire les droites $(D)$ et $(T)$ et la courbe $(C_f)$.
+6) a) Montrer que :
+$$\int_0^{1/2} (2x-1)e^{2x} dx = 1 - \frac{e}{2}$$
+b) Montrer que l’aire du domaine plan limité par $(C_f)$, la tangente $(T)$ et les deux droites d'équations $x = 0$ et $x = \frac{1}{2}$ est $(6 - 2e)\text{ cm}^2$.

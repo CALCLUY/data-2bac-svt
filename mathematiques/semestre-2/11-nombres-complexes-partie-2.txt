@@ -1,0 +1,146 @@
+---
+## Section: Semestre 2 (Cours et Exercices)
+Titre: Nombres complexes (Partie 2) - Cours
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Équations du second degré à coefficients réels dans $\mathbb{C}$
+#### 1-1/ Racine carrée d'un nombre réel
+#### 1-2/ Résolution de l'équation $az^2 + bz + c = 0$ ($a, b, c \in \mathbb{R}, a \ne 0$)
+
+### II- Interprétation géométrique des arguments
+#### 2-1/ Angle de deux vecteurs et argument
+#### 2-2/ Points alignés et points cocycliques
+#### 2-3/ Droites orthogonales
+
+### III- Écritures complexes des transformations usuelles du plan
+#### 3-1/ Translation
+#### 3-2/ Homothétie
+#### 3-3/ Rotation
+
+### IV- Applications géométriques
+#### 4-1/ Nature d'un triangle
+#### 4-2/ Ensembles de points
+
+### V- Exercices
+#### 5-1/ Exercice 1
+#### 5-2/ Exercice 2
+#### 5-3/ Exercice 3
+#### 5-4/ Exercice 4
+#### 5-5/ Exercice 5
+#### 5-6/ Exercice 6
+
+---
+
+### I- Équations du second degré à coefficients réels dans $\mathbb{C}$
+
+#### 1-1/ Racine carrée d'un nombre réel
+- Si $a > 0$, $a$ admet deux racines carrées réelles : $\sqrt{a}$ et $-\sqrt{a}$.
+- Si $a = 0$, $a$ admet une seule racine carrée : $0$.
+- Si $a < 0$, $a$ admet deux racines carrées imaginaires pures : $i\sqrt{|a|}$ et $-i\sqrt{|a|}$.
+
+#### 1-2/ Résolution de l'équation $az^2 + bz + c = 0$ ($a \ne 0$)
+Soit $\Delta = b^2 - 4ac$ le discriminant de l'équation.
+- Si $\Delta > 0$ : l'équation admet deux solutions réelles distinctes :
+  $$z_1 = \frac{-b - \sqrt{\Delta}}{2a} \quad \text{et} \quad z_2 = \frac{-b + \sqrt{\Delta}}{2a}$$
+- Si $\Delta = 0$ : l'équation admet une unique solution réelle :
+  $$z_0 = -\frac{b}{2a}$$
+- Si $\Delta < 0$ : l'équation admet deux solutions complexes conjuguées :
+  $$z_1 = \frac{-b - i\sqrt{-\Delta}}{2a} \quad \text{et} \quad z_2 = \frac{-b + i\sqrt{-\Delta}}{2a} = \overline{z_1}$$
+
+---
+
+### II- Interprétation géométrique des arguments
+
+#### 2-1/ Angle de deux vecteurs et argument
+Soient $A(z_A)$, $B(z_B)$, $C(z_C)$ et $D(z_D)$ des points distincts du plan complexe :
+$$(\vec{u}, \vec{AB}) \equiv \arg(z_B - z_A) \pmod{2\pi}$$
+$$(\vec{AB}, \vec{CD}) \equiv \arg\left(\frac{z_D - z_C}{z_B - z_A}\right) \pmod{2\pi}$$
+$$(\vec{AB}, \vec{AC}) \equiv \arg\left(\frac{z_C - z_A}{z_B - z_A}\right) \pmod{2\pi}$$
+
+#### 2-2/ Points alignés
+Les points distincts $A, B, C$ sont alignés si et seulement si :
+$$\frac{z_C - z_A}{z_B - z_A} \in \mathbb{R} \quad \iff \quad \arg\left(\frac{z_C - z_A}{z_B - z_A}\right) \equiv 0 \pmod{\pi}$$
+
+#### 2-3/ Droites orthogonales
+Les droites $(AB)$ et $(CD)$ sont perpendiculaires ($(AB) \perp (CD)$) si et seulement si :
+$$\frac{z_D - z_C}{z_B - z_A} \in i\mathbb{R} \quad \iff \quad \arg\left(\frac{z_D - z_C}{z_B - z_A}\right) \equiv \frac{\pi}{2} \pmod{\pi}$$
+
+---
+
+### III- Écritures complexes des transformations usuelles du plan
+
+#### 3-1/ Translation
+Soit $t_{\vec{u}}$ la translation de vecteur $\vec{u}$ d'affixe $b$.
+Si $M'(z') = t_{\vec{u}}(M(z))$, alors l'écriture complexe de la translation est :
+$$z' = z + b$$
+
+#### 3-2/ Homothétie
+Soit $h$ l'homothétie de centre $\Omega(\omega)$ et de rapport $k \in \mathbb{R}^*$.
+Si $M'(z') = h(M(z))$, alors l'écriture complexe de l'homothétie est :
+$$z' - \omega = k(z - \omega) \quad \iff \quad z' = kz + \omega(1 - k)$$
+
+#### 3-3/ Rotation
+Soit $R$ la rotation de centre $\Omega(\omega)$ et d'angle $\theta \in \mathbb{R}$.
+Si $M'(z') = R(M(z))$, alors l'écriture complexe de la rotation est :
+$$z' - \omega = e^{i\theta}(z - \omega) \quad \iff \quad z' = e^{i\theta} z + \omega(1 - e^{i\theta})$$
+
+---
+
+### IV- Applications géométriques
+
+#### 4-1/ Nature d'un triangle
+Soit le rapport $Z = \frac{z_C - z_A}{z_B - z_A}$ :
+- Si $|Z| = 1$ et $\arg(Z) \equiv \pm \frac{\pi}{2} \pmod{2\pi}$ (soit $Z = \pm i$) : le triangle $ABC$ est rectangle et isocèle en $A$.
+- Si $|Z| = 1$ et $\arg(Z) \equiv \pm \frac{\pi}{3} \pmod{2\pi}$ (soit $Z = e^{\pm i\frac{\pi}{3}}$) : le triangle $ABC$ est équilatéral.
+- Si $\arg(Z) \equiv \pm \frac{\pi}{2} \pmod{2\pi}$ ($Z \in i\mathbb{R}^*$) : le triangle $ABC$ est rectangle en $A$.
+- Si $|Z| = 1$ ($AB = AC$) : le triangle $ABC$ est isocèle en $A$.
+
+#### 4-2/ Ensembles de points
+- $|z - \omega| = R$ ($R > 0$) : l'ensemble des points $M(z)$ est le cercle de centre $\Omega(\omega)$ et de rayon $R$.
+- $|z - z_A| = |z - z_B|$ : l'ensemble des points $M(z)$ est la médiatrice du segment $[AB]$.
+- $\arg(z - z_A) \equiv \theta \pmod{2\pi}$ : l'ensemble des points $M(z)$ est une demi-droite d'origine $A$ privée de $A$.
+
+---
+
+### V- Exercices
+
+#### 5-1/ Exercice 1
+1. Résoudre dans l'ensemble $\mathbb{C}$ les équations suivantes :
+   - $z^2 - 2z + 5 = 0$
+   - $z^2 + 2\sqrt{3}z + 4 = 0$
+   - $2z^2 - 6z + 5 = 0$
+2. Résoudre dans $\mathbb{C}$ : $z^4 - 3z^2 - 4 = 0$.
+
+#### 5-2/ Exercice 2
+Dans le plan complexe rapporté à un repère orthonormé direct $(O, \vec{u}, \vec{v})$, on considère les points $A(2+i)$, $B(3-2i)$ et $C(-1+4i)$.
+1. Montrer que les points $A, B$ et $C$ ne sont pas alignés.
+2. Déterminer l'affixe du point $D$ pour que $ABCD$ soit un parallélogramme.
+3. Déterminer l'affixe du centre de gravité $G$ du triangle $ABC$.
+
+#### 5-3/ Exercice 3
+Soient les points $A(1+i)$, $B(2-i)$ et $C(4+2i)$.
+1. Calculer le quotient $\frac{z_C - z_A}{z_B - z_A}$.
+2. Écrire ce quotient sous forme trigonométrique.
+3. En déduire la nature du triangle $ABC$.
+
+#### 5-4/ Exercice 4
+Soit la rotation $R$ de centre $\Omega(1+2i)$ et d'angle $\frac{\pi}{2}$.
+1. Donner l'écriture complexe de la rotation $R$.
+2. Déterminer l'affixe du point $A'$ image du point $A(3-i)$ par la rotation $R$.
+3. Déterminer l'affixe du point $B$ dont l'image par $R$ est $B'(2+4i)$.
+
+#### 5-5/ Exercice 5
+Soit $R$ la transformation qui au point $M(z)$ associe le point $M'(z')$ tel que :
+$$z' = -iz + 3 + i$$
+1. Déterminer l'affixe du point invariant $\Omega$ par la transformation $R$.
+2. Montrer que $R$ est une rotation dont on précisera le centre et l'angle.
+
+#### 5-6/ Exercice 6
+Déterminer l'ensemble $(\Gamma)$ des points $M(z)$ dans chacun des cas :
+1. $|z - 2 + 3i| = 4$
+2. $|z + 1 - i| = |z - 3 + 2i|$
+3. $|iz - 2 + i| = 3$
+4. $\frac{z - 2 + i}{z + 1 - 2i} \in i\mathbb{R}$

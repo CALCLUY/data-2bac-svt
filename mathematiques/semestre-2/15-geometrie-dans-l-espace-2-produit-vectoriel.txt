@@ -1,0 +1,133 @@
+---
+## Section: Semestre 2 (Cours et Exercices)
+Titre: Géométrie dans l’espace 2 (Produit vectoriel) - Cours
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Orientation de l’espace – Trièdre et base orientée
+
+### II- Définition géométrique du produit vectoriel
+#### 2-1/ Définition
+#### 2-2/ Propriétés géométriques
+#### 2-3/ Interprétation géométrique : aire d'un triangle et d'un parallélogramme
+
+### III- Expression analytique du produit vectoriel
+#### 3-1/ Déterminants d'ordre 2
+#### 3-2/ Formule analytique de $\vec{u} \wedge \vec{v}$
+
+### IV- Applications du produit vectoriel
+#### 4-1/ Colinéarité de deux vecteurs et alignement de points
+#### 4-2/ Vecteur normal à un plan défini par 3 points non alignés
+#### 4-3/ Distance d'un point à une droite
+
+### V- Exercices
+#### 5-1/ Exercice 1
+#### 5-2/ Exercice 2
+#### 5-3/ Exercice 3
+#### 5-4/ Exercice 4
+#### 5-5/ Exercice 5
+#### 5-6/ Exercice 6
+
+---
+
+### I- Orientation de l’espace – Trièdre et base orientée
+
+Soit $(O, \vec{i}, \vec{j}, \vec{k})$ un repère de l'espace.
+La règle du bonhomme d'Ampère, de la main droite ou du tire-bouchon de Maxwell permet de définir l'orientation directe de la base $(\vec{i}, \vec{j}, \vec{k})$.
+
+---
+
+### II- Définition géométrique du produit vectoriel
+
+#### 2-1/ Définition
+Soient $\vec{u}$ et $\vec{v}$ deux vecteurs de l'espace.
+Le produit vectoriel de $\vec{u}$ et $\vec{v}$, noté $\vec{u} \wedge \vec{v}$, est le vecteur défini par :
+1. Si $\vec{u}$ et $\vec{v}$ sont colinéaires, alors $\vec{u} \wedge \vec{v} = \vec{0}$.
+2. Si $\vec{u}$ et $\vec{v}$ ne sont pas colinéaires :
+   - $\vec{u} \wedge \vec{v}$ est orthogonal à $\vec{u}$ et à $\vec{v}$.
+   - La base $(\vec{u}, \vec{v}, \vec{u} \wedge \vec{v})$ est une base directe.
+   - Sa norme est : $\|\vec{u} \wedge \vec{v}\| = \|\vec{u}\| \times \|\vec{v}\| \times \sin(\theta)$ où $\theta \in [0, \pi]$ est l'angle entre $\vec{u}$ et $\vec{v}$.
+
+#### 2-2/ Propriétés
+- Antisymétrie : $\vec{v} \wedge \vec{u} = -(\vec{u} \wedge \vec{v})$.
+- Bilinéarité :
+  - $(\vec{u} + \vec{v}) \wedge \vec{w} = \vec{u} \wedge \vec{w} + \vec{v} \wedge \vec{w}$
+  - $(\alpha \vec{u}) \wedge \vec{v} = \alpha (\vec{u} \wedge \vec{v})$
+
+#### 2-3/ Interprétation géométrique : aire
+- L'aire d'un parallélogramme $ABCD$ construit sur $\vec{AB}$ et $\vec{AD}$ est :
+$$\mathcal{A}_{ABCD} = \|\vec{AB} \wedge \vec{AD}\|$$
+- L'aire du triangle $ABC$ est :
+$$\mathcal{A}_{ABC} = \frac{1}{2} \|\vec{AB} \wedge \vec{AC}\|$$
+
+---
+
+### III- Expression analytique du produit vectoriel
+
+#### 3-1/ Déterminants d'ordre 2
+Dans une base orthonormée directe $(\vec{i}, \vec{j}, \vec{k})$, soient $\vec{u}(x, y, z)$ et $\vec{v}(x', y', z')$ :
+$$\vec{u} \wedge \vec{v} = \begin{vmatrix} y & y' \\ z & z' \end{vmatrix} \vec{i} - \begin{vmatrix} x & x' \\ z & z' \end{vmatrix} \vec{j} + \begin{vmatrix} x & x' \\ y & y' \end{vmatrix} \vec{k}$$
+
+#### 3-2/ Formule analytique
+$$\vec{u} \wedge \vec{v} = (yz' - zy') \vec{i} + (zx' - xz') \vec{j} + (xy' - yx') \vec{k}$$
+Les coordonnées de $\vec{u} \wedge \vec{v}$ sont donc :
+$$\vec{u} \wedge \vec{v} \begin{pmatrix} yz' - zy' \\ zx' - xz' \\ xy' - yx' \end{pmatrix}$$
+
+---
+
+### IV- Applications du produit vectoriel
+
+#### 4-1/ Colinéarité et alignement
+- $\vec{u}$ et $\vec{v}$ sont colinéaires $\iff \vec{u} \wedge \vec{v} = \vec{0}$.
+- Trois points distincts $A, B, C$ sont alignés $\iff \vec{AB} \wedge \vec{AC} = \vec{0}$.
+
+#### 4-2/ Vecteur normal à un plan $(ABC)$
+Si $A, B, C$ sont trois points non alignés, alors $\vec{n} = \vec{AB} \wedge \vec{AC}$ est un vecteur normal au plan $(ABC)$.
+
+#### 4-3/ Distance d'un point à une droite
+Soit $(D)$ la droite passant par le point $A$ et de vecteur directeur $\vec{u}$.
+La distance d'un point $M$ de l'espace à la droite $(D)$ est donnée par :
+$$d(M, (D)) = \frac{\|\vec{AM} \wedge \vec{u}\|}{\|\vec{u}\|}$$
+
+---
+
+### V- Exercices
+
+#### 5-1/ Exercice 1
+Dans un repère orthonormé direct $(O, \vec{i}, \vec{j}, \vec{k})$, on considère les vecteurs :
+$$\vec{u}(1, 2, -1) \quad \text{et} \quad \vec{v}(3, 0, 2)$$
+1. Calculer les coordonnées du vecteur $\vec{w} = \vec{u} \wedge \vec{v}$.
+2. Vérifier que $\vec{w} \perp \vec{u}$ et $\vec{w} \perp \vec{v}$.
+3. Calculer $\|\vec{u} \wedge \vec{v}\|$.
+
+#### 5-2/ Exercice 2
+On donne les points $A(1, 0, 2)$, $B(2, 1, 0)$ et $C(0, 3, 1)$.
+1. Déterminer les coordonnées du vecteur $\vec{AB} \wedge \vec{AC}$.
+2. En déduire que les points $A, B$ et $C$ définissent un unique plan $(P)$.
+3. Calculer l'aire du triangle $ABC$.
+4. Donner une équation cartésienne du plan $(ABC)$.
+
+#### 5-3/ Exercice 3
+Soit la droite $(D)$ passant par le point $A(1, -1, 2)$ et dirigée par $\vec{u}(2, 1, -2)$, et soit le point $M(3, 2, 1)$.
+1. Calculer le produit vectoriel $\vec{AM} \wedge \vec{u}$.
+2. En déduire la distance $d(M, (D))$.
+
+#### 5-4/ Exercice 4
+Soient $A(2, 1, 0)$, $B(0, 1, 1)$ et $C(1, -1, 2)$.
+1. Déterminer une équation cartésienne du plan $(ABC)$.
+2. Soit le point $D(3, 2, 5)$. Calculer la distance $d(D, (ABC))$.
+3. En déduire le volume du tétraèdre $ABCD$ par la formule : $\mathcal{V} = \frac{1}{3} \mathcal{A}_{ABC} \times d(D, (ABC))$.
+
+#### 5-5/ Exercice 5
+Soit la sphère $(S)$ d'équation $x^2 + y^2 + z^2 - 2x + 2y - 2 = 0$ et la droite $(\Delta)$ passant par $A(0, 1, 2)$ et dirigée par $\vec{u}(1, 1, 0)$.
+1. Déterminer le centre $\Omega$ et le rayon $R$ de la sphère $(S)$.
+2. Calculer $d(\Omega, (\Delta))$ à l'aide du produit vectoriel.
+3. En déduire la position relative de $(S)$ et $(\Delta)$.
+
+#### 5-6/ Exercice 6
+Soit $(P)$ le plan passant par $A(1, 2, 3)$ et contenant les vecteurs $\vec{u}(1, 0, 1)$ et $\vec{v}(0, 1, -1)$.
+1. Calculer $\vec{n} = \vec{u} \wedge \vec{v}$.
+2. En déduire une équation cartésienne de $(P)$.
+3. Déterminer une représentation paramétrique de la droite $(\Delta)$ perpendiculaire à $(P)$ passant par l'origine $O$.

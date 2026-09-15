@@ -1,0 +1,191 @@
+---
+## Section: Semestre 2 (Cours et Exercices)
+Titre: Probabilités - Cours
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Vocabulaire probabiliste
+#### 1-1/ Expérience aléatoire et univers $\Omega$
+#### 1-2/ Événements et types d'événements
+
+### II- Probabilité d’un événement
+#### 2-1/ Définition d'une loi de probabilité
+#### 2-2/ Hypothèse d'équiprobabilité
+#### 2-3/ Propriétés générales des probabilités
+
+### III- Probabilité conditionnelle
+#### 3-1/ Définition de $P(B|A)$ ou $P_A(B)$
+#### 3-2/ Règle de multiplication et arbre de probabilité
+#### 3-3/ Formule des probabilités totales
+
+### IV- Événements indépendants
+#### 4-1/ Définition
+#### 4-2/ Propriété
+
+### V- Variable aléatoire et loi de probabilité
+#### 5-1/ Définition d'une variable aléatoire discrète
+#### 5-2/ Loi de probabilité d’une variable aléatoire
+#### 5-3/ Espérance mathématique, variance et écart-type
+
+### VI- Épreuves répétées et Loi binomiale
+#### 6-1/ Schéma de Bernoulli
+#### 6-2/ Loi binomiale $\mathcal{B}(n, p)$
+#### 6-3/ Espérance et variance d'une loi binomiale
+
+### VII- Exercices
+#### 7-1/ Exercice 1
+#### 7-2/ Exercice 2
+#### 7-3/ Exercice 3
+#### 7-4/ Exercice 4
+#### 7-5/ Exercice 5
+#### 7-6/ Exercice 6
+
+---
+
+### I- Vocabulaire probabiliste
+
+#### 1-1/ Expérience aléatoire et univers $\Omega$
+- Une expérience aléatoire est une expérience dont le résultat ne peut pas être déterminé avec certitude avant d'être réalisée.
+- L'ensemble de toutes les issues (ou résultats possibles) est appelé univers et noté $\Omega$.
+
+#### 1-2/ Événements
+- Un événement est tout sous-ensemble de l'univers $\Omega$.
+- Événement élémentaire : singleton $\{\omega\}$.
+- Événement certain : l'univers $\Omega$.
+- Événement impossible : l'ensemble vide $\emptyset$.
+- Intersection de deux événements : $A \cap B$ ("$A$ et $B$").
+- Réunion de deux événements : $A \cup B$ ("$A$ ou $B$").
+- Événements incompatibles (ou disjoints) : $A \cap B = \emptyset$.
+- Événement contraire : $\overline{A}$ (complémentaire de $A$ dans $\Omega$).
+
+---
+
+### II- Probabilité d’un événement
+
+#### 2-1/ Définition
+Une probabilité $P$ sur un univers fini $\Omega$ est une application de l'ensemble des événements dans $[0, 1]$ telle que :
+- $P(\Omega) = 1$
+- Si $A \cap B = \emptyset$, alors $P(A \cup B) = P(A) + P(B)$.
+
+#### 2-2/ Hypothèse d'équiprobabilité
+Lorsque toutes les issues élémentaires ont la même chance de se réaliser :
+$$P(A) = \frac{\text{Card}(A)}{\text{Card}(\Omega)} = \frac{\text{Nombre de cas favorables}}{\text{Nombre de cas possibles}}$$
+
+#### 2-3/ Propriétés
+- $0 \le P(A) \le 1$ et $P(\emptyset) = 0$
+- $P(\overline{A}) = 1 - P(A)$
+- $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+
+---
+
+### III- Probabilité conditionnelle
+
+#### 3-1/ Définition
+Soit $A$ un événement tel que $P(A) > 0$.
+La probabilité conditionnelle de l'événement $B$ sachant que $A$ est réalisé, notée $P_A(B)$ ou $P(B|A)$, est définie par :
+$$P_A(B) = \frac{P(A \cap B)}{P(A)}$$
+
+#### 3-2/ Règle de multiplication
+$$P(A \cap B) = P(A) \times P_A(B) = P(B) \times P_B(A)$$
+
+#### 3-3/ Formule des probabilités totales
+Soit $\{A_1, A_2, \dots, A_n\}$ un système complet d'événements de l'univers $\Omega$ (une partition de $\Omega$).
+Pour tout événement $B$, on a :
+$$P(B) = \sum_{k=1}^n P(A_k \cap B) = \sum_{k=1}^n P(A_k) \times P_{A_k}(B)$$
+En particulier pour une partition $\{A, \overline{A}\}$ :
+$$P(B) = P(A) \times P_A(B) + P(\overline{A}) \times P_{\overline{A}}(B)$$
+
+---
+
+### IV- Événements indépendants
+Deux événements $A$ et $B$ sont dits indépendants si la réalisation de l'un n'influence pas la réalisation de l'autre, ce qui équivaut à :
+$$P(A \cap B) = P(A) \times P(B)$$
+Si $P(A) > 0$, cela équivaut à $P_A(B) = P(B)$.
+
+---
+
+### V- Variable aléatoire et loi de probabilité
+
+#### 5-1/ Définition
+Une variable aléatoire réelle $X$ est une fonction définie sur l'univers $\Omega$ à valeurs dans $\mathbb{R}$ :
+$$X: \Omega \to X(\Omega) = \{x_1, x_2, \dots, x_n\}$$
+
+#### 5-2/ Loi de probabilité
+La loi de probabilité de $X$ associe à chaque valeur possible $x_i$ la probabilité de l'événement $(X = x_i)$ :
+$$p_i = P(X = x_i) \quad \text{avec} \quad \sum_{i=1}^n p_i = 1$$
+
+#### 5-3/ Paramètres caractéristiques
+- Espérance mathématique :
+$$E(X) = \sum_{i=1}^n x_i P(X = x_i)$$
+- Variance :
+$$V(X) = E(X^2) - [E(X)]^2 = \sum_{i=1}^n (x_i - E(X))^2 P(X = x_i)$$
+- Écart-type :
+$$\sigma(X) = \sqrt{V(X)}$$
+
+---
+
+### VI- Épreuves répétées et Loi binomiale
+
+#### 6-1/ Schéma de Bernoulli
+Une épreuve de Bernoulli est une expérience aléatoire n'ayant que deux issues possibles : "Succès" ($S$) de probabilité $p$, et "Échec" ($E$) de probabilité $q = 1 - p$.
+
+#### 6-2/ Loi binomiale $\mathcal{B}(n, p)$
+On répète de manière indépendante $n$ fois une épreuve de Bernoulli de paramètre $p$.
+Soit $X$ la variable aléatoire égale au nombre total de succès obtenus au cours de ces $n$ épreuves. On dit que $X$ suit une loi binomiale de paramètres $n$ et $p$, notée $\mathcal{B}(n, p)$.
+Pour tout $k \in \{0, 1, 2, \dots, n\}$ :
+$$P(X = k) = C_n^k p^k (1 - p)^{n-k}$$
+
+#### 6-3/ Paramètres d'une loi binomiale
+$$E(X) = np$$
+$$V(X) = np(1 - p)$$
+$$\sigma(X) = \sqrt{np(1 - p)}$$
+
+---
+
+### VII- Exercices
+
+#### 7-1/ Exercice 1
+On lance deux dés équilibrés à six faces numérotées de 1 à 6.
+Calculer la probabilité des événements suivants :
+1. $A$ : "La somme des deux numéros obtenus est égale à 7".
+2. $B$ : "Le produit des deux numéros obtenus est pair".
+3. $C$ : "Les deux dés affichent le même numéro".
+
+#### 7-2/ Exercice 2
+Une urne $U_1$ contient 3 boules blanches et 2 boules noires. Une urne $U_2$ contient 2 boules blanches et 4 boules noires.
+On choisit au hasard une urne avec probabilité $\frac{1}{2}$, puis on tire une boule au hasard dans cette urne.
+1. Construire l'arbre pondéré de probabilité.
+2. Calculer la probabilité de tirer une boule blanche.
+3. Sachant que la boule tirée est blanche, quelle est la probabilité qu'elle provienne de l'urne $U_1$ ?
+
+#### 7-3/ Exercice 3
+Une usine fabrique des pièces mécaniques à l'aide de deux machines $M_1$ et $M_2$.
+La machine $M_1$ assure $60\%$ de la production et présente un taux de défectuosité de $2\%$.
+La machine $M_2$ assure $40\%$ de la production et présente un taux de défectuosité de $3\%$.
+On choisit au hasard une pièce dans le stock.
+1. Calculer la probabilité que la pièce soit défectueuse.
+2. Sachant que la pièce est défectueuse, calculer la probabilité qu'elle provienne de la machine $M_1$.
+
+#### 7-4/ Exercice 4
+Une urne contient 5 boules rouges et 3 boules vertes. On tire simultanément 3 boules de l'urne.
+Soit $X$ la variable aléatoire représentant le nombre de boules rouges tirées.
+1. Déterminer les valeurs prises par la variable aléatoire $X$.
+2. Déterminer la loi de probabilité de $X$.
+3. Calculer l'espérance mathématique $E(X)$, la variance $V(X)$ et l'écart-type $\sigma(X)$.
+
+#### 7-5/ Exercice 5
+On lance une pièce de monnaie truquée 5 fois de suite de façon indépendante. La probabilité d'obtenir "Pile" à chaque lancer est $p = 0{,}6$.
+Soit $X$ le nombre de fois où l'on obtient "Pile".
+1. Quelle est la loi de probabilité suivie par $X$ ? Préciser ses paramètres.
+2. Calculer la probabilité d'obtenir exactement 3 fois "Pile".
+3. Calculer la probabilité d'obtenir au moins une fois "Pile".
+4. Calculer l'espérance et la variance de $X$.
+
+#### 7-6/ Exercice 6
+Dans une population, $15\%$ des individus sont porteurs d'un virus. On prélève au hasard un échantillon de 10 personnes (avec remise assimilée).
+Soit $Y$ le nombre de personnes porteuses du virus dans l'échantillon.
+1. Justifier que $Y$ suit une loi binomiale.
+2. Calculer la probabilité qu'aucune personne ne soit porteuse du virus.
+3. Calculer la probabilité qu'au moins deux personnes soient porteuses du virus.

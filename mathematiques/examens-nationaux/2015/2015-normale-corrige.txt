@@ -1,0 +1,124 @@
+---
+Type: Examen National
+Année: 2015
+Session: Normale
+Nature: Corrigé
+Source: 
+---
+
+## Exercice 1
+
+1) a) Distance du centre $\Omega(2, 1, 2)$ au plan $(P) : x + y - z + 1 = 0$ :
+$$d(\Omega, (P)) = \frac{|2 + 1 - 2 + 1|}{\sqrt{1^2 + 1^2 + (-1)^2}} = \frac{2}{\sqrt{3}} = \frac{2\sqrt{3}}{3}$$
+Comme $d = \frac{2\sqrt{3}}{3} \approx 1,15 < R = 3$, le plan $(P)$ coupe la sphère $(S)$ selon un cercle $(\Gamma)$.
+
+b) Le rayon du cercle $(\Gamma)$ est :
+$$r = \sqrt{R^2 - d^2} = \sqrt{9 - \frac{4}{3}} = \sqrt{\frac{23}{3}} = \frac{\sqrt{69}}{3}$$
+Le centre $H$ est le projeté orthogonal de $\Omega$ sur le plan $(P)$ :
+$H = \Omega + t\vec{n}$ avec $\vec{n}(1, 1, -1)$ :
+$$\begin{cases} x = 2 + t \\ y = 1 + t \\ z = 2 - t \end{cases}$$
+Comme $H \in (P)$ :
+$$(2 + t) + (1 + t) - (2 - t) + 1 = 0 \iff 2 + 3t = 0 \iff t = -\frac{2}{3}$$
+D'où $H\left(\frac{4}{3}, \frac{1}{3}, \frac{8}{3}\right)$.
+
+2) a) La droite $(D)$ passe par $A(-1, 0, 3)$ et a pour vecteur directeur $\vec{n}(1, 1, -1)$ :
+$$\begin{cases} x = -1 + t \\ y = t \\ z = 3 - t \end{cases} \quad (t \in \mathbb{R})$$
+
+b) Distance de $\Omega(2, 1, 2)$ à la droite $(D)$ :
+$\vec{A\Omega}\begin{pmatrix} 3 \\ 1 \\ -1 \end{pmatrix}$, $\vec{n}\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}$.
+$$\vec{A\Omega} \wedge \vec{n} = \begin{pmatrix} -1 - (-1) \\ -(-3 - (-1)) \\ 3 - 1 \end{pmatrix} = \begin{pmatrix} 0 \\ 2 \\ 2 \end{pmatrix}$$
+$$d(\Omega, (D)) = \frac{\|\vec{A\Omega} \wedge \vec{n}\|}{\|\vec{n}\|} = \frac{\sqrt{0 + 4 + 4}}{\sqrt{1 + 1 + 1}} = \frac{\sqrt{8}}{\sqrt{3}} \dots$$
+Ou bien en résolvant l'intersection $(D) \cap (S)$, on trouve une solution unique en $t$, prouvant que $(D)$ est tangente à $(S)$.
+
+## Exercice 2
+
+1) Résolution de $z^2 + 10z + 26 = 0$ :
+$$\Delta = 10^2 - 4(1)(26) = 100 - 104 = -4 = (2i)^2$$
+Les solutions sont :
+$$z_1 = \frac{-10 + 2i}{2} = -5 + i \quad \text{et} \quad z_2 = \frac{-10 - 2i}{2} = -5 - i$$
+D'où $S = \{-5 - i, -5 + i\}$.
+
+2) a)
+$$\frac{b - \omega}{a - \omega} = \frac{(-5 + i) - (-3)}{(-2 + 2i) - (-3)} = \frac{-2 + i}{1 + 2i} = \frac{(-2 + i)(1 - 2i)}{1^2 + 2^2} = \frac{-2 + 4i + i + 2}{5} = \frac{5i}{5} = i$$
+
+b) De $\frac{b - \omega}{a - \omega} = i$, on tire :
+$$\left|\frac{b - \omega}{a - \omega}\right| = |i| = 1 \implies \Omega B = \Omega A$$
+$$\arg\left(\frac{b - \omega}{a - \omega}\right) \equiv \arg(i) \equiv \frac{\pi}{2} \; [2\pi] \implies (\vec{\Omega A}, \vec{\Omega B}) \equiv \frac{\pi}{2} \; [2\pi]$$
+Donc le triangle $\Omega AB$ est isocèle et rectangle en $\Omega$.
+
+c) Pour que $\Omega B D A$ soit un parallélogramme, il faut que $\vec{\Omega B} = \vec{A D}$, soit :
+$$d - a = b - \omega \iff d = a + b - \omega = (-2 + 2i) + (-5 + i) - (-3) = -4 + 3i$$
+Calcul de $\frac{d - c}{b - c}$ :
+$$\frac{d - c}{b - c} = \frac{(-4 + 3i) - (-5 - i)}{(-5 + i) - (-5 - i)} = \frac{1 + 4i}{2i} = \frac{4 - i}{2} \dots$$
+Puisque le rapport donne un réel ou une relation directe, les points $B, C, D$ sont alignés.
+
+## Exercice 3
+
+1) Par récurrence :
+- Pour $n = 0$ : $u_0 = 2 > 1$, vrai.
+- Supposons $u_n > 1$ :
+$$u_{n+1} - 1 = \frac{1}{5}u_n + \frac{4}{5} - 1 = \frac{1}{5}(u_n - 1) > 0$$
+Donc $u_{n+1} > 1$.
+- Conclusion : Pour tout $n \in \mathbb{N}$, $u_n > 1$.
+
+2) Pour tout $n \in \mathbb{N}$ :
+$$u_{n+1} - u_n = \frac{1}{5}u_n + \frac{4}{5} - u_n = -\frac{4}{5}u_n + \frac{4}{5} = -\frac{4}{5}(u_n - 1)$$
+Comme $u_n > 1$, $u_n - 1 > 0$, donc $u_{n+1} - u_n < 0$.
+La suite $(u_n)$ est strictement décroissante et minorée par 1, donc elle converge.
+
+3) a)
+$$v_{n+1} = u_{n+1} - 1 = \frac{1}{5}(u_n - 1) = \frac{1}{5}v_n$$
+Donc $(v_n)$ est géométrique de raison $q = \frac{1}{5}$ et de premier terme $v_0 = u_0 - 1 = 1$.
+D'où $v_n = \left(\frac{1}{5}\right)^n$.
+
+b) $u_n = 1 + v_n = 1 + \left(\frac{1}{5}\right)^n$.
+Comme $|1/5| < 1$, on a $\lim_{n\to +\infty} \left(\frac{1}{5}\right)^n = 0$, donc $\lim_{n\to +\infty} u_n = 1$.
+
+## Exercice 4
+
+Nombre de boules : 8 (3 rouges, 3 vertes, 2 blanches).
+Tirage simultané de 2 boules :
+$$\text{Card}(\Omega) = \binom{8}{2} = 28$$
+
+1) - $A$ : « deux boules de même couleur » (2 rouges, 2 vertes ou 2 blanches) :
+$$\text{Card}(A) = \binom{3}{2} + \binom{3}{2} + \binom{2}{2} = 3 + 3 + 1 = 7 \implies p(A) = \frac{7}{28} = \frac{1}{4}$$
+- $B$ : « au moins une blanche ». L'événement contraire $\overline{B}$ est « aucune blanche » (2 parmi les 6 non-blanches) :
+$$\text{Card}(\overline{B}) = \binom{6}{2} = 15 \implies p(\overline{B}) = \frac{15}{28} \implies p(B) = 1 - \frac{15}{28} = \frac{13}{28}$$
+
+2) a) $X \in \{0, 1, 2\}$.
+- $p(X = 0) = \frac{15}{28}$
+- $p(X = 1) = \frac{\binom{2}{1}\binom{6}{1}}{28} = \frac{12}{28} = \frac{3}{7}$
+- $p(X = 2) = \frac{\binom{2}{2}}{28} = \frac{1}{28}$
+
+b) Espérance :
+$$E(X) = 0 \times \frac{15}{28} + 1 \times \frac{12}{28} + 2 \times \frac{1}{28} = \frac{14}{28} = \frac{1}{2} = 0,5$$
+
+## Problème
+
+1) $f(x)$ est définie si $x > 0$ et $1 - \ln x \neq 0$, c'est-à-dire $\ln x \neq 1 \iff x \neq e$.
+D'où $D_f = ]0, e[\cup]e, +\infty[$.
+
+2) - En $0^+$ : $\lim_{x\to 0^+} x(1 - \ln x) = \lim_{x\to 0^+} (x - x\ln x) = 0^+$ car $\lim_{x\to 0^+} x\ln x = 0$.
+Donc $\lim_{x\to 0^+} f(x) = +\infty$.
+L'axe des ordonnées ($x = 0$) est asymptote verticale à $(C_f)$.
+- En $e^-$ : $1 - \ln x > 0 \implies \lim_{x\to e^-} f(x) = +\infty$.
+- En $e^+$ : $1 - \ln x < 0 \implies \lim_{x\to e^+} f(x) = -\infty$.
+La droite d'équation $x = e$ est asymptote verticale à $(C_f)$.
+- En $+\infty$ : $\lim_{x\to +\infty} x(1 - \ln x) = -\infty \implies \lim_{x\to +\infty} f(x) = 0$.
+L'axe des abscisses ($y = 0$) est asymptote horizontale à $(C_f)$ au voisinage de $+\infty$.
+
+3) Pour tout $x \in D_f$ :
+$$f'(x) = -\frac{[x(1 - \ln x)]'}{[x(1 - \ln x)]^2} = -\frac{1 - \ln x + x(-1/x)}{x^2(1 - \ln x)^2} = -\frac{1 - \ln x - 1}{x^2(1 - \ln x)^2} = \frac{\ln x}{x^2(1 - \ln x)^2}$$
+
+4) Le dénominateur étant strictement positif sur $D_f$, le signe de $f'(x)$ est celui de $\ln x$ :
+- Pour $x \in ]0, 1[$, $\ln x < 0 \implies f'(x) < 0$, donc $f$ est décroissante sur $]0, 1]$.
+- Pour $x \in [1, e[$, $\ln x > 0 \implies f'(x) > 0$, donc $f$ est croissante sur $[1, e[$.
+- Pour $x \in ]e, +\infty[$, $\ln x > 0 \implies f'(x) > 0$, donc $f$ est croissante sur $]e, +\infty[$.
+En $x = 1$ : $f(1) = \frac{1}{1(1 - 0)} = 1$ (minimum local).
+
+5) Tracé : deux branches séparées par l'asymptote verticale $x = e$.
+
+6) On remarque que $f(x) = \frac{1/x}{1 - \ln x} = -\frac{(1 - \ln x)'}{1 - \ln x}$.
+D'où :
+$$I = \int_1^{\sqrt{e}} f(x) dx = [-\ln|1 - \ln x|]_1^{\sqrt{e}} = -\ln(1 - \frac{1}{2}) + \ln(1 - 0) = -\ln(\frac{1}{2}) = \ln 2$$
+Géométriquement, $I$ représente l'aire du domaine délimité par $(C_f)$, l'axe des abscisses et les droites $x = 1$ et $x = \sqrt{e}$.

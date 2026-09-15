@@ -1,0 +1,156 @@
+---
+## Section: Semestre 1 (Cours et Exercices)
+Titre: Séance 2 - Continuité (Partie 1)
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Continuité et continuité à droite et à gauche d’une fonction en un point $x_0$
+#### 1-1/ Continuité d’une fonction en un point $x_0$
+#### 1-2/ Continuité à droite et à gauche d’une fonction en un point $x_0$
+
+### II- Continuité sur un intervalle
+#### 2-1/ Continuité sur un intervalle $I$
+
+### III- Opérations sur les fonctions continues sur un intervalle $I \subset \mathbb{R}$
+#### 3-1/ Opérations sur les fonctions continues
+
+### IV- Continuité des fonctions usuelles
+#### 4-1/ Propriétés
+
+### V- Image d’un intervalle par une fonction continue
+#### 5-1/ Théorème
+
+### VI- Image d’un intervalle par une fonction continue et strictement monotone
+
+### VII- Continuité de la composée de deux fonctions continues
+
+### IIX- Exercices
+#### 8-1/ Exercice 1
+#### 8-2/ Exercice 2
+#### 8-3/ Exercice 3
+#### 8-4/ Exercice 4
+#### 8-5/ Exercice 5
+#### 8-6/ Exercice 6
+
+---
+
+### I- Continuité et continuité à droite et à gauche d’une fonction en un point $x_0$
+
+#### 1-1/ Continuité d’une fonction en un point $x_0$
+Soit $f$ une fonction définie sur un intervalle ouvert $I$ contenant $x_0$.
+On dit que $f$ est continue en $x_0$ si :
+$$\lim_{x \to x_0} f(x) = f(x_0)$$
+
+#### 1-2/ Continuité à droite et à gauche d’une fonction en un point $x_0$
+- $f$ est continue à droite en $x_0$ si : $\lim_{x \to x_0^+} f(x) = f(x_0)$.
+- $f$ est continue à gauche en $x_0$ si : $\lim_{x \to x_0^-} f(x) = f(x_0)$.
+- Propriété : $f$ est continue en $x_0$ si et seulement si elle est continue à droite et à gauche en $x_0$, c'est-à-dire :
+$$\lim_{x \to x_0^+} f(x) = \lim_{x \to x_0^-} f(x) = f(x_0)$$
+
+---
+
+### II- Continuité sur un intervalle
+
+#### 2-1/ Continuité sur un intervalle $I$
+- $f$ est continue sur l'intervalle ouvert $]a, b[$ si elle est continue en tout point $x$ de $]a, b[$.
+- $f$ est continue sur le segment $[a, b]$ si elle est continue sur $]a, b[$, continue à droite en $a$ et continue à gauche en $b$.
+
+---
+
+### III- Opérations sur les fonctions continues sur un intervalle $I \subset \mathbb{R}$
+
+#### 3-1/ Opérations sur les fonctions continues
+Si $f$ et $g$ sont continues sur un intervalle $I$, alors :
+- $f + g$, $f - g$ et $f \times g$ sont continues sur $I$.
+- $k \cdot f$ est continue sur $I$ ($k \in \mathbb{R}$).
+- Si $g(x) \ne 0$ pour tout $x \in I$, alors $\frac{1}{g}$ et $\frac{f}{g}$ sont continues sur $I$.
+- Si $f(x) \ge 0$ pour tout $x \in I$, alors $\sqrt{f}$ est continue sur $I$.
+
+---
+
+### IV- Continuité des fonctions usuelles
+
+#### 4-1/ Propriétés
+- Toute fonction polynôme est continue sur $\mathbb{R}$.
+- Toute fonction rationnelle est continue sur tout intervalle inclus dans son domaine de définition.
+- Les fonctions $x \mapsto \sin x$ et $x \mapsto \cos x$ sont continues sur $\mathbb{R}$.
+- La fonction $x \mapsto \tan x$ est continue sur tout intervalle contenu dans son domaine de définition $\mathbb{R} \setminus \{\frac{\pi}{2} + k\pi, k \in \mathbb{Z}\}$.
+- La fonction $x \mapsto \sqrt{x}$ est continue sur $[0, +\infty[$.
+- La fonction $x \mapsto |x|$ est continue sur $\mathbb{R}$.
+
+---
+
+### V- Image d’un intervalle par une fonction continue
+
+#### 5-1/ Théorème
+L’image d’un intervalle par une fonction continue est un intervalle.
+L’image d’un segment (intervalle fermé et borné $[a, b]$) par une fonction continue est un segment $[m, M]$, où $m$ est la valeur minimale et $M$ est la valeur maximale de $f$ sur $[a, b]$ :
+$$f([a, b]) = [m, M]$$
+
+---
+
+### VI- Image d’un intervalle par une fonction continue et strictement monotone
+
+| Intervalle $I$ | Image $f(I)$ si $f$ est strictement croissante | Image $f(I)$ si $f$ est strictement décroissante |
+| :--- | :--- | :--- |
+| $[a, b]$ | $[f(a), f(b)]$ | $[f(b), f(a)]$ |
+| $[a, b[$ | $[f(a), \lim_{x \to b^-} f(x)[$ | $]\lim_{x \to b^-} f(x), f(a)]$ |
+| $]a, b]$ | $]\lim_{x \to a^+} f(x), f(b)]$ | $[f(b), \lim_{x \to a^+} f(x)[$ |
+| $]a, b[$ | $]\lim_{x \to a^+} f(x), \lim_{x \to b^-} f(x)[$ | $]\lim_{x \to b^-} f(x), \lim_{x \to a^+} f(x)[$ |
+| $[a, +\infty[$ | $[f(a), \lim_{x \to +\infty} f(x)[$ | $]\lim_{x \to +\infty} f(x), f(a)]$ |
+| $]a, +\infty[$ | $]\lim_{x \to a^+} f(x), \lim_{x \to +\infty} f(x)[$ | $]\lim_{x \to +\infty} f(x), \lim_{x \to a^+} f(x)[$ |
+| $]-\infty, b]$ | $]\lim_{x \to -\infty} f(x), f(b)]$ | $[f(b), \lim_{x \to -\infty} f(x)[$ |
+| $]-\infty, b[$ | $]\lim_{x \to -\infty} f(x), \lim_{x \to b^-} f(x)[$ | $]\lim_{x \to b^-} f(x), \lim_{x \to -\infty} f(x)[$ |
+| $\mathbb{R} = ]-\infty, +\infty[$ | $]\lim_{x \to -\infty} f(x), \lim_{x \to +\infty} f(x)[$ | $]\lim_{x \to +\infty} f(x), \lim_{x \to -\infty} f(x)[$ |
+
+---
+
+### VII- Continuité de la composée de deux fonctions continues
+
+Soit $f$ une fonction définie sur un intervalle $I$ et $g$ une fonction définie sur un intervalle $J$ telle que $f(I) \subset J$.
+- Si $f$ est continue en un point $x_0 \in I$ et $g$ est continue en $y_0 = f(x_0) \in J$, alors la fonction composée $g \circ f$ est continue en $x_0$.
+- Si $f$ est continue sur l'intervalle $I$ et $g$ est continue sur l'intervalle $J$ avec $f(I) \subset J$, alors $g \circ f$ est continue sur $I$.
+
+---
+
+### IIX- Exercices
+
+#### 8-1/ Exercice 1
+1. Étudier la continuité de $f$ en $x_0$ :
+   - $f(x) = \frac{x^2 - x - 6}{x - 3}$ pour $x \ne 3$ et $f(3) = 5$, en $x_0 = 3$.
+   - $f(x) = \frac{\sqrt{x+1} - 1}{x}$ pour $x \ne 0$ et $f(0) = \frac{1}{2}$, en $x_0 = 0$.
+   - $f(x) = \frac{\sin 3x}{x}$ pour $x \ne 0$ et $f(0) = 2$, en $x_0 = 0$.
+
+#### 8-2/ Exercice 2
+Soit la fonction $f$ définie par :
+$$f(x) = \begin{cases} \frac{x^2+x-2}{x-1} & \text{si } x > 1 \\ 3 & \text{si } x = 1 \\ \frac{\sqrt{2-x}-1}{x-1} & \text{si } x < 1 \end{cases}$$
+1. Étudier la continuité de $f$ à droite en $1$.
+2. Étudier la continuité de $f$ à gauche en $1$.
+3. $f$ est-elle continue en $1$ ?
+
+#### 8-3/ Exercice 3
+Déterminer la valeur du réel $a$ pour que la fonction $f$ soit continue en $x_0 = 0$ :
+$$f(x) = \begin{cases} \frac{\tan 2x}{x} & \text{si } x > 0 \\ a^2 + 1 & \text{si } x = 0 \\ \frac{1 - \cos 2x}{x^2} & \text{si } x < 0 \end{cases}$$
+
+#### 8-4/ Exercice 4
+Déterminer l'intervalle sur lequel la fonction $f$ est continue dans chacun des cas :
+1. $f(x) = 2x^3 - 5x + 7$
+2. $f(x) = \frac{2x-1}{x^2-9}$
+3. $f(x) = \sqrt{x^2-4x+3}$
+4. $f(x) = \sin(2x - \frac{\pi}{3})$
+
+#### 8-5/ Exercice 5
+Soit $f$ la fonction numérique définie par $f(x) = x^3 - 3x + 1$.
+1. Dresser le tableau de variation de $f$ sur $[-2, 2]$.
+2. Déterminer les images des intervalles suivants :
+   - $f([0, 1])$
+   - $f([1, 2])$
+   - $f([-2, 1])$
+   - $f([-1, 1])$
+
+#### 8-6/ Exercice 6
+Soit $f(x) = \sqrt{x^2+1}$ et $g(x) = \frac{1}{x-2}$.
+1. Déterminer $D_f$ et $D_g$.
+2. Étudier la continuité de la fonction $h = g \circ f$ sur $\mathbb{R}$.

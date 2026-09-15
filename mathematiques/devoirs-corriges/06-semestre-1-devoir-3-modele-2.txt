@@ -1,0 +1,34 @@
+---
+## Section: Devoirs corrigés
+Titre: Math 2Bac SPC - Semestre 1 Devoir 3 Modèle 2
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+### Exercice 1 (6 pts)
+Dans le plan complexe muni d'un repère orthonormé direct $(O, \vec{u}, \vec{v})$, on considère les points $A$, $B$ et $C$ d'affixes respectives :
+$$a = 1 + i, \quad b = 3 + 3i, \quad c = 2 + 4i$$
+1. Calculer les distances $AB$, $AC$ et $BC$.
+2. Calculer le rapport $\frac{c - a}{b - a}$ et l'écrire sous forme algébrique puis trigonométrique.
+3. En déduire la nature exacte du triangle $ABC$.
+4. Déterminer l'affixe du point $D$ tel que $ABDC$ soit un carré.
+5. Déterminer l'ensemble $(\Gamma)$ des points $M(z)$ vérifiant : $|z - 1 - i| = |z - 3 - 3i|$.
+
+---
+
+### Exercice 2 (14 pts)
+**Partie 1**
+Soit $g$ la fonction définie sur $]0, +\infty[$ par :
+$$g(x) = 2x - \ln(x)$$
+1. Calculer $g'(x)$ et étudier les variations de $g$.
+2. Dresser le tableau de variations de $g$ et en déduire que pour tout $x > 0$ : $g(x) > 0$.
+
+**Partie 2**
+Soit $f$ la fonction définie sur $[0, +\infty[$ par :
+$$f(x) = \begin{cases} x^2 \ln(x) & \text{si } x > 0 \\ 0 & \text{si } x = 0 \end{cases}$$
+1. Montrer que $f$ est continue à droite en $0$.
+2. Étudier la dérivabilité de $f$ à droite en $0$ et donner une interprétation géométrique.
+3. Calculer $\lim_{x \to +\infty} f(x)$ et déterminer la nature de la branche infinie en $+\infty$.
+4. Montrer que pour tout $x > 0$ : $f'(x) = x(2\ln x + 1)$.
+5. Dresser le tableau de variations complet de $f$.
+6. Déterminer le point d'inflexion de la courbe $(C_f)$.
+7. Tracer la courbe $(C_f)$ dans un repère orthonormé $(O, \vec{i}, \vec{j})$.

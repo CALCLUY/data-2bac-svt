@@ -1,0 +1,29 @@
+---
+## Section: Devoirs corrigés
+Titre: Math 2Bac SPC - Semestre 1 Devoir 2 Modèle 2
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+### Exercice 1 (5 pts)
+Soit la suite $(u_n)_{n \in \mathbb{N}}$ définie par :
+$$u_0 = 0 \quad \text{et} \quad u_{n+1} = \sqrt{\frac{u_n + 2}{3}}$$
+1. Montrer que pour tout $n \in \mathbb{N}$ : $0 \le u_n < 1$.
+2. Étudier la monotonie de la suite $(u_n)$ et en déduire qu'elle converge.
+3. Déterminer la limite de la suite $(u_n)$.
+4. Soit $(w_n)$ la suite définie par : $w_n = 1 - u_n$.
+   a. Montrer que pour tout $n \in \mathbb{N}$ : $w_{n+1} \le \frac{1}{3} w_n$.
+   b. En déduire que $w_n \le \left(\frac{1}{3}\right)^n$, puis retrouver $\lim_{n \to +\infty} u_n$.
+
+---
+
+### Exercice 2 (15 pts)
+Soit $f$ la fonction définie sur $[0, +\infty[$ par :
+$$f(x) = x - 2\sqrt{x} + 1$$
+1. Calculer $\lim_{x \to +\infty} f(x)$ et étudier la branche infinie au voisinage de $+\infty$.
+2. Étudier la dérivabilité de $f$ à droite en $0$ et donner une interprétation géométrique.
+3. Calculer $f'(x)$ pour $x > 0$ et dresser le tableau de variations de $f$.
+4. Déterminer les points d'intersection de $(C_f)$ avec les axes de coordonnées.
+5. Soit $g$ la restriction de $f$ à l'intervalle $[1, +\infty[$.
+   a. Montrer que $g$ admet une fonction réciproque $g^{-1}$ définie sur un intervalle $J$ à déterminer.
+   b. Donner l'expression explicite de $g^{-1}(x)$ pour $x \in J$.
+   c. Tracer les courbes $(C_g)$ et $(C_{g^{-1}})$ dans un même repère orthonormé $(O, \vec{i}, \vec{j})$.
