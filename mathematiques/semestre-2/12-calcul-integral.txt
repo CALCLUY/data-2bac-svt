@@ -1,0 +1,156 @@
+---
+## Section: Semestre 2 (Cours et Exercices)
+Titre: Calcul intégral - Cours
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Intégrale d’une fonction continue
+#### 1-1/ Définition
+#### 1-2/ Interprétation géométrique (Aire sous une courbe)
+
+### II- Propriétés de l'intégrale
+#### 2-1/ Linéarité de l'intégrale
+#### 2-2/ Relation de Chasles
+#### 2-3/ Positivité et ordre
+#### 2-4/ Valeur moyenne d’une fonction continue
+
+### III- Techniques de calcul intégral
+#### 3-1/ Utilisation directe des primitives
+#### 3-2/ Intégration par parties
+
+### IV- Calcul des aires
+#### 4-1/ Aire du domaine délimité par $(C_f)$ et l'axe des abscisses
+#### 4-2/ Aire du domaine compris entre deux courbes $(C_f)$ et $(C_g)$
+
+### V- Calcul des volumes
+#### 5-1/ Volume d'un solide de révolution
+
+### VI- Exercices
+#### 6-1/ Exercice 1
+#### 6-2/ Exercice 2
+#### 6-3/ Exercice 3
+#### 6-4/ Exercice 4
+#### 6-5/ Exercice 5
+#### 6-6/ Exercice 6
+
+---
+
+### I- Intégrale d’une fonction continue
+
+#### 1-1/ Définition
+Soit $f$ une fonction continue sur un intervalle $I$ et soient $a, b \in I$.
+Soit $F$ une primitive de $f$ sur $I$. On appelle intégrale de $f$ de $a$ à $b$ le nombre réel noté :
+$$\int_a^b f(x) \, dx = [F(x)]_a^b = F(b) - F(a)$$
+Ce nombre ne dépend pas du choix de la primitive $F$.
+
+#### 1-2/ Interprétation géométrique (Aire sous une courbe)
+Si $f$ est continue et positive ($f(x) \ge 0$) sur $[a, b]$ ($a \le b$), alors l'intégrale $\int_a^b f(x) \, dx$ est égale à l'aire (en unités d'aire : u.a.) du domaine délimité par la courbe $(C_f)$, l'axe des abscisses, et les droites verticales d'équations $x = a$ et $x = b$.
+Unité d'aire : $1 \text{ u.a.} = \|\vec{i}\| \times \|\vec{j}\|$.
+
+---
+
+### II- Propriétés de l'intégrale
+
+#### 2-1/ Linéarité de l'intégrale
+Pour toutes fonctions $f$ et $g$ continues sur $[a, b]$ et tous réels $\alpha, \beta$ :
+$$\int_a^b (\alpha f(x) + \beta g(x)) \, dx = \alpha \int_a^b f(x) \, dx + \beta \int_a^b g(x) \, dx$$
+
+#### 2-2/ Relation de Chasles
+Pour tous réels $a, b, c$ d'un intervalle où $f$ est continue :
+$$\int_a^b f(x) \, dx = \int_a^c f(x) \, dx + \int_c^b f(x) \, dx$$
+Conséquences :
+$$\int_a^a f(x) \, dx = 0 \quad \text{et} \quad \int_b^a f(x) \, dx = -\int_a^b f(x) \, dx$$
+
+#### 2-3/ Positivité et ordre
+Soit $a \le b$ :
+- Si pour tout $x \in [a, b]$, $f(x) \ge 0$, alors $\int_a^b f(x) \, dx \ge 0$.
+- Si pour tout $x \in [a, b]$, $f(x) \le g(x)$, alors $\int_a^b f(x) \, dx \le \int_a^b g(x) \, dx$.
+- En particulier : $\left|\int_a^b f(x) \, dx\right| \le \int_a^b |f(x)| \, dx$.
+
+#### 2-4/ Valeur moyenne d’une fonction continue
+La valeur moyenne de la fonction $f$ sur $[a, b]$ ($a < b$) est le réel :
+$$\mu = \frac{1}{b - a} \int_a^b f(x) \, dx$$
+Théorème de la moyenne : Il existe au moins un réel $c \in [a, b]$ tel que $f(c) = \mu$.
+
+---
+
+### III- Techniques de calcul intégral
+
+#### 3-1/ Utilisation directe des primitives
+Reconnaître les formes usuelles : $u' u^n$, $\frac{u'}{u}$, $u' e^u$, $\frac{u'}{\sqrt{u}}$, etc.
+
+#### 3-2/ Intégration par parties
+Soient $u$ et $v$ deux fonctions dérivables sur $[a, b]$ telles que leurs dérivées $u'$ et $v'$ soient continues sur $[a, b]$ :
+$$\int_a^b u(x) v'(x) \, dx = [u(x) v(x)]_a^b - \int_a^b u'(x) v(x) \, dx$$
+Règle mnémotechnique (ALPES) pour choisir $u(x)$ en priorité :
+1. Arc/Arctan
+2. Logarithme ($\ln$)
+3. Polynômes
+4. Exponentielle ($e^x$)
+5. Sinus / Cosinus
+
+---
+
+### IV- Calcul des aires
+
+#### 4-1/ Aire entre $(C_f)$ et l'axe des abscisses
+L'aire du domaine délimité par $(C_f)$, l'axe des abscisses et les droites $x = a$ et $x = b$ ($a \le b$) est :
+$$\mathcal{A} = \left(\int_a^b |f(x)| \, dx\right) \text{ u.a.}$$
+
+#### 4-2/ Aire entre deux courbes $(C_f)$ et $(C_g)$
+L'aire du domaine délimité par $(C_f)$, $(C_g)$ et les droites $x = a$ et $x = b$ ($a \le b$) est :
+$$\mathcal{A} = \left(\int_a^b |f(x) - g(x)| \, dx\right) \text{ u.a.}$$
+
+---
+
+### V- Calcul des volumes
+
+#### 5-1/ Volume d'un solide de révolution
+L'espace étant muni d'un repère orthonormé d'unité graphique $1 \text{ cm}$. Le volume du solide de révolution engendré par la rotation de la courbe $(C_f)$ autour de l'axe des abscisses $(Ox)$ sur $[a, b]$ ($a \le b$) est :
+$$\mathcal{V} = \left(\pi \int_a^b (f(x))^2 \, dx\right) \text{ u.v.}$$
+Unité de volume : $1 \text{ u.v.} = \|\vec{i}\| \times \|\vec{j}\| \times \|\vec{k}\|$.
+
+---
+
+### VI- Exercices
+
+#### 6-1/ Exercice 1
+Calculer les intégrales suivantes à l'aide des primitives :
+1. $I_1 = \int_0^1 (3x^2 - 2x + 1) \, dx$
+2. $I_2 = \int_1^2 \left(\frac{1}{x^2} + \frac{1}{x}\right) \, dx$
+3. $I_3 = \int_0^{\frac{\pi}{4}} \cos(2x) \, dx$
+4. $I_4 = \int_0^1 \frac{2x}{x^2+1} \, dx$
+5. $I_5 = \int_0^1 x e^{x^2} \, dx$
+
+#### 6-2/ Exercice 2
+En utilisant l'intégration par parties, calculer :
+1. $J_1 = \int_1^e x \ln(x) \, dx$
+2. $J_2 = \int_0^1 (2x+1)e^x \, dx$
+3. $J_3 = \int_0^{\pi} x \sin(x) \, dx$
+4. $J_4 = \int_1^e \ln(x) \, dx$
+
+#### 6-3/ Exercice 3
+À l'aide d'une double intégration par parties, calculer :
+1. $K_1 = \int_0^1 x^2 e^x \, dx$
+2. $K_2 = \int_0^{\frac{\pi}{2}} e^x \cos(x) \, dx$
+
+#### 6-4/ Exercice 4
+Soit la suite $(I_n)_{n \in \mathbb{N}}$ définie par :
+$$I_n = \int_0^1 x^n e^{-x} \, dx$$
+1. Calculer $I_0$.
+2. Montrer que pour tout $n \in \mathbb{N}$ : $I_n \ge 0$.
+3. Montrer que la suite $(I_n)$ est décroissante. En déduire qu'elle converge.
+4. À l'aide d'une intégration par parties, montrer que : $I_{n+1} = (n+1)I_n - e^{-1}$.
+5. Montrer que pour tout $n \in \mathbb{N}$ : $0 \le I_n \le \frac{1}{n+1}$. En déduire $\lim_{n \to +\infty} I_n$.
+
+#### 6-5/ Exercice 5
+Le plan est rapporté à un repère orthonormé $(O, \vec{i}, \vec{j})$ d'unité graphique $2 \text{ cm}$.
+Soit $f(x) = x - 1 + \frac{\ln(x)}{x}$ définie sur $[1, e]$.
+1. Étudier le signe de $f(x)$ sur $[1, e]$.
+2. Calculer l'aire $\mathcal{A}$ en $\text{cm}^2$ du domaine délimité par $(C_f)$, l'axe des abscisses et les droites $x = 1$ et $x = e$.
+
+#### 6-6/ Exercice 6
+Soit la fonction $f(x) = \sqrt{x} e^{\frac{x}{2}}$ définie sur $[0, 1]$.
+Calculer le volume $\mathcal{V}$ du solide engendré par la rotation de $(C_f)$ autour de l'axe des abscisses sur $[0, 1]$ (unité graphique $1 \text{ cm}$).

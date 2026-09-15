@@ -1,0 +1,38 @@
+---
+## Section: Devoirs corrigés
+Titre: Math 2Bac SPC - Semestre 1 Devoir 2 Modèle 1
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+### Exercice 1 (4 pts)
+Soit la suite $(u_n)_{n \in \mathbb{N}}$ définie par :
+$$u_0 = 1 \quad \text{et} \quad u_{n+1} = \frac{3u_n + 2}{u_n + 2}$$
+1. Montrer par récurrence que pour tout $n \in \mathbb{N}$ : $0 < u_n < 2$.
+2. Montrer que la suite $(u_n)$ est strictement croissante. En déduire qu'elle est convergente.
+3. Soit $(v_n)$ la suite définie par : $v_n = \frac{u_n - 2}{u_n + 1}$.
+   a. Montrer que $(v_n)$ est une suite géométrique dont on déterminera la raison et le premier terme.
+   b. Exprimer $v_n$ en fonction de $n$, puis en déduire l'expression de $u_n$ en fonction de $n$.
+   c. Calculer la limite de la suite $(u_n)$.
+
+---
+
+### Exercice 2 (16 pts)
+**Partie 1**
+Soit $g$ la fonction numérique définie sur $\mathbb{R}$ par :
+$$g(x) = 2x^3 - 3x^2 - 1$$
+1. Calculer $g'(x)$ et dresser le tableau de variations de $g$.
+2. Montrer que l'équation $g(x) = 0$ admet une solution unique $\alpha$ sur $\mathbb{R}$ et vérifier que $1{,}6 < \alpha < 1{,}7$.
+3. Déterminer le signe de $g(x)$ sur $\mathbb{R}$.
+
+**Partie 2**
+Soit $f$ la fonction numérique définie par :
+$$f(x) = \frac{1 - x}{1 + x^3}$$
+Soit $(C_f)$ sa courbe représentative dans un repère orthonormé $(O, \vec{i}, \vec{j})$ (unité 2 cm).
+1. Déterminer $D_f$ et calculer les limites aux bornes de $D_f$.
+2. Interpréter géométriquement les limites obtenues.
+3. Montrer que pour tout $x \in D_f$ :
+$$f'(x) = \frac{g(x)}{(1+x^3)^2}$$
+4. En déduire les variations de $f$ et dresser son tableau de variations.
+5. Montrer que $f(\alpha) = \frac{2(1-\alpha)}{3(\alpha^2-\alpha+1)}$.
+6. Donner l'équation de la tangente $(T)$ à la courbe $(C_f)$ au point d'abscisse $x_0 = 0$.
+7. Tracer la droite $(T)$ et la courbe $(C_f)$.

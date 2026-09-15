@@ -1,0 +1,35 @@
+---
+## Section: Devoirs corrigés
+Titre: Math 2Bac SPC - Semestre 2 Devoir 1 Modèle 1
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+### Exercice 1 (5 pts)
+1. Résoudre dans $\mathbb{C}$ l'équation :
+$$z^2 - 2\sqrt{2}z + 4 = 0$$
+2. On pose $z_1 = \sqrt{2} + i\sqrt{2}$ et $z_2 = \sqrt{2} - i\sqrt{2}$.
+   a. Écrire $z_1$ et $z_2$ sous forme trigonométrique et sous forme exponentielle.
+   b. Montrer que $z_1^{2024}$ est un nombre réel positif.
+3. Soit la rotation $R$ de centre $O$ et d'angle $\frac{\pi}{4}$.
+   Donner l'écriture complexe de $R$ et déterminer l'affixe du point $A'$ image de $A(2)$ par $R$.
+
+---
+
+### Exercice 2 (5 pts)
+1. Résoudre les équations différentielles suivantes :
+   - $(E_1) : y' - 3y = 0$
+   - $(E_2) : y' + 2y = 4$
+   - $(E_3) : y'' - 4y' + 4y = 0$
+2. Déterminer la solution particulière de $(E_3)$ vérifiant $y(0) = 1$ et $y'(0) = 3$.
+
+---
+
+### Exercice 3 (10 pts)
+Soit la fonction $f$ définie sur $\mathbb{R}$ par :
+$$f(x) = (x - 1)e^x + 1$$
+1. Calculer $\lim_{x \to -\infty} f(x)$ et interpréter graphiquement le résultat.
+2. Calculer $\lim_{x \to +\infty} f(x)$ et $\lim_{x \to +\infty} \frac{f(x)}{x}$. Préciser la branche infinie en $+\infty$.
+3. Montrer que pour tout $x \in \mathbb{R}$ : $f'(x) = xe^x$.
+4. Dresser le tableau de variations de $f$.
+5. Montrer que $(C_f)$ admet un point d'inflexion dont on déterminera les coordonnées.
+6. Tracer $(C_f)$ dans un repère orthonormé $(O, \vec{i}, \vec{j})$.

@@ -1,0 +1,45 @@
+---
+## Section: Devoirs corrigés
+Titre: Math 2Bac SPC - Semestre 2 Devoir 3 Modèle 1
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+### Exercice 1 (4 pts)
+Une urne contient 3 boules rouges, 4 boules vertes et 2 boules noires (indiscernables au toucher). On tire au hasard et simultanément 3 boules de l'urne.
+1. Quel est le nombre total de tirages possibles ?
+2. Calculer la probabilité de chacun des événements suivants :
+   - $A$ : "Tirer trois boules de même couleur".
+   - $B$ : "Tirer trois boules de couleurs différentes deux à deux".
+   - $C$ : "Tirer au moins une boule rouge".
+3. Soit $X$ la variable aléatoire représentant le nombre de boules vertes tirées.
+   a. Déterminer la loi de probabilité de $X$.
+   b. Calculer l'espérance mathématique $E(X)$.
+
+---
+
+### Exercice 2 (4 pts)
+Dans l'espace muni d'un repère orthonormé $(O, \vec{i}, \vec{j}, \vec{k})$, on considère les points $A(1, 2, -1)$, $B(0, 1, 2)$ et le plan $(P) : 2x - y + 2z - 1 = 0$.
+1. Donner une représentation paramétrique de la droite $(AB)$.
+2. Déterminer les coordonnées du point d'intersection de la droite $(AB)$ avec le plan $(P)$.
+3. Calculer la distance du point $A$ au plan $(P)$.
+4. Soit la droite $(D)$ passant par $B$ et dirigée par $\vec{u}(1, -1, 0)$. Calculer la distance $d(A, (D))$ à l'aide du produit vectoriel.
+
+---
+
+### Exercice 3 (3 pts)
+Calculer les intégrales suivantes :
+$$I = \int_0^{\frac{\pi}{2}} x \cos(x) \, dx$$
+$$J = \int_1^2 \frac{x+1}{x^2+2x} \, dx$$
+$$K = \int_0^1 \frac{e^x}{1 + e^x} \, dx$$
+
+---
+
+### Exercice 4 (9 pts)
+Soit la fonction $f$ définie sur $\mathbb{R}$ par :
+$$f(x) = (2 - x)e^x - 1$$
+1. Calculer les limites de $f$ en $-\infty$ et en $+\infty$.
+2. Montrer que $(C_f)$ admet une branche parabolique de direction l'axe des ordonnées en $+\infty$.
+3. Calculer $f'(x)$ et dresser le tableau de variations de $f$.
+4. Montrer que l'équation $f(x) = 0$ admet exactement deux solutions dont l'une est $0$ et l'autre $\alpha \in ]1{,}5; 2[$.
+5. Tracer $(C_f)$ dans un repère orthonormé $(O, \vec{i}, \vec{j})$.
+6. Calculer l'aire du domaine plan délimité par $(C_f)$, l'axe des abscisses et les droites $x = 0$ et $x = 1$.

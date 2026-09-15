@@ -1,0 +1,47 @@
+---
+## Section: Devoirs corrigés
+Titre: Math 2Bac SPC - Semestre 1 Devoir 1 Modèle 2
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+### Exercice 1 (4 pts)
+1. Résoudre dans $\mathbb{R}$ les équations suivantes :
+$$\sqrt[3]{x} + \sqrt{x} = 2$$
+$$x^3 - 8 = 0$$
+2. Simplifier l'expression numérique suivante :
+$$A = \frac{\sqrt[3]{16} \times \sqrt[4]{32}}{\sqrt{2} \times \sqrt[12]{2^5}}$$
+
+---
+
+### Exercice 2 (5 pts)
+Calculer les limites suivantes :
+1. $\lim_{x \to 2} \frac{\sqrt[3]{x+6} - 2}{x - 2}$
+2. $\lim_{x \to +\infty} (\sqrt[3]{x^3+3x^2} - x)$
+3. $\lim_{x \to 0} \frac{1 - \cos(x)}{\sqrt{1+x^2} - 1}$
+4. $\lim_{x \to -\infty} \frac{\sqrt{x^2+1}}{2x-3}$
+
+---
+
+### Exercice 3 (5 pts)
+Soit $f$ la fonction définie par :
+$$f(x) = \frac{2x}{x^2+1}$$
+1. Étudier la parité de $f$.
+2. Calculer $\lim_{x \to +\infty} f(x)$ et interpréter le résultat.
+3. Calculer $f'(x)$ et dresser le tableau de variations complet de $f$.
+4. Montrer que $f([0, 1]) = [0, 1]$.
+
+---
+
+### Exercice 4 (4 pts)
+Soit $f(x) = x^4 - 2x^2 + 2$ définie sur $[0, +\infty[$.
+1. Étudier les variations de $f$ sur $[0, +\infty[$.
+2. Soit $g$ la restriction de $f$ à $[1, +\infty[$.
+   a. Montrer que $g$ est une bijection de $[1, +\infty[$ sur un intervalle $J$ que l'on déterminera.
+   b. Déterminer $g^{-1}(x)$ pour tout $x \in J$.
+
+---
+
+### Exercice 5 (2 pts)
+Montrer que l'équation :
+$$x^5 + x^3 + x - 1 = 0$$
+admet une unique solution dans l'intervalle $]0, 1[$.

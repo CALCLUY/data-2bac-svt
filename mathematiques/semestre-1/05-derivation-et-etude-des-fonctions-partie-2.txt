@@ -1,0 +1,140 @@
+---
+## Section: Semestre 1 (Cours et Exercices)
+Titre: Séance 5 - Dérivation et étude des fonctions (Partie 2)
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Éléments de symétrie d’une courbe
+#### 1-1/ Axe de symétrie
+#### 1-2/ Centre de symétrie
+
+### II- Périodicité d’une fonction
+
+### III- Étude de variations et représentation graphique
+#### 3-1/ Plan général d'étude d'une fonction
+#### 3-2/ Position relative de deux courbes
+
+### IV- Théorème de Rolle et Théorème des Accroissements Finis (TAF)
+#### 4-1/ Théorème de Rolle
+#### 4-2/ Théorème des Accroissements Finis (TAF)
+#### 4-3/ Inégalité des Accroissements Finis
+
+### V- Exercices
+#### 5-1/ Exercice 1
+#### 5-2/ Exercice 2
+#### 5-3/ Exercice 3
+#### 5-4/ Exercice 4
+#### 5-5/ Exercice 5
+#### 5-6/ Exercice 6
+
+---
+
+### I- Éléments de symétrie d’une courbe
+
+#### 1-1/ Axe de symétrie
+La droite d’équation $(\Delta): x = a$ est un axe de symétrie de la courbe $(C_f)$ si et seulement si pour tout $x \in D_f$ :
+- $(2a - x) \in D_f$
+- $f(2a - x) = f(x)$
+En particulier, si $a = 0$ ($f$ est paire), l'axe des ordonnées $(Oy)$ est axe de symétrie.
+
+#### 1-2/ Centre de symétrie
+Le point $\Omega(a, b)$ est un centre de symétrie de la courbe $(C_f)$ si et seulement si pour tout $x \in D_f$ :
+- $(2a - x) \in D_f$
+- $f(2a - x) + f(x) = 2b$ (ou encore $f(2a - x) = 2b - f(x)$)
+En particulier, si $\Omega(0, 0)$ ($f$ est impaire), l'origine du repère est centre de symétrie.
+
+---
+
+### II- Périodicité d’une fonction
+Soit $f$ une fonction numérique et $T > 0$. On dit que $f$ est périodique de période $T$ (ou $T$-périodique) si pour tout $x \in D_f$ :
+- $(x + T) \in D_f$ et $(x - T) \in D_f$
+- $f(x + T) = f(x)$
+Dans ce cas, l'étude de la fonction peut être restreinte à un intervalle de longueur $T$, par exemple $[0, T]$ ou $[-\frac{T}{2}, \frac{T}{2}]$.
+
+---
+
+### III- Étude de variations et représentation graphique
+
+#### 3-1/ Plan général d'étude d'une fonction
+1. Déterminer l'ensemble de définition $D_f$.
+2. Étudier la parité et la périodicité pour réduire l'ensemble d'étude $D_E$.
+3. Calculer les limites aux bornes de $D_E$ et déterminer les branches infinies (asymptotes, directions asymptotiques).
+4. Calculer la fonction dérivée $f'$, étudier son signe et dresser le tableau de variations complet.
+5. Calculer la dérivée seconde $f''$ pour déterminer la concavité et les points d'inflexion (si nécessaire).
+6. Déterminer les points d'intersection de $(C_f)$ avec les axes du repère.
+7. Tracer les asymptotes, les tangentes particulières, puis la courbe $(C_f)$.
+
+#### 3-2/ Position relative de deux courbes
+Pour étudier la position relative de la courbe $(C_f)$ par rapport à une droite $(D): y = ax+b$ (ou une autre courbe $(C_g)$) :
+- On étudie le signe de la différence $f(x) - (ax+b)$ (ou $f(x) - g(x)$).
+- Si $f(x) - y > 0$, alors $(C_f)$ est au-dessus de $(D)$.
+- Si $f(x) - y < 0$, alors $(C_f)$ est en dessous de $(D)$.
+- Si $f(x) - y = 0$, $(C_f)$ coupe $(D)$.
+
+---
+
+### IV- Théorème de Rolle et Théorème des Accroissements Finis (TAF)
+
+#### 4-1/ Théorème de Rolle
+Soit $f$ une fonction définie sur un intervalle $[a, b]$ tel que :
+- $f$ est continue sur $[a, b]$
+- $f$ est dérivable sur $]a, b[$
+- $f(a) = f(b)$
+Alors il existe au moins un réel $c \in ]a, b[$ tel que $f'(c) = 0$.
+
+#### 4-2/ Théorème des Accroissements Finis (TAF)
+Soit $f$ une fonction définie sur un intervalle $[a, b]$ ($a < b$) tel que :
+- $f$ est continue sur $[a, b]$
+- $f$ est dérivable sur $]a, b[$
+Alors il existe au moins un réel $c \in ]a, b[$ tel que :
+$$f(b) - f(a) = f'(c)(b - a) \quad \text{soit} \quad \frac{f(b) - f(a)}{b - a} = f'(c)$$
+
+#### 4-3/ Inégalité des Accroissements Finis
+Soit $f$ une fonction dérivable sur un intervalle $I$.
+S'il existe deux réels $m$ et $M$ tels que pour tout $x \in I$ : $m \le f'(x) \le M$, alors pour tous $a, b \in I$ avec $a \le b$ :
+$$m(b - a) \le f(b) - f(a) \le M(b - a)$$
+En particulier, si $|f'(x)| \le k$ sur $I$, alors $|f(b) - f(a)| \le k|b - a|$.
+
+---
+
+### V- Exercices
+
+#### 5-1/ Exercice 1
+Montrer que la droite $(\Delta)$ est un axe de symétrie de la courbe $(C_f)$ :
+1. $f(x) = x^2 - 4x + 5$ et $(\Delta): x = 2$.
+2. $f(x) = \sqrt{-x^2+2x+3}$ et $(\Delta): x = 1$.
+
+#### 5-2/ Exercice 2
+Montrer que le point $\Omega$ est un centre de symétrie de la courbe $(C_f)$ :
+1. $f(x) = \frac{2x-3}{x-1}$ et $\Omega(1, 2)$.
+2. $f(x) = x^3 - 3x^2 + 4$ et $\Omega(1, 2)$.
+
+#### 5-3/ Exercice 3
+Soit $f$ la fonction numérique définie par : $f(x) = \frac{x^2 - 2x + 2}{x - 1}$.
+1. Déterminer $D_f$ et calculer les limites aux bornes de $D_f$.
+2. Montrer que la droite $(D): y = x - 1$ est une asymptote oblique à $(C_f)$ au voisinage de $\pm \infty$.
+3. Étudier la position relative de $(C_f)$ et $(D)$.
+4. Calculer $f'(x)$ et dresser le tableau de variations de $f$.
+5. Montrer que $\Omega(1, 0)$ est un centre de symétrie de $(C_f)$.
+6. Construire la courbe $(C_f)$.
+
+#### 5-4/ Exercice 4
+Soit $f$ la fonction définie par : $f(x) = \sqrt{x^2 - 2x}$.
+1. Déterminer $D_f$.
+2. Étudier la dérivabilité de $f$ à droite en $2$ et à gauche en $0$, puis interpréter géométriquement les résultats.
+3. Déterminer les branches infinies de $(C_f)$ au voisinage de $+\infty$ et $-\infty$.
+4. Calculer $f'(x)$ sur $D_{f'}$ et dresser le tableau de variations de $f$.
+5. Tracer $(C_f)$.
+
+#### 5-5/ Exercice 5
+1. En appliquant le théorème de Rolle à la fonction $g(t) = \sin t$, montrer que pour tout $x > 0$, il existe $c \in ]0, x[$ tel que $\cos c = \frac{\sin x}{x}$.
+2. En utilisant le TAF, montrer que pour tout réel $x > 0$ :
+$$\frac{x}{x+1} < \ln(1+x) < x$$
+
+#### 5-6/ Exercice 6
+Soit $f(x) = \sqrt{1+x}$ sur $[0, 3]$.
+1. Montrer que pour tout $x \in [0, 3]$ : $\frac{1}{4} \le f'(x) \le \frac{1}{2}$.
+2. En déduire que pour tout $x \in [0, 3]$ :
+$$1 + \frac{1}{4}x \le \sqrt{1+x} \le 1 + \frac{1}{2}x$$

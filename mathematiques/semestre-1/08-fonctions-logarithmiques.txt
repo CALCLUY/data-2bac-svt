@@ -1,0 +1,207 @@
+---
+## Section: Semestre 1 (Cours et Exercices)
+Titre: Fonctions logarithmiques - Cours
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Fonction logarithme népérien
+#### 1-1/ Définition et conséquences
+#### 1-2/ Propriétés algébriques
+
+### II- Étude et représentation graphique de la fonction $\ln$
+#### 2-1/ Domaine, continuité, dérivabilité
+#### 2-2/ Variations et tableau de variation
+#### 2-3/ Représentation graphique
+
+### III- Limites usuelles de la fonction logarithme népérien
+#### 3-1/ Théorèmes
+#### 3-2/ Formules usuelles
+
+### IV- Dérivée logarithmique et dérivée de $\ln(u(x))$
+#### 4-1/ Théorème
+#### 4-2/ Primitives du type $\frac{u'(x)}{u(x)}$
+
+### V- Logarithme de base $a$ ($a > 0$ et $a \ne 1$)
+#### 5-1/ Définition
+#### 5-2/ Logarithme décimal ($\\log_{10}$ ou $\log$)
+
+### VI- Équations, inéquations et systèmes logarithmiques
+
+### VII- Exercices
+#### 7-1/ Exercice 1
+#### 7-2/ Exercice 2
+#### 7-3/ Exercice 3
+#### 7-4/ Exercice 4
+#### 7-5/ Exercice 5
+#### 7-6/ Exercice 6
+
+---
+
+### I- Fonction logarithme népérien
+
+#### 1-1/ Définition et conséquences
+La fonction logarithme népérien, notée $\ln$, est l'unique primitive de la fonction $x \mapsto \frac{1}{x}$ sur l'intervalle $]0, +\infty[$ qui s'annule en $1$ :
+$$\forall x \in ]0, +\infty[ : \quad (\ln x)' = \frac{1}{x} \quad \text{et} \quad \ln(1) = 0$$
+- Pour tout $x > 0$ : $\ln(x)$ existe.
+- $\ln(e) = 1$ où $e \approx 2{,}71828$.
+- $\ln(x) > 0 \iff x > 1$
+- $\ln(x) < 0 \iff 0 < x < 1$
+- $\ln(x) = 0 \iff x = 1$
+- Pour tous $a, b > 0$ : $\ln(a) = \ln(b) \iff a = b$ et $\ln(a) < \ln(b) \iff a < b$.
+
+#### 1-2/ Propriétés algébriques
+Pour tous réels $a, b > 0$ et $r \in \mathbb{Q}$ :
+- $\ln(a \times b) = \ln(a) + \ln(b)$
+- $\ln\left(\frac{1}{b}\right) = -\ln(b)$
+- $\ln\left(\frac{a}{b}\right) = \ln(a) - \ln(b)$
+- $\ln(a^r) = r \ln(a)$
+- $\ln(\sqrt{a}) = \frac{1}{2} \ln(a)$
+- $\ln(\sqrt[n]{a}) = \frac{1}{n} \ln(a)$ ($n \in \mathbb{N}^*$)
+
+---
+
+### II- Étude et représentation graphique de la fonction $\ln$
+
+#### 2-1/ Domaine, continuité, dérivabilité
+La fonction $\ln$ est définie, continue et strictement dérivable sur $]0, +\infty[$.
+Sa dérivée est $(\ln x)' = \frac{1}{x} > 0$ pour tout $x > 0$.
+
+#### 2-2/ Variations et tableau de variation
+Puisque $(\ln x)' > 0$, la fonction $\ln$ est strictement croissante sur $]0, +\infty[$.
+$$\lim_{x \to 0^+} \ln(x) = -\infty \quad \text{et} \quad \lim_{x \to +\infty} \ln(x) = +\infty$$
+
+| $x$ | $0$ | | $1$ | | $e$ | | $+\infty$ |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| $(\ln x)'$ | | $+$ | | $+$ | | $+$ | |
+| $\ln(x)$ | $-\infty$ | $\nearrow$ | $0$ | $\nearrow$ | $1$ | $\nearrow$ | $+\infty$ |
+
+#### 2-3/ Représentation graphique
+- La droite $(Oy)$ d'équation $x = 0$ est asymptote verticale à $(C_{\ln})$.
+- Au voisinage de $+\infty$, $\lim_{x \to +\infty} \frac{\ln x}{x} = 0$, donc $(C_{\ln})$ admet une branche parabolique de direction l'axe des abscisses $(Ox)$.
+- Tangente au point $(1, 0)$ : $y = x - 1$.
+
+---
+
+### III- Limites usuelles de la fonction logarithme népérien
+
+$$\lim_{x \to +\infty} \ln(x) = +\infty$$
+$$\lim_{x \to 0^+} \ln(x) = -\infty$$
+$$\lim_{x \to +\infty} \frac{\ln(x)}{x} = 0 \quad \text{et} \quad \lim_{x \to +\infty} \frac{\ln(x)}{x^n} = 0 \ (n \in \mathbb{N}^*)$$
+$$\lim_{x \to 0^+} x \ln(x) = 0 \quad \text{et} \quad \lim_{x \to 0^+} x^n \ln(x) = 0 \ (n \in \mathbb{N}^*)$$
+$$\lim_{x \to 1} \frac{\ln(x)}{x-1} = 1$$
+$$\lim_{x \to 0} \frac{\ln(1+x)}{x} = 1$$
+
+---
+
+### IV- Dérivée logarithmique et dérivée de $\ln(u(x))$
+
+#### 4-1/ Théorème
+Si $u$ est une fonction dérivable et strictement positive sur un intervalle $I$, alors la fonction $f(x) = \ln(u(x))$ est dérivable sur $I$, et :
+$$(\ln(u(x)))' = \frac{u'(x)}{u(x)}$$
+Si $u(x) \ne 0$ sur $I$, alors :
+$$(\ln|u(x)|)' = \frac{u'(x)}{u(x)}$$
+
+#### 4-2/ Primitives du type $\frac{u'(x)}{u(x)}$
+Les primitives de la fonction $x \mapsto \frac{u'(x)}{u(x)}$ sur un intervalle où $u(x) \ne 0$ sont les fonctions :
+$$x \mapsto \ln|u(x)| + c \quad (c \in \mathbb{R})$$
+
+---
+
+### V- Logarithme de base $a$ ($a > 0$ et $a \ne 1$)
+
+#### 5-1/ Définition
+Pour tout réel $a \in ]0, 1[ \cup ]1, +\infty[$, la fonction logarithme de base $a$, notée $\log_a$, est définie sur $]0, +\infty[$ par :
+$$\log_a(x) = \frac{\ln(x)}{\ln(a)}$$
+- En particulier : $\log_a(a) = 1$ et $\log_a(1) = 0$.
+
+#### 5-2/ Logarithme décimal
+Lorsque la base est $10$, on note $\log$ la fonction logarithme décimal :
+$$\log(x) = \frac{\ln(x)}{\ln(10)}$$
+- $\log(10^n) = n$ pour tout $n \in \mathbb{Z}$.
+
+---
+
+### VI- Équations, inéquations et systèmes logarithmiques
+- $\ln(u(x)) = \ln(v(x)) \iff u(x) = v(x)$ avec $u(x) > 0$ et $v(x) > 0$.
+- $\ln(u(x)) \le \ln(v(x)) \iff u(x) \le v(x)$ avec $u(x) > 0$ et $v(x) > 0$.
+
+---
+
+### VII- Exercices
+
+#### 7-1/ Exercice 1
+1. Résoudre dans $\mathbb{R}$ :
+   - $\ln(2x - 1) = 0$
+   - $\ln(x+2) + \ln(x-1) = \ln(4)$
+   - $\ln^2(x) - 3\ln(x) + 2 = 0$
+2. Résoudre dans $\mathbb{R}$ :
+   - $\ln(3x - 2) \le 0$
+   - $\ln(x^2 - 1) \ge \ln(2x + 2)$
+
+#### 7-2/ Exercice 2
+Soit la fonction $g$ définie sur $]0, +\infty[$ par : $g(x) = 2x - 1 + 2\ln(x)$.
+1. Calculer $g(1)$.
+2. En déduire à partir du tableau de variation que $g(x) > 0$ pour tout $x \in ]1, +\infty[$ et $g(x) < 0$ pour tout $x \in ]0, 1[$.
+
+On considère $f$ définie sur $]0, +\infty[$ par : $f(x) = 3 - 3x + 2(x+1)\ln(x)$.
+Soit $(C_f)$ sa courbe dans un repère orthonormé $(O, \vec{i}, \vec{j})$ (unité 2 cm).
+3. Montrer que $\lim_{x \to 0^+} f(x) = -\infty$, et interpréter géométriquement ce résultat.
+4. Montrer que $\lim_{x \to +\infty} f(x) = +\infty$.
+5. Montrer que $(C_f)$ admet au voisinage de $+\infty$ une branche parabolique de direction l'axe des ordonnées.
+6. Montrer que $f'(x) = g(x)$ pour tout $x \in ]0, +\infty[$.
+7. En déduire les variations de $f$ et dresser son tableau de variations.
+8. Montrer que $I(1, 0)$ est un point d'inflexion de $(C_f)$.
+9. Déterminer l'équation de la tangente $(T)$ en $I$, puis construire $(T)$ et $(C_f)$.
+
+#### 7-3/ Exercice 3
+Soit la fonction $g$ définie sur $]0, +\infty[$ par : $g(x) = x(x-1) + \ln(x)$.
+1. Calculer $g'(x)$ et étudier les variations de $g$.
+2. Calculer $g(1)$, puis déduire le signe de $g(x)$ sur $]0, +\infty[$.
+
+Soit $f$ définie sur $]0, +\infty[$ par : $f(x) = (x-1)^2 + \ln^2(x)$.
+3. Calculer $\lim_{x \to 0^+} f(x)$ et interpréter graphiquement.
+4. Calculer $\lim_{x \to +\infty} f(x)$ et $\lim_{x \to +\infty} \frac{f(x)}{x}$, puis étudier la branche infinie en $+\infty$.
+5. Montrer que $\forall x \in ]0, +\infty[ : f'(x) = \frac{2g(x)}{x}$.
+6. Dresser le tableau de variations de $f$.
+7. Tracer $(C_f)$.
+
+#### 7-4/ Exercice 4
+**Partie 1**
+Soit $g$ définie sur $]0, +\infty[$ par : $g(x) = x^2 + x - 2 + 2\ln(x)$.
+1. Vérifier que $g(1) = 0$.
+2. Montrer que $g(x) \le 0$ pour tout $x \in ]0, 1]$ et $g(x) \ge 0$ pour tout $x \in [1, +\infty[$.
+
+**Partie 2**
+Soit $f$ définie sur $]0, +\infty[$ par : $f(x) = x + (1 - 2x)\ln(x)$.
+1. Calculer $\lim_{x \to 0^+} f(x)$ et interpréter graphiquement.
+2. Montrer que $\lim_{x \to +\infty} f(x) = +\infty$.
+3. Montrer que $(C_f)$ admet en $+\infty$ une branche parabolique de direction la droite $(D): y = x$.
+4. Montrer que pour tout $x > 0$ : $f'(x) = \frac{g(x)}{x^2}$.
+5. En déduire les variations de $f$ et dresser son tableau de variations.
+6. Résoudre dans $]0, +\infty[$ : $(1 - 2x)\ln(x) = 0$. En déduire les points d'intersection de $(C_f)$ avec $(D)$.
+7. Tracer $(D)$ et $(C_f)$.
+
+#### 7-5/ Exercice 5
+Soit $f$ définie sur $[1, +\infty[$ par : $f(x) = x\sqrt{\ln(x)}$.
+1. Montrer que $f$ est continue sur $[1, +\infty[$.
+2. Étudier la dérivabilité de $f$ à droite en $1$, et interpréter géométriquement.
+3. Dresser le tableau de variation de $f$.
+4. Déterminer l'intersection de $(C_f)$ et $(\Delta): y = x$.
+5. Montrer que $f$ admet une fonction réciproque $g$ définie sur $J = [0, +\infty[$.
+6. Soit $(u_n)$ définie par $u_0 = 2$ et $u_{n+1} = g(u_n)$. Montrer que $1 \le u_n \le e$, étudier la monotonie et calculer sa limite.
+
+#### 7-6/ Exercice 6
+**Partie 1**
+Soit $g(x) = \frac{2x}{x+1} - \ln(1+x)$ sur $]-1, +\infty[$.
+1. Dresser le tableau de variation de $g$.
+2. Montrer que $g(x) = 0$ admet deux solutions $0$ et $\alpha$ avec $3{,}8 < \alpha < 4$.
+3. Déduire le signe de $g(x)$.
+
+**Partie 2**
+Soit $f(x) = \frac{\ln(1+x)}{\sqrt{x}}$ pour $x > 0$ et $f(0) = 0$.
+1. Montrer que $f$ est continue en $0$.
+2. Étudier la dérivabilité de $f$ en $0$.
+3. Montrer que $f'(x) = \frac{g(x)}{2x\sqrt{x}}$ et dresser le tableau de variations de $f$.
+4. Vérifier que $f(\alpha) = \frac{2\sqrt{\alpha}}{1+\alpha}$.

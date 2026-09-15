@@ -1,0 +1,183 @@
+---
+## Section: Semestre 1 (Cours et Exercices)
+Titre: Limite d’une suite - Cours
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Rappels sur les suites numériques
+#### 1-1/ Suites arithmétiques
+#### 1-2/ Suites géométriques
+#### 1-3/ Suite majorée, minorée, bornée
+
+### II- Limite finie d’une suite – Limite infinie d’une suite
+#### 2-1/ Définitions
+#### 2-2/ Limites usuelles
+
+### III- Opérations sur les limites des suites
+
+### IV- Critères de convergence (Théorèmes de comparaison)
+
+### V- Limite des suites géométriques et des suites du type $n^p$
+#### 5-1/ Limite de la suite $(q^n)$
+#### 5-2/ Limite de la suite $(n^p)$
+
+### VI- Convergence des suites monotones
+#### 6-1/ Théorème de convergence monotone
+#### 6-2/ Suites adjacentes
+
+### VII- Suite du type $u_{n+1} = f(u_n)$
+
+### IIX- Exercices
+#### 8-1/ Exercice 1
+#### 8-2/ Exercice 2
+#### 8-3/ Exercice 3
+#### 8-4/ Exercice 4
+#### 8-5/ Exercice 5
+#### 8-6/ Exercice 6
+
+---
+
+### I- Rappels sur les suites numériques
+
+#### 1-1/ Suites arithmétiques
+Une suite $(u_n)_{n \ge n_0}$ est arithmétique de raison $r$ si pour tout $n \ge n_0$ :
+$$u_{n+1} = u_n + r$$
+- Terme général : $u_n = u_p + (n - p)r$ (en particulier $u_n = u_0 + nr$).
+- Somme de termes consécutifs :
+$$S = u_p + u_{p+1} + \dots + u_n = (n - p + 1) \frac{u_p + u_n}{2}$$
+
+#### 1-2/ Suites géométriques
+Une suite $(v_n)_{n \ge n_0}$ est géométrique de raison $q$ si pour tout $n \ge n_0$ :
+$$v_{n+1} = q \times v_n$$
+- Terme général : $v_n = v_p \times q^{n-p}$ (en particulier $v_n = v_0 \times q^n$).
+- Somme de termes consécutifs ($q \ne 1$) :
+$$S = v_p + v_{p+1} + \dots + v_n = v_p \frac{1 - q^{n-p+1}}{1 - q}$$
+
+#### 1-3/ Suite majorée, minorée, bornée
+- $(u_n)$ est majorée par $M$ si pour tout $n$ : $u_n \le M$.
+- $(u_n)$ est minorée par $m$ si pour tout $n$ : $u_n \ge m$.
+- $(u_n)$ est bornée si elle est à la fois majorée et minorée ($m \le u_n \le M$).
+
+---
+
+### II- Limite finie d’une suite – Limite infinie d’une suite
+
+#### 2-1/ Définitions
+- On dit que la suite $(u_n)$ admet pour limite le nombre réel $l$ si tout intervalle ouvert contenant $l$ contient tous les termes de la suite à partir d'un certain rang. On écrit : $\lim_{n \to +\infty} u_n = l$. La suite est dite convergente.
+- On dit que $(u_n)$ tend vers $+\infty$ (resp. $-\infty$) si tout intervalle de la forme $]A, +\infty[$ (resp. $]-\infty, -A[$) contient tous les termes de la suite à partir d'un certain rang. La suite est dite divergente.
+
+#### 2-2/ Limites usuelles
+$$\lim_{n \to +\infty} \frac{1}{n} = 0, \quad \lim_{n \to +\infty} \frac{1}{n^p} = 0 \ (p \in \mathbb{N}^*), \quad \lim_{n \to +\infty} \frac{1}{\sqrt{n}} = 0$$
+$$\lim_{n \to +\infty} n^p = +\infty \ (p \in \mathbb{N}^*), \quad \lim_{n \to +\infty} \sqrt{n} = +\infty$$
+
+---
+
+### III- Opérations sur les limites des suites
+Les règles de calcul pour la somme, le produit et le quotient des limites de suites sont identiques à celles pour les fonctions (avec les mêmes formes indéterminées : $[+\infty - \infty]$, $[0 \times \infty]$, $\left[\frac{0}{0}\right]$, $\left[\frac{\infty}{\infty}\right]$).
+
+---
+
+### IV- Critères de convergence (Théorèmes de comparaison)
+- Si $u_n \le v_n$ à partir d'un certain rang et $\lim_{n \to +\infty} u_n = +\infty$, alors $\lim_{n \to +\infty} v_n = +\infty$.
+- Si $u_n \le v_n$ à partir d'un certain rang et $\lim_{n \to +\infty} v_n = -\infty$, alors $\lim_{n \to +\infty} u_n = -\infty$.
+- Théorème des gendarmes : Si $v_n \le u_n \le w_n$ à partir d'un certain rang et $\lim_{n \to +\infty} v_n = \lim_{n \to +\infty} w_n = l$, alors $\lim_{n \to +\infty} u_n = l$.
+- Si $|u_n - l| \le v_n$ à partir d'un certain rang et $\lim_{n \to +\infty} v_n = 0$, alors $\lim_{n \to +\infty} u_n = l$.
+
+---
+
+### V- Limite des suites géométriques et des suites du type $n^p$
+
+#### 5-1/ Limite de la suite $(q^n)$
+- Si $q > 1$, alors $\lim_{n \to +\infty} q^n = +\infty$.
+- Si $q = 1$, alors $\lim_{n \to +\infty} q^n = 1$.
+- Si $-1 < q < 1$ (c'est-à-dire $|q| < 1$), alors $\lim_{n \to +\infty} q^n = 0$.
+- Si $q \le -1$, alors la suite $(q^n)$ n'a pas de limite.
+
+#### 5-2/ Limite de la suite $(n^p)$ ($p \in \mathbb{Q}^*$)
+- Si $p > 0$, alors $\lim_{n \to +\infty} n^p = +\infty$.
+- Si $p < 0$, alors $\lim_{n \to +\infty} n^p = 0$.
+
+---
+
+### VI- Convergence des suites monotones
+
+#### 6-1/ Théorème de convergence monotone
+- Toute suite croissante et majorée est convergente.
+- Toute suite décroissante et minorée est convergente.
+- Si une suite est croissante et non majorée, elle tend vers $+\infty$.
+- Si une suite est décroissante et non minorée, elle tend vers $-\infty$.
+
+#### 6-2/ Suites adjacentes
+Deux suites $(u_n)$ et $(v_n)$ sont dites adjacentes si :
+1. L'une est croissante et l'autre est décroissante.
+2. $\lim_{n \to +\infty} (u_n - v_n) = 0$.
+Théorème : Si $(u_n)$ et $(v_n)$ sont adjacentes, alors elles convergent vers la même limite.
+
+---
+
+### VII- Suite du type $u_{n+1} = f(u_n)$
+Soit $f$ une fonction continue sur un intervalle $I$ telle que $f(I) \subset I$.
+Soit $(u_n)$ la suite définie par $u_0 \in I$ et pour tout $n \in \mathbb{N}$ : $u_{n+1} = f(u_n)$.
+Si la suite $(u_n)$ est convergente et sa limite est $l \in I$, alors $l$ est une solution de l'équation :
+$$f(l) = l$$
+
+---
+
+### IIX- Exercices
+
+#### 8-1/ Exercice 1
+Calculer les limites des suites suivantes :
+1. $u_n = \frac{2n^2 - 3n + 1}{5n^2 + 7}$
+2. $u_n = \frac{n^3 + 2n - 4}{3n^2 - n + 5}$
+3. $u_n = \sqrt{n+1} - \sqrt{n}$
+4. $u_n = \sqrt{n^2+3n} - n$
+5. $u_n = \frac{3^n - 2^n}{3^n + 2^n}$
+6. $u_n = \frac{5^n + (-2)^n}{5^n - 3}$
+
+#### 8-2/ Exercice 2
+En utilisant les théorèmes de comparaison, déterminer la limite de chacune des suites suivantes :
+1. $u_n = \frac{\sin(n)}{n^2+1}$
+2. $u_n = \frac{(-1)^n + \cos(n)}{n}$
+3. $u_n = 2n + (-1)^n \sqrt{n}$
+4. $u_n = \frac{n + \sin(n)}{2n - \cos(n)}$
+
+#### 8-3/ Exercice 3
+Soit la suite $(u_n)_{n \in \mathbb{N}}$ définie par :
+$$u_0 = 1 \quad \text{et} \quad u_{n+1} = \frac{u_n}{1 + 2u_n}$$
+1. Montrer par récurrence que pour tout $n \in \mathbb{N}$ : $u_n > 0$.
+2. Étudier la monotonie de la suite $(u_n)$. En déduire qu'elle est convergente.
+3. On pose $v_n = \frac{1}{u_n}$. Montrer que $(v_n)$ est une suite arithmétique.
+4. Exprimer $v_n$ puis $u_n$ en fonction de $n$.
+5. Retrouver $\lim_{n \to +\infty} u_n$.
+
+#### 8-4/ Exercice 4
+Soit la suite $(u_n)_{n \in \mathbb{N}}$ définie par :
+$$u_0 = 2 \quad \text{et} \quad u_{n+1} = \frac{1}{2} u_n + 3$$
+1. Montrer par récurrence que pour tout $n \in \mathbb{N}$ : $u_n < 6$.
+2. Montrer que la suite $(u_n)$ est strictement croissante.
+3. En déduire que $(u_n)$ converge et déterminer sa limite.
+4. On pose $v_n = u_n - 6$.
+   a. Montrer que $(v_n)$ est une suite géométrique dont on déterminera la raison et le premier terme.
+   b. Exprimer $v_n$ puis $u_n$ en fonction de $n$.
+   c. Calculer la limite de $(u_n)$.
+
+#### 8-5/ Exercice 5
+Soit la suite $(u_n)_{n \in \mathbb{N}}$ définie par :
+$$u_0 = \frac{1}{2} \quad \text{et} \quad u_{n+1} = \sqrt{\frac{1 + u_n}{2}}$$
+1. Montrer que pour tout $n \in \mathbb{N}$ : $0 < u_n < 1$.
+2. Montrer que la suite $(u_n)$ est strictement croissante.
+3. En déduire qu'elle converge et calculer sa limite.
+
+#### 8-6/ Exercice 6
+Soit $(u_n)_{n \in \mathbb{N}}$ la suite définie par :
+$$u_0 = 1 \quad \text{et} \quad u_{n+1} = \frac{u_n}{2 + u_n}$$
+1. Montrer que pour tout $n \in \mathbb{N}$ : $u_n > 0$.
+2. Montrer que pour tout $n \in \mathbb{N}$ :
+$$u_{n+1} - u_n = -\frac{u_n(1+u_n)}{2+u_n}$$
+3. Étudier la monotonie de la suite $(u_n)$.
+4. Soit $(v_n)$ la suite définie par $(\forall n \in \mathbb{N}) : v_n = \frac{u_n}{1+u_n}$.
+   a. Montrer que $(v_n)$ est une suite géométrique de raison $\frac{1}{2}$.
+   b. Exprimer $v_n$ puis $u_n$ en fonction de $n$.
+   c. Calculer la limite de la suite $(u_n)$.

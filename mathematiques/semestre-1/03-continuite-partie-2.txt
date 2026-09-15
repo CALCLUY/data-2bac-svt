@@ -1,0 +1,190 @@
+---
+## Section: Semestre 1 (Cours et Exercices)
+Titre: Séance 3 - Continuité (Partie 2)
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+## Sommaire
+
+### I- Théorème des valeurs intermédiaires
+#### 1-1/ Propriété (Théorème des valeurs intermédiaires)
+#### 1-2/ Conséquences
+#### 1-3/ Cas d’une fonction continue et strictement monotone
+
+### II- Fonction réciproque d’une fonction continue et strictement monotone sur un intervalle $I$
+#### 2-1/ Théorème
+#### 2-2/ Relation entre $f$ et sa réciproque $f^{-1}$
+#### 2-3/ Propriétés de la fonction réciproque $f^{-1}$
+
+### III- La fonction racine d’ordre n (ou racine $n^{\text{ième}}$)
+#### 3-1/ Définition et théorème
+#### 3-2/ Cas particuliers
+#### 3-3/ Propriétés
+#### 3-4/ Limites de la fonction $g(x) = \sqrt[n]{f(x)}$
+
+### VI- Puissance rationnelle d’un nombre réel positif
+#### 4-1/ Définition
+#### 4-2/ Propriétés
+
+### V- Exercices
+#### 5-1/ Exercice 1
+#### 5-2/ Exercice 2
+#### 5-3/ Exercice 3
+#### 5-4/ Exercice 4
+#### 5-5/ Exercice 5
+#### 5-6/ Exercice 6
+
+---
+
+### I- Théorème des valeurs intermédiaires
+
+#### 1-1/ Propriété (Théorème des valeurs intermédiaires)
+$f$ est une fonction continue sur $[a, b]$.
+Pour tout nombre $k$ compris entre $f(a)$ et $f(b)$, il existe au moins un élément $c$ de $[a, b]$ tel que :
+$$f(c) = k$$
+
+![](https://www.alloschool.com/files/premium/maths/2bac-spc/s3/img3.bmp)
+
+#### 1-2/ Conséquences
+- Puisque la fonction $f$ est continue on a $f([a, b]) = [m, M]$ (l’image d’un segment est un segment).
+- Si $f$ est continue sur $[a, b]$ et $f(a) \times f(b) < 0$, alors l’équation $f(x) = 0$ admet au moins une solution $c$ dans $]a, b[$.
+
+#### 1-3/ Cas d’une fonction continue et strictement monotone
+$f$ est une fonction continue et strictement monotone sur $[a, b]$.
+Pour tout nombre $k$ compris entre $f(a)$ et $f(b)$, il existe un unique élément $c$ de $[a, b]$ tel que :
+$$f(c) = k$$
+En particulier, si $f(a) \times f(b) < 0$, l'équation $f(x) = 0$ admet une unique solution dans $]a, b[$.
+
+---
+
+### II- Fonction réciproque d’une fonction continue et strictement monotone sur un intervalle $I$
+
+#### 2-1/ Théorème
+Toute fonction continue et strictement monotone sur un intervalle $I$ admet une fonction réciproque définie sur $J = f(I)$.
+$f: I \to J$ est une bijection, c'est-à-dire que pour tout $y \in J$, il existe un unique $x \in I$ tel que $f(x) = y$.
+On définit la fonction notée $f^{-1}$, appelée fonction réciproque de $f$ :
+$$f^{-1}: J = f(I) \to I, \quad y \mapsto f^{-1}(y) = x$$
+
+#### 2-2/ Relation entre $f$ et sa réciproque $f^{-1}$
+$$\begin{cases} f(x) = y \\ x \in I \end{cases} \iff \begin{cases} f^{-1}(y) = x \\ y \in J \end{cases}$$
+$$\forall x \in I : \quad (f^{-1} \circ f)(x) = x$$
+$$\forall y \in J : \quad (f \circ f^{-1})(y) = y$$
+
+#### 2-3/ Propriétés de la fonction réciproque $f^{-1}$
+- La fonction réciproque $f^{-1}$ est continue sur $J = f(I)$.
+- La fonction réciproque $f^{-1}$ a le même sens de variation que $f$.
+- Dans un repère orthonormé, les courbes $(C_f)$ et $(C_{f^{-1}})$ sont symétriques par rapport à la première bissectrice (la droite d'équation $y = x$).
+
+---
+
+### III- La fonction racine d’ordre n (ou racine $n^{\text{ième}}$)
+
+#### 3-1/ Définition et théorème
+La fonction $f(x) = x^n$ (avec $n \in \mathbb{N}^*$) est continue et strictement croissante sur $[0, +\infty[$.
+Sa fonction réciproque $f^{-1}$ est notée $f^{-1}(x) = \sqrt[n]{x} = x^{\frac{1}{n}}$ et appelée la fonction racine d’ordre $n$ (ou la fonction racine $n^{\text{ième}}$).
+On appelle $\sqrt[n]{x}$ la racine d’ordre $n$ du réel positif $x$.
+
+#### 3-2/ Cas particuliers
+- Cas $n = 1$ : $f^{-1}(x) = \sqrt[1]{x} = x$ (trivial). On prend donc $n \in \mathbb{N} \setminus \{0, 1\}$.
+- Cas $n = 2$ : $f^{-1}(x) = \sqrt[2]{x} = \sqrt{x}$ (racine carrée).
+- Cas $n = 3$ : $f^{-1}(x) = \sqrt[3]{x}$ (racine cubique ou racine d’ordre 3).
+
+#### 3-3/ Propriétés
+Pour tous réels positifs $a$ et $b$ et tous entiers naturels non nuls $n$ et $m$ :
+- $(\sqrt[n]{a})^n = \sqrt[n]{a^n} = a$
+- $\sqrt[n]{a \times b} = \sqrt[n]{a} \times \sqrt[n]{b}$
+- $\sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}$ ($b > 0$)
+- $\sqrt[n]{a^m} = (\sqrt[n]{a})^m$
+- $\sqrt[n]{\sqrt[m]{a}} = \sqrt[n \times m]{a}$
+- $\sqrt[n \times p]{a^{m \times p}} = \sqrt[n]{a^m}$ ($p \in \mathbb{N}^*$)
+- $a < b \iff \sqrt[n]{a} < \sqrt[n]{b}$
+
+![](https://www.alloschool.com/files/premium/maths/2bac-spc/s3/img1.jpg)
+
+#### 3-4/ Limites de la fonction $g(x) = \sqrt[n]{f(x)}$
+- $\lim_{x \to x_0} f(x) = +\infty \implies \lim_{x \to x_0} \sqrt[n]{f(x)} = +\infty$
+- $\lim_{x \to x_0} f(x) = l$ avec $l \ge 0 \implies \lim_{x \to x_0} \sqrt[n]{f(x)} = \sqrt[n]{l}$
+(Les propriétés restent valables pour $x \to x_0^+$, $x \to x_0^-$, ou $x \to \pm \infty$).
+
+---
+
+### VI- Puissance rationnelle d’un nombre réel positif
+
+#### 4-1/ Définition
+Soit $x \in \mathbb{R}_+^*$ et $n \in \mathbb{N}^*$, $m \in \mathbb{Z}$.
+On pose $r = \frac{m}{n} \in \mathbb{Q}$.
+Le nombre $\sqrt[n]{x^m}$ se note :
+$$\sqrt[n]{x^m} = x^{\frac{m}{n}} = x^r$$
+$x^r$ est appelé puissance rationnelle du nombre réel strictement positif $x$ d’exposant $r$.
+Par convention : $0^r = 0$ pour tout $r > 0$.
+
+#### 4-2/ Propriétés
+Pour tous réels $a > 0$ et $b > 0$, et pour tous rationnels $r$ et $r'$ :
+- $a^r \times a^{r'} = a^{r+r'}$
+- $\frac{a^r}{a^{r'}} = a^{r-r'}$
+- $(a^r)^{r'} = a^{r \times r'}$
+- $(a \times b)^r = a^r \times b^r$
+- $\left(\frac{a}{b}\right)^r = \frac{a^r}{b^r}$
+- $a^{-r} = \frac{1}{a^r}$
+
+![](https://www.alloschool.com/files/premium/maths/2bac-spc/s3/img2.jpg)
+
+---
+
+### V- Exercices
+
+#### 5-1/ Exercice 1
+Soit $f$ la fonction numérique définie sur $\mathbb{R}$ par : $f(x) = x^6 + 2x^4 - 1$.
+1. Montrer que l’équation $x^6 + 2x^4 - 1 = 0$ admet au moins une solution sur $]0, 1[$.
+
+On considère la fonction $g$ définie sur $\mathbb{R}$ par : $g(x) = x^3 - 6x^2 + 9x + 1$.
+2. Dresser le tableau de variation de $g$ sur $\mathbb{R}$.
+3. Montrer que l’équation $g(x) = 0$ admet une unique solution sur $\mathbb{R}$. On note cette solution par $\alpha$.
+4. Déterminer le signe de $g(x)$ sur $[1, +\infty[$.
+
+#### 5-2/ Exercice 2
+On considère la fonction $f$ définie par : $f(x) = \frac{x^2}{x+1}$.
+1. Déterminer $D_f$, puis calculer les limites de $f$ aux bornes de $D_f$.
+2. Montrer que : $(\forall x \in D_f) \quad f'(x) = \frac{x(x+2)}{(x+1)^2}$.
+3. Dresser le tableau de variation de $f$.
+4. Déterminer $f(]-\infty, -2])$, $f([-2, -1[)$, $f(]-1, 0])$ et $f([0, +\infty[)$.
+
+Soit $g$ la restriction de $f$ sur l’intervalle $]-\infty, -2]$.
+5. Montrer que $g$ admet une fonction réciproque $g^{-1}$ définie sur un intervalle $J$ que l’on déterminera.
+6. Montrer que : $(\forall x \in J) \quad g^{-1}(x) = \frac{x - \sqrt{x^2+4x}}{2}$.
+
+#### 5-3/ Exercice 3
+Calculer les limites suivantes :
+1. $\lim_{x \to 1} \frac{2 - \sqrt[3]{x+7}}{x - 1}$
+2. $\lim_{x \to 2} \frac{x - 2}{\sqrt[3]{x-1} - \sqrt[3]{3x-5}}$
+3. $\lim_{x \to -\infty} (\sqrt[3]{5x^2+x+1} + 2x)$
+4. $\lim_{x \to +\infty} (\sqrt[3]{8x^3+3x+1} - 2x)$
+5. $\lim_{x \to +\infty} \frac{2x^3 - 5x + 2}{3x^2 + \sqrt[3]{2x^2+1} - 5}$
+6. $\lim_{x \to +\infty} \frac{3x^2+x+1}{\sqrt[3]{8x^2+3} - \sqrt[3]{8x^2+1}}$
+
+#### 5-4/ Exercice 4
+Soit $f$ la fonction définie sur $[1, +\infty[$ par : $f(x) = x^2 - 2\sqrt{x^2-1}$.
+1. Montrer que : $\lim_{x \to +\infty} f(x) = +\infty$.
+2. Montrer que $f$ est continue sur l’intervalle $[1, +\infty[$.
+3. Montrer que : $(\forall x > 1) \quad f'(x) = \frac{2x(x^2-2)}{\sqrt{x^2-1}(\sqrt{x^2-1}+1)}$.
+4. Déduire les variations de $f$ sur $[1, +\infty[$.
+
+Soit $g$ la restriction de $f$ sur $[\sqrt{2}, +\infty[$.
+5. Montrer que $g$ admet une fonction réciproque définie sur un intervalle $J$ à déterminer.
+6. Montrer que : $(\forall x \in [\sqrt{2}, +\infty[) : g(x) = (\sqrt{x^2-1}-1)^2$.
+7. Déduire $g^{-1}(x)$ pour tout $x \in J$.
+
+#### 5-5/ Exercice 5
+On considère la fonction $f$ définie sur $\mathbb{R}$ par : $f(x) = x^3 - x^2 + 3x + 1$.
+1. Montrer que $f$ est strictement croissante sur $\mathbb{R}$.
+2. Montrer que l’équation $f(x) = 0$ admet une solution unique $a$ dans $]-\frac{1}{2}, 0[$.
+3. Calculer $f(-\frac{1}{4})$, puis déduire un encadrement de $a$ d’amplitude $0{,}25$.
+4. Montrer que $\sqrt{a+1} = -\frac{2a}{a+1}$.
+
+#### 5-6/ Exercice 6
+On considère la fonction $f$ définie par : $f(x) = \frac{1}{x} - 2\sqrt{x+1}$.
+1. Justifier que $D_f = [-1, 0[ \cup ]0, +\infty[$.
+2. Calculer les limites de $f$ aux bornes de $D_f$.
+3. Montrer que $f$ est continue et strictement décroissante sur $]0, +\infty[$.
+4. Montrer que l'équation $f(x) = 0$ admet une solution unique $\alpha$ dans $]\frac{1}{4}, 1[$.
+5. Vérifier que $4\alpha^3 + 4\alpha^2 - 1 = 0$.

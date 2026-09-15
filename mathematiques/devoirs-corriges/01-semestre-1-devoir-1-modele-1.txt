@@ -1,0 +1,41 @@
+---
+## Section: Devoirs corrigés
+Titre: Math 2Bac SPC - Semestre 1 Devoir 1 Modèle 1
+Professeur: Mr CHEDDADI Haitam
+Source:
+
+### Exercice 1 (4 pts)
+1. Calculer les limites suivantes :
+$$A = \lim_{x \to +\infty} \frac{\sqrt[3]{x^3+x} - 2x}{x+1}$$
+$$B = \lim_{x \to 1} \frac{\sqrt[3]{x} - 1}{x - 1}$$
+$$C = \lim_{x \to +\infty} (\sqrt[3]{x^3+x^2+1} - x)$$
+$$D = \lim_{x \to 0} \frac{\sqrt[3]{1+x} - \sqrt{1+x}}{x}$$
+
+---
+
+### Exercice 2 (6 pts)
+Soit la fonction $f$ définie sur $\mathbb{R}$ par :
+$$f(x) = \begin{cases} x^2 \sin\left(\frac{1}{x}\right) & \text{si } x \ne 0 \\ 0 & \text{si } x = 0 \end{cases}$$
+1. Montrer que pour tout $x \ne 0$ : $|f(x)| \le x^2$.
+2. En déduire que $f$ est continue en $0$.
+3. Étudier la dérivabilité de $f$ en $0$ et interpréter géométriquement le résultat.
+4. Calculer $f'(x)$ pour tout $x \ne 0$.
+5. La fonction dérivée $f'$ est-elle continue en $0$ ? Justifier.
+
+---
+
+### Exercice 3 (5 pts)
+Soit $f$ la fonction numérique définie par :
+$$f(x) = x^3 - 3x + 1$$
+1. Dresser le tableau de variations de $f$ sur $[-2, 2]$.
+2. Montrer que l'équation $f(x) = 0$ admet exactement trois solutions réelles dans $[-2, 2]$.
+3. Donner un encadrement d'amplitude $10^{-1}$ de la plus petite racine.
+
+---
+
+### Exercice 4 (5 pts)
+Soit $g$ la fonction définie sur $[1, +\infty[$ par :
+$$g(x) = \sqrt{x-1} + 2$$
+1. Montrer que $g$ admet une fonction réciproque $g^{-1}$ définie sur un intervalle $J$ à préciser.
+2. Déterminer l'expression explicite de $g^{-1}(x)$ pour tout $x \in J$.
+3. Tracer dans un même repère orthonormé $(O, \vec{i}, \vec{j})$ les courbes $(C_g)$ et $(C_{g^{-1}})$.
