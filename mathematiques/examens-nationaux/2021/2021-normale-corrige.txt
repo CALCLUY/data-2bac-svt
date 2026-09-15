@@ -1,0 +1,97 @@
+---
+Type: Examen National
+Année: 2021
+Session: Normale
+Nature: Corrigé
+Source: 
+---
+
+## Exercice 1
+
+1) Par récurrence :
+- Pour $n = 0$ : $u_0 = 1/3 \in ]0, 1/3]$, vrai.
+- Supposons $0 < u_n \le 1/3$.
+Alors $3 - 2u_n \ge 3 - 2(1/3) = 7/3 > 0$, donc $u_{n+1} > 0$.
+De plus, $\frac{1}{3} - u_{n+1} = \frac{1}{3} - \frac{u_n}{3 - 2u_n} = \frac{3 - 2u_n - 3u_n}{3(3 - 2u_n)} = \frac{3 - 5u_n}{3(3 - 2u_n)}$.
+Comme $u_n \le 1/3$, $3 - 5u_n \ge 3 - 5/3 = 4/3 > 0$.
+Donc $0 < u_{n+1} \le 1/3$.
+Conclusion : pour tout $n \in \mathbb{N}$, $0 < u_n \le 1/3$.
+
+2) $u_{n+1} - u_n = \frac{u_n - 3u_n + 2u_n^2}{3 - 2u_n} = \frac{2u_n(u_n - 1)}{3 - 2u_n}$.
+Comme $0 < u_n \le 1/3 < 1$, $u_n - 1 < 0$ et $3 - 2u_n > 0$, donc $u_{n+1} - u_n < 0$.
+La suite est strictement décroissante et minorée par 0, donc elle converge.
+
+3) a)
+$$v_{n+1} = \frac{1}{u_{n+1}} - 1 = \frac{3 - 2u_n}{u_n} - 1 = \frac{3 - 3u_n}{u_n} = 3\left(\frac{1}{u_n} - 1\right) = 3v_n$$
+Donc $(v_n)$ est une suite géométrique de raison 3.
+b) $v_0 = \frac{1}{1/3} - 1 = 3 - 1 = 2$.
+D'où $v_n = 2 \times 3^n$.
+De $v_n = \frac{1}{u_n} - 1$, on tire $\frac{1}{u_n} = v_n + 1 \iff u_n = \frac{1}{2 \times 3^n + 1}$.
+c) Comme $3 > 1$, $\lim_{n\to +\infty} 3^n = +\infty$, d'où $\lim_{n\to +\infty} u_n = 0$.
+
+## Exercice 2
+
+1) $A(0, 1, 4)$, $B(2, 1, 2)$, $C(2, 5, 0)$.
+$\vec{AB}\begin{pmatrix} 2 \\ 0 \\ -2 \end{pmatrix}$, $\vec{AC}\begin{pmatrix} 2 \\ 4 \\ -4 \end{pmatrix}$.
+$$\vec{AB} \wedge \vec{AC} = 4\vec{i} + 4\vec{j} + 4\vec{k}$$
+Le vecteur $\vec{n}(1, 1, 1)$ est normal à $(ABC)$, d'où l'équation cartésienne :
+$$1(x - 0) + 1(y - 1) + 1(z - 4) = 0 \iff x + y + z - 5 = 0$$
+
+2) a) $(S) : (x - 1)^2 + (y - 1)^2 + (z - 1)^2 = 4 = 2^2$.
+Le centre est $\Omega(1, 1, 1)$ et le rayon est $R = 2$.
+
+b) Distance de $\Omega$ à $(ABC)$ :
+$$d(\Omega, (ABC)) = \frac{|1 + 1 + 1 - 5|}{\sqrt{1^2 + 1^2 + 1^2}} = \frac{2}{\sqrt{3}}$$
+Comme $d = \frac{2}{\sqrt{3}} < R = 2$, le plan $(ABC)$ coupe la sphère $(S)$ selon un cercle $(\Gamma)$.
+
+c) Le rayon de $(\Gamma)$ est :
+$$r = \sqrt{R^2 - d^2} = \sqrt{4 - \frac{4}{3}} = \frac{2\sqrt{6}}{3}$$
+Le centre $H$ est le projeté orthogonal de $\Omega$ sur $(ABC)$ : $H\left(\frac{5}{3}, \frac{5}{3}, \frac{5}{3}\right)$.
+
+## Exercice 3
+
+Nombre total de tirages simultanés de 3 jetons parmi 9 :
+$$\text{Card}(\Omega) = \binom{9}{3} = 84$$
+
+1) - $A$ : « même couleur » (3 blancs ou 3 noirs) :
+$$\text{Card}(A) = \binom{4}{3} + \binom{5}{3} = 4 + 10 = 14 \implies p(A) = \frac{14}{84} = \frac{1}{6}$$
+- $B$ : « portant le numéro 2 » (il y a 4 jetons avec le numéro 2 : 2 blancs et 2 noirs) :
+$$\text{Card}(B) = \binom{4}{3} = 4 \implies p(B) = \frac{4}{84} = \frac{1}{21}$$
+
+2) a) Le numéro 3 apparaît sur 4 jetons (1 blanc, 3 noirs).
+Les valeurs prises par $X$ sont $X \in \{0, 1, 2, 3\}$.
+b) Loi de probabilité :
+- $p(X = 0) = \frac{\binom{5}{3}}{84} = \frac{10}{84} = \frac{5}{42}$
+- $p(X = 1) = \frac{\binom{4}{1}\binom{5}{2}}{84} = \frac{4 \times 10}{84} = \frac{40}{84} = \frac{10}{21}$
+- $p(X = 2) = \frac{\binom{4}{2}\binom{5}{1}}{84} = \frac{6 \times 5}{84} = \frac{30}{84} = \frac{5}{14}$
+- $p(X = 3) = \frac{\binom{4}{3}}{84} = \frac{4}{84} = \frac{1}{21}$
+
+c) Espérance mathématique :
+$$E(X) = 0 \times \frac{10}{84} + 1 \times \frac{40}{84} + 2 \times \frac{30}{84} + 3 \times \frac{4}{84} = \frac{112}{84} = \frac{4}{3}$$
+
+## Problème
+
+1) En $-\infty$ : $(x - 1)^2 e^x \to 0$, donc $\lim_{x\to -\infty} f(x) = -1$.
+La droite d'équation $y = -1$ est asymptote horizontale à $(C_f)$ au voisinage de $-\infty$.
+
+2) En $+\infty$ : $\lim_{x\to +\infty} f(x) = +\infty$ et $\lim_{x\to +\infty} \frac{f(x)}{x} = +\infty$.
+La courbe $(C_f)$ admet une branche parabolique de direction l’axe des ordonnées au voisinage de $+\infty$.
+
+3) a) $f'(x) = 2(x - 1)e^x + (x - 1)^2 e^x = (x - 1)e^x(2 + x - 1) = (x - 1)(x + 1)e^x = (x^2 - 1)e^x$.
+b) Comme $e^x > 0$, le signe de $f'(x)$ est celui de $x^2 - 1$ :
+- $f'(x) \ge 0$ sur $]-\infty, -1]\cup[1, +\infty[$ : $f$ est croissante.
+- $f'(x) \le 0$ sur $[-1, 1]$ : $f$ est décroissante.
+Maximum local en $-1$ : $f(-1) = 4e^{-1} - 1$.
+Minimum local en $1$ : $f(1) = -1$.
+
+4) Tangente en $x = 0$ :
+$f(0) = 1 - 1 = 0$, $f'(0) = -1$.
+Équation de la tangente : $y = -x$.
+
+5) Construction de $(C_f)$.
+
+6) a) Intégration par parties de $I = \int_0^1 (x - 1)^2 e^x dx$ :
+$$I = [(x - 1)^2 e^x]_0^1 - 2\int_0^1 (x - 1)e^x dx = -1 - 2[(x - 2)e^x]_0^1 = -1 - 2(-e + 2) = 2e - 5$$
+
+b) Aire du domaine :
+$$\mathcal{A} = \int_0^1 |f(x)| dx = \int_0^1 (1 - (x - 1)^2 e^x) dx = [x]_0^1 - I = 1 - (2e - 5) = (6 - 2e)\text{ cm}^2$$

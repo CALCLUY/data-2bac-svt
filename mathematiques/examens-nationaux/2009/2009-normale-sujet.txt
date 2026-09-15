@@ -1,0 +1,83 @@
+---
+Type: Examen National
+Année: 2009
+Session: Normale
+Nature: Sujet
+Source: 
+---
+
+## Exercice 1 (3 points)
+
+L’espace est rapporté à un repère orthonormé direct $(O, \vec{i}, \vec{j}, \vec{k})$.
+On considère les points $A(-2, 2, 8)$, $B(6, 6, 0)$, $C(2, -1, 0)$ et $D(0, 1, -1)$, et $(S)$ l’ensemble des points $M$ vérifiant $\vec{MA} \cdot \vec{MB} = 0$.
+
+1) Déterminer les coordonnées du produit vectoriel $\vec{OC} \wedge \vec{OD}$ et en déduire que $x + 2y + 2z = 0$ est une équation cartésienne du plan $(OCD)$.
+2) Vérifier que $(S)$ est la sphère de centre $\Omega(2, 4, 4)$ et de rayon $R = 6$.
+3) a) Calculer la distance du point $\Omega$ au plan $(OCD)$.
+b) En déduire que le plan $(OCD)$ est tangent à la sphère $(S)$.
+c) Vérifier que $\vec{OA} \cdot \vec{OB} = 0$ et en déduire que $O$ est le point de contact de la sphère $(S)$ et du plan $(OCD)$.
+
+## Exercice 2 (3 points)
+
+Dans le plan complexe rapporté à un repère orthonormé direct $(O, \vec{u}, \vec{v})$, on considère les points $A$, $B$ et $C$ d’affixes respectives :
+$$a = 2 - 2i, \quad b = -\frac{\sqrt{3}}{2} + \frac{1}{2}i, \quad c = 1 - \sqrt{3} + (1 + \sqrt{3})i$$
+
+1) Écrire $a$ et $b$ sous forme trigonométrique.
+2) Soit $R$ la rotation de centre $O$ et d’angle $\frac{5\pi}{6}$.
+a) Soit $Z$ l’affixe du point $M$ et $Z'$ l’affixe du point $M'$ image de $M$ par la rotation $R$. Montrer que $Z' = bZ$.
+b) Vérifier que le point $C$ est l'image du point $A$ par la rotation $R$.
+3) Montrer que $\arg(c) \equiv \arg(a) + \arg(b) \; [2\pi]$, puis déterminer un argument du nombre complexe $c$.
+
+## Exercice 3 (2 points)
+
+On pose $I = \int_{-2}^{-1} \frac{x}{x+3} dx$ et $J = \int_{-2}^{-1} \ln(2x+6) dx$.
+
+1) a) Vérifier que $\frac{x}{x+3} = 1 - \frac{3}{x+3}$ pour tout $x \in \mathbb{R} \setminus \{-3\}$.
+b) Montrer que $I = 1 - 3\ln 2$.
+2) À l’aide d’une intégration par parties, montrer que $J = -I$.
+
+## Exercice 4 (3 points)
+
+Une caisse contient 3 boules blanches, 4 boules noires et 5 boules rouges (indiscernables au toucher).
+On tire au hasard et simultanément trois boules de la caisse.
+
+1) On considère les deux événements :
+- $A$ : « Obtenir trois boules de même couleur »
+- $B$ : « Obtenir trois boules de couleurs différentes deux à deux »
+Montrer que $p(A) = \frac{3}{44}$ et $p(B) = \frac{3}{11}$.
+
+2) Soit $X$ la variable aléatoire qui à chaque tirage fait correspondre le nombre de couleurs des boules tirées.
+a) Déterminer les valeurs prises par $X$.
+b) Déterminer la loi de probabilité de la variable aléatoire $X$.
+
+## Problème (9 points)
+
+### Partie I
+
+On considère la fonction numérique $f$ définie sur $\mathbb{R}$ par :
+$$f(x) = 2\ln(e^x - 2\sqrt{e^x} + 2)$$
+Soit $(C_f)$ sa courbe représentative dans un repère orthonormé $(O, \vec{i}, \vec{j})$ (unité : $1\text{ cm}$).
+
+1) Vérifier que pour tout $x \in \mathbb{R}$, $e^x - 2\sqrt{e^x} + 2 = (\sqrt{e^x} - 1)^2 + 1$, en déduire que $D_f = \mathbb{R}$ et que pour tout $x \in \mathbb{R}$, $1 - \frac{2}{\sqrt{e^x}} + \frac{2}{e^x} > 0$.
+2) Calculer $\lim_{x\to +\infty} f(x)$ et montrer que $\lim_{x\to -\infty} f(x) = \ln 4$, puis interpréter le résultat géométriquement.
+3) a) Montrer que pour tout $x \in \mathbb{R}$ :
+$$f'(x) = \frac{2\sqrt{e^x}(\sqrt{e^x}-1)}{(\sqrt{e^x}-1)^2 + 1}$$
+et vérifier que $f'(0) = 0$.
+b) Étudier le signe de $\sqrt{e^x}-1$, en déduire que $f$ est croissante sur $[0, +\infty[$ et décroissante sur $]-\infty, 0]$.
+4) a) Vérifier que pour tout $x \in \mathbb{R}$ :
+$$f(x) = 2x + 2\ln\left(1 - \frac{2}{\sqrt{e^x}} + \frac{2}{e^x}\right)$$
+b) Montrer que la droite $(D)$ d'équation $y = 2x$ est asymptote à la courbe $(C_f)$ au voisinage de $+\infty$.
+5) a) Vérifier que pour tout $x \in \mathbb{R}$ :
+$$e^x - 3\sqrt{e^x} + 2 = (\sqrt{e^x}-1)(\sqrt{e^x}-2)$$
+b) Étudier le signe de $(\sqrt{e^x}-1)(\sqrt{e^x}-2)$ sur $\mathbb{R}$.
+c) En déduire que pour tout $x \in [0, \ln 4]$, $e^x - 2\sqrt{e^x} + 2 \le \sqrt{e^x}$.
+d) Montrer que pour tout $x \in [0, \ln 4]$, $f(x) \le x$.
+6) Construire la courbe $(C_f)$ et la droite $(D)$ dans le repère $(O, \vec{i}, \vec{j})$. (On admet que $(C_f)$ admet deux points d'inflexion d'abscisses respectives $\alpha$ et $\beta$, on prend $\ln 4 \approx 1,4$).
+
+### Partie II
+
+On considère la suite numérique $(u_n)$ définie par :
+$$u_0 = 1 \quad \text{et} \quad u_{n+1} = f(u_n) \quad \text{pour tout } n \in \mathbb{N}$$
+
+1) Montrer par récurrence que pour tout $n \in \mathbb{N}$, $0 \le u_n \le \ln 4$.
+2) Montrer que la suite $(u_n)$ est décroissante, en déduire qu'elle est convergente et déterminer sa limite.

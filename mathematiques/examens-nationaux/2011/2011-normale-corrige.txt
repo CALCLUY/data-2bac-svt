@@ -1,0 +1,123 @@
+---
+Type: Examen National
+Année: 2011
+Session: Normale
+Nature: Corrigé
+Source: 
+---
+
+## Exercice 1
+
+1) a) Résolution de $x^2 + 4x - 5 = 0$ :
+$$\Delta = 4^2 - 4(1)(-5) = 16 + 20 = 36 = 6^2 > 0$$
+Les solutions sont :
+$$x_1 = \frac{-4 + 6}{2} = 1 \quad \text{et} \quad x_2 = \frac{-4 - 6}{2} = -5$$
+D'où $S = \{-5, 1\}$.
+
+b) Pour $x \in ]0, +\infty[$, $x^2 + 5 > 0$, $x + 2 > 0$ et $2x > 0$.
+$$\ln(x^2 + 5) = \ln(x + 2) + \ln(2x) \iff \ln(x^2 + 5) = \ln(2x(x + 2)) \iff x^2 + 5 = 2x^2 + 4x \iff x^2 + 4x - 5 = 0$$
+D'après 1) a), $x \in \{-5, 1\}$. Comme $x > 0$, on retient $x = 1$.
+D'où $S = \{1\}$.
+
+2) Pour $x \in ]0, +\infty[$ :
+$$\ln x + \ln(x + 1) \ge \ln(x^2 + 1) \iff \ln(x(x + 1)) \ge \ln(x^2 + 1) \iff x^2 + x \ge x^2 + 1 \iff x \ge 1$$
+Comme $x > 0$, les solutions sont dans $[1, +\infty[$.
+D'où $S = [1, +\infty[$.
+
+## Exercice 2
+
+1) Par récurrence :
+- Pour $n = 0$ : $u_0 = 1 > 0$, vrai.
+- Hérédité : Supposons $u_n > 0$. Alors $5 + 8u_n > 5 > 0$, donc $u_{n+1} = \frac{u_n}{5 + 8u_n} > 0$.
+- Conclusion : Pour tout $n \in \mathbb{N}$, $u_n > 0$.
+
+2) a) Pour tout $n \in \mathbb{N}$ :
+$$v_{n+1} = \frac{1}{u_{n+1}} + 2 = \frac{5 + 8u_n}{u_n} + 2 = \frac{5}{u_n} + 8 + 2 = 5\left(\frac{1}{u_n} + 2\right) = 5v_n$$
+Donc $(v_n)$ est une suite géométrique de raison $q = 5$.
+Son premier terme est $v_0 = \frac{1}{u_0} + 2 = \frac{1}{1} + 2 = 3$.
+D'où pour tout $n \in \mathbb{N}$ :
+$$v_n = 3 \times 5^n$$
+
+b) De $v_n = \frac{1}{u_n} + 2$, on tire $\frac{1}{u_n} = v_n - 2$, d'où :
+$$u_n = \frac{1}{v_n - 2} = \frac{1}{3 \times 5^n - 2}$$
+Comme $5 > 1$, on a $\lim_{n\to +\infty} 5^n = +\infty$, donc :
+$$\lim_{n\to +\infty} u_n = 0$$
+
+## Exercice 3
+
+1) Résolution de $z^2 - 18z + 82 = 0$ :
+$$\Delta = (-18)^2 - 4(1)(82) = 324 - 328 = -4 = (2i)^2$$
+Les solutions sont :
+$$z_1 = \frac{18 + 2i}{2} = 9 + i \quad \text{et} \quad z_2 = \frac{18 - 2i}{2} = 9 - i$$
+D'où $S = \{9 - i, 9 + i\}$.
+
+2) a) Avec $a = 9 + i$, $b = 9 - i$, $c = 11 - i$ :
+$$\frac{c - b}{a - b} = \frac{11 - i - (9 - i)}{9 + i - (9 - i)} = \frac{2}{2i} = \frac{1}{i} = -i$$
+On a $\left|\frac{c - b}{a - b}\right| = |-i| = 1 \implies \frac{BC}{BA} = 1 \implies BC = BA$.
+Et $\arg\left(\frac{c - b}{a - b}\right) \equiv \arg(-i) \equiv -\frac{\pi}{2} \; [2\pi] \implies (\vec{BA}, \vec{BC}) \equiv -\frac{\pi}{2} \; [2\pi]$.
+Donc le triangle $ABC$ est isocèle et rectangle en $B$.
+
+b) $4(1 - i) = 4\sqrt{2}\left(\frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2}\right) = 4\sqrt{2}\left(\cos(-\frac{\pi}{4}) + i\sin(-\frac{\pi}{4})\right)$.
+
+c) On a $c - a = 11 - i - (9 + i) = 2 - 2i = 2(1 - i)$ et $c - b = 2$.
+Donc $(c - a)(c - b) = 2(1 - i) \times 2 = 4(1 - i)$.
+En passant aux modules :
+$$|c - a| \times |c - b| = |4(1 - i)| \implies AC \times BC = 4\sqrt{1^2 + (-1)^2} = 4\sqrt{2}$$
+
+d) L'expression complexe de la rotation $R(B, \frac{3\pi}{2})$ est :
+$$z' - b = e^{i\frac{3\pi}{2}}(z - b) \iff z' - (9 - i) = -i(z - 9 + i) \iff z' = -iz + 9i + 1 + 9 - i = -iz + 10 + 8i$$
+Pour le point $C(c)$ avec $c = 11 - i$ :
+$$c' = -i(11 - i) + 10 + 8i = -11i - 1 + 10 + 8i = 9 - 3i$$
+
+## Problème
+
+### Partie I
+
+1) a) $g(x) = (1 - x)e^x - 1$.
+$$g'(x) = (1 - x)'e^x + (1 - x)(e^x)' = -e^x + (1 - x)e^x = -xe^x$$
+b) Comme $e^x > 0$ pour tout $x \in \mathbb{R}$ :
+- Si $x \ge 0$, $-x \le 0 \implies g'(x) \le 0$, donc $g$ est décroissante sur $[0, +\infty[$.
+- Si $x \le 0$, $-x \ge 0 \implies g'(x) \ge 0$, donc $g$ est croissante sur $]-\infty, 0]$.
+En $x = 0$ : $g(0) = (1 - 0)e^0 - 1 = 1 - 1 = 0$.
+
+2) Puisque $g$ admet un maximum absolu en $0$ qui vaut $g(0) = 0$, on a pour tout $x \in \mathbb{R}$ :
+$$g(x) \le 0$$
+
+### Partie II
+
+1) a) $\lim_{x\to +\infty} (2 - x) = -\infty$ et $\lim_{x\to +\infty} e^x = +\infty$, donc $\lim_{x\to +\infty} (2 - x)e^x = -\infty$. Comme $\lim_{x\to +\infty} (-x) = -\infty$, on a $\lim_{x\to +\infty} f(x) = -\infty$.
+b) $\frac{f(x)}{x} = \left(\frac{2}{x} - 1\right)e^x - 1$.
+Comme $\lim_{x\to +\infty} (\frac{2}{x} - 1) = -1$ et $\lim_{x\to +\infty} e^x = +\infty$, on a $\lim_{x\to +\infty} \frac{f(x)}{x} = -\infty$.
+La courbe $(C_f)$ admet au voisinage de $+\infty$ une branche parabolique de direction l’axe des ordonnées.
+
+2) a) $f(x) = 2e^x - xe^x - x$.
+Puisque $\lim_{x\to -\infty} e^x = 0$ et $\lim_{x\to -\infty} xe^x = 0$, on a $\lim_{x\to -\infty} (2 - x)e^x = 0$, d'où $\lim_{x\to -\infty} f(x) = +\infty$.
+De plus :
+$$\lim_{x\to -\infty} [f(x) + x] = \lim_{x\to -\infty} (2 - x)e^x = 0$$
+b) La droite $(D)$ d'équation $y = -x$ est donc une asymptote oblique à $(C_f)$ au voisinage de $-\infty$.
+
+3) a) $f'(x) = [(2 - x)e^x - x]' = -e^x + (2 - x)e^x - 1 = (1 - x)e^x - 1 = g(x)$.
+b) $f'(0) = g(0) = 0$, donc $(C_f)$ admet une tangente horizontale au point d'abscisse 0 (point $(0, 2)$).
+c) Comme $g(x) \le 0$ et $g(x) = 0 \iff x = 0$, $f'$ est strictement négative sur $\mathbb{R}^*$, donc $f$ est strictement décroissante sur $\mathbb{R}$.
+
+4) $f$ est continue et strictement décroissante sur $\mathbb{R}$.
+$f(3/2) = (2 - 3/2)e^{3/2} - 3/2 = \frac{1}{2}e^{3/2} - \frac{3}{2} = \frac{1}{2}(e^{3/2} - 3) > 0$ car $e^{3/2} > 3$.
+$f(2) = (2 - 2)e^2 - 2 = -2 < 0$.
+Par le théorème des valeurs intermédiaires, l'équation $f(x) = 0$ admet une solution unique $\alpha$ telle que $\frac{3}{2} < \alpha < 2$.
+
+5) a) $f(x) + x = 0 \iff (2 - x)e^x = 0 \iff 2 - x = 0 \iff x = 2$.
+Pour $x = 2$, $y = -2$. Le point d'intersection est $A(2, -2)$.
+b) Signe de $f(x) + x = (2 - x)e^x$ : comme $e^x > 0$, il est du signe de $2 - x$.
+- Pour $x < 2$ : $f(x) + x > 0 \implies f(x) > -x$.
+- Pour $x > 2$ : $f(x) + x < 0 \implies f(x) < -x$.
+c) $(C_f)$ est au-dessus de $(D)$ sur $]-\infty, 2[$ et en dessous de $(D)$ sur $]2, +\infty[$.
+
+6) a) $f''(x) = g'(x) = -xe^x$.
+$f''(x)$ s'annule en $0$ en changeant de signe (positive pour $x < 0$, négative pour $x > 0$).
+Donc le point $(0, f(0)) = (0, 2)$ est l'unique point d'inflexion de $(C_f)$.
+
+7) a) Intégration par parties de $\int_{-1}^0 (2 - x)e^x dx$ :
+Posons $u(x) = 2 - x \implies u'(x) = -1$ et $v'(x) = e^x \implies v(x) = e^x$.
+$$\int_{-1}^0 (2 - x)e^x dx = [(2 - x)e^x]_{-1}^0 - \int_{-1}^0 (-e^x) dx = 2 - 3e^{-1} + [e^x]_{-1}^0 = 2 - \frac{3}{e} + 1 - \frac{1}{e} = 3 - \frac{4}{e}$$
+b) Sur $[-1, 0]$, $(C_f)$ est au-dessus de $(D)$, donc l'aire est :
+$$\text{Aire} = \int_{-1}^0 (f(x) - (-x)) dx \times 1\text{ cm}^2 = \int_{-1}^0 (2 - x)e^x dx = \left(3 - \frac{4}{e}\right)\text{ cm}^2$$

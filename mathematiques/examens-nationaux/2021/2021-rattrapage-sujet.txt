@@ -1,0 +1,59 @@
+---
+Type: Examen National
+Année: 2021
+Session: Rattrapage
+Nature: Sujet
+Source: 
+---
+
+## Exercice 1 (4 points)
+
+On considère la suite numérique $(u_n)$ définie par :
+$$u_0 = 1 \quad \text{et} \quad u_{n+1} = \frac{u_n}{1 + 2u_n} \quad \text{pour tout } n \in \mathbb{N}$$
+
+1) Montrer par récurrence que pour tout $n \in \mathbb{N}$ : $u_n > 0$.
+2) Montrer que la suite $(u_n)$ est décroissante et en déduire qu'elle converge.
+3) Soit $(v_n)$ la suite définie par :
+$$v_n = \frac{1}{u_n} \quad \text{pour tout } n \in \mathbb{N}$$
+a) Montrer que $(v_n)$ est une suite arithmétique de raison 2.
+b) Exprimer $v_n$ en fonction de $n$, puis en déduire l’expression de $u_n$ en fonction de $n$.
+c) Calculer $\lim_{n\to +\infty} u_n$.
+
+## Exercice 2 (5 points)
+
+Dans l’espace rapporté à un repère orthonormé direct $(O, \vec{i}, \vec{j}, \vec{k})$, on considère les points $A(1, 0, 2)$, $B(2, 1, 0)$ et $C(0, 1, 1)$ et la sphère $(S)$ d'équation :
+$$x^2 + y^2 + z^2 - 2x + 2y - 2z - 1 = 0$$
+
+1) Montrer que $\vec{AB} \wedge \vec{AC} = \vec{i} + \vec{j} + 2\vec{k}$ et en déduire une équation cartésienne du plan $(ABC)$.
+2) a) Déterminer le centre $\Omega$ et le rayon $R$ de la sphère $(S)$.
+b) Calculer la distance $d(\Omega, (ABC))$ et déterminer la nature de l'intersection du plan $(ABC)$ et de la sphère $(S)$.
+
+## Exercice 3 (4 points)
+
+Une urne contient 8 boules indiscernables au toucher : 3 boules rouges, 3 boules vertes et 2 boules blanches.
+On tire simultanément et au hasard 2 boules de l'urne.
+
+1) Calculer la probabilité des événements suivants :
+- $A$ : « Les deux boules tirées sont de même couleur ».
+- $B$ : « Obtenir au moins une boule blanche ».
+2) Soit $X$ la variable aléatoire égale au nombre de boules blanches tirées.
+a) Déterminer les valeurs possibles de la variable aléatoire $X$.
+b) Déterminer la loi de probabilité de la variable aléatoire $X$.
+c) Calculer l'espérance mathématique $E(X)$.
+
+## Problème (7 points)
+
+On considère la fonction numérique $f$ définie sur l’intervalle $]0, +\infty[$ par :
+$$f(x) = x - 1 - \frac{\ln x}{x}$$
+Soit $(C_f)$ sa courbe dans un repère orthonormé $(O, \vec{i}, \vec{j})$ (unité : $1\text{ cm}$).
+
+1) Montrer que $\lim_{x\to 0^+} f(x) = +\infty$ et interpréter ce résultat géométriquement.
+2) Calculer $\lim_{x\to +\infty} f(x)$ et montrer que la droite $(D) : y = x - 1$ est asymptote à $(C_f)$ au voisinage de $+\infty$.
+3) a) Montrer que pour tout $x \in ]0, +\infty[$ :
+$$f'(x) = \frac{x^2 - 1 + \ln x}{x^2}$$
+b) Dresser le tableau de variations de la fonction $f$.
+4) Étudier la position relative de $(C_f)$ par rapport à la droite $(D)$.
+5) Construire la droite $(D)$ et la courbe $(C_f)$.
+6) a) Calculer l’intégrale :
+$$I = \int_1^e \frac{\ln x}{x} dx$$
+b) En déduire l'aire du domaine plan délimité par $(C_f)$, la droite $(D)$ et les droites d'équations $x = 1$ et $x = e$.

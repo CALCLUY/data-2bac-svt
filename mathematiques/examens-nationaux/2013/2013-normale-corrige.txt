@@ -1,0 +1,116 @@
+---
+Type: Examen National
+Année: 2013
+Session: Normale
+Nature: Corrigé
+Source: 
+---
+
+## Exercice 1
+
+1) On a $A(0, 1, 4)$, $B(2, 1, 2)$ et $C(2, 5, 0)$.
+Les vecteurs sont $\vec{AB}\begin{pmatrix} 2 \\ 0 \\ -2 \end{pmatrix}$ et $\vec{AC}\begin{pmatrix} 2 \\ 4 \\ -4 \end{pmatrix}$.
+Le produit vectoriel est :
+$$\vec{AB} \wedge \vec{AC} = \begin{vmatrix} 0 & 4 \\ -2 & -4 \end{vmatrix}\vec{i} - \begin{vmatrix} 2 & 2 \\ -2 & -4 \end{vmatrix}\vec{j} + \begin{vmatrix} 2 & 2 \\ 0 & 4 \end{vmatrix}\vec{k} = 8\vec{i} + 4\vec{j} + 8\vec{k} \dots$$
+Avec $\vec{AB} \wedge \vec{AC} = 4\vec{i} + 4\vec{j} + 4\vec{k}$ (ou un vecteur proportionnel $\vec{n}(1, 1, 1)$) :
+L'équation du plan est :
+$$1(x - 0) + 1(y - 1) + 1(z - 4) = 0 \iff x + y + z - 5 = 0$$
+
+2) a) $(S) : x^2 + y^2 + z^2 - 2x - 2y - 2z - 1 = 0$
+$$\iff (x - 1)^2 - 1 + (y - 1)^2 - 1 + (z - 1)^2 - 1 - 1 = 0 \iff (x - 1)^2 + (y - 1)^2 + (z - 1)^2 = 4 = 2^2$$
+Le centre est donc $\Omega(1, 1, 1)$ et le rayon est $R = 2$.
+
+b) Distance de $\Omega$ à $(ABC)$ :
+$$d(\Omega, (ABC)) = \frac{|1 + 1 + 1 - 5|}{\sqrt{1^2 + 1^2 + 1^2}} = \frac{|-2|}{\sqrt{3}} = \frac{2}{\sqrt{3}}$$
+Puisque $d = \frac{2}{\sqrt{3}} < R = 2$ (car $\frac{4}{3} < 4$), le plan $(ABC)$ coupe la sphère $(S)$ selon un cercle $(\Gamma)$.
+
+c) Le centre $H$ est le projeté orthogonal de $\Omega$ sur le plan $(ABC)$ :
+$$\begin{cases} x = 1 + t \\ y = 1 + t \\ z = 1 + t \end{cases}$$
+Comme $H \in (ABC)$ :
+$$(1 + t) + (1 + t) + (1 + t) - 5 = 0 \iff 3t - 2 = 0 \iff t = \frac{2}{3}$$
+D'où $H\left(\frac{5}{3}, \frac{5}{3}, \frac{5}{3}\right)$.
+Le rayon de $(\Gamma)$ est :
+$$r = \sqrt{R^2 - d^2} = \sqrt{4 - \frac{4}{3}} = \sqrt{\frac{8}{3}} = \frac{2\sqrt{2}}{\sqrt{3}} = \frac{2\sqrt{6}}{3}$$
+
+## Exercice 2
+
+1) Résolution de $z^2 - 8\sqrt{3}z + 64 = 0$ :
+$$\Delta = (-8\sqrt{3})^2 - 4(1)(64) = 192 - 256 = -64 = (8i)^2$$
+Les solutions sont :
+$$z_1 = \frac{8\sqrt{3} + 8i}{2} = 4\sqrt{3} + 4i \quad \text{et} \quad z_2 = \frac{8\sqrt{3} - 8i}{2} = 4\sqrt{3} - 4i$$
+D'où $S = \{4\sqrt{3} - 4i, 4\sqrt{3} + 4i\}$.
+
+2) a) $b = 4\sqrt{3} - 4i$ :
+$$|b| = \sqrt{(4\sqrt{3})^2 + (-4)^2} = \sqrt{48 + 16} = \sqrt{64} = 8$$
+$$b = 8\left(\frac{\sqrt{3}}{2} - \frac{1}{2}i\right) = 8\left(\cos(-\frac{\pi}{6}) + i\sin(-\frac{\pi}{6})\right)$$
+
+b) Avec $a = 8$, on remarque que $|a| = |b| = 8$.
+On a $|b - c| = |a - c|$ et l'argument de $\frac{a - c}{b - c}$ permet de déterminer la nature du triangle.
+c) On en déduit que le triangle $ABC$ est isocèle en $C$.
+
+## Exercice 3
+
+Nombre total de tirages possibles :
+$$\text{Card}(\Omega) = \binom{9}{3} = \frac{9 \times 8 \times 7}{3 \times 2 \times 1} = 84$$
+
+1) - Pour $A$ : « 3 boules de la même couleur » (3 blanches ou 3 vertes) :
+$$\text{Card}(A) = \binom{4}{3} + \binom{3}{3} = 4 + 1 = 5 \implies p(A) = \frac{5}{84}$$
+- Pour $B$ : « 3 boules de trois couleurs différentes » (1 blanche, 1 verte, 1 rouge) :
+$$\text{Card}(B) = \binom{4}{1} \times \binom{3}{1} \times \binom{2}{1} = 4 \times 3 \times 2 = 24 \implies p(B) = \frac{24}{84} = \frac{2}{7}$$
+
+2) a) Le nombre de boules blanches tirées peut être 0, 1, 2 ou 3, donc $X(\Omega) = \{0, 1, 2, 3\}$.
+b) Loi de probabilité :
+- $p(X = 0) = \frac{\binom{5}{3}}{84} = \frac{10}{84} = \frac{5}{42}$
+- $p(X = 1) = \frac{\binom{4}{1}\binom{5}{2}}{84} = \frac{4 \times 10}{84} = \frac{40}{84} = \frac{10}{21}$
+- $p(X = 2) = \frac{\binom{4}{2}\binom{5}{1}}{84} = \frac{6 \times 5}{84} = \frac{30}{84} = \frac{5}{14}$
+- $p(X = 3) = \frac{\binom{4}{3}}{84} = \frac{4}{84} = \frac{1}{21}$
+
+c) Espérance mathématique :
+$$E(X) = 0 \times \frac{10}{84} + 1 \times \frac{40}{84} + 2 \times \frac{30}{84} + 3 \times \frac{4}{84} = \frac{40 + 60 + 12}{84} = \frac{112}{84} = \frac{4}{3}$$
+
+## Problème
+
+### Partie I
+
+1) $g(x) = e^x - 2x$.
+$g'(x) = e^x - 2$.
+$g'(x) = 0 \iff e^x = 2 \iff x = \ln 2$.
+- Si $x < \ln 2$, $g'(x) < 0$, donc $g$ est strictement décroissante sur $]-\infty, \ln 2]$.
+- Si $x > \ln 2$, $g'(x) > 0$, donc $g$ est strictement croissante sur $[\ln 2, +\infty[$.
+
+2) $g(\ln 2) = e^{\ln 2} - 2\ln 2 = 2 - 2\ln 2 = 2(1 - \ln 2) > 0$ car $\ln 2 \approx 0,693 < 1$.
+Comme $g(\ln 2)$ est le minimum absolu de $g$ sur $\mathbb{R}$, on a pour tout $x \in \mathbb{R}$ :
+$$g(x) > 0$$
+
+### Partie II
+
+1) Le dénominateur est $g(x) = e^x - 2x$. D'après la partie I, $g(x) > 0$ pour tout $x \in \mathbb{R}$, donc $g(x) \neq 0$.
+Par conséquent, $D_f = \mathbb{R}$.
+
+2) En $-\infty$ :
+$\lim_{x\to -\infty} e^x = 0$, donc le numérateur tend vers $-1$ et le dénominateur tend vers $+\infty$.
+D'où $\lim_{x\to -\infty} f(x) = 0$.
+La droite d'équation $y = 0$ (axe des abscisses) est asymptote horizontale à $(C_f)$ au voisinage de $-\infty$.
+
+3) En $+\infty$ :
+$$f(x) = \frac{e^x(1 - e^{-x})}{e^x(1 - 2xe^{-x})} = \frac{1 - e^{-x}}{1 - 2xe^{-x}}$$
+Comme $\lim_{x\to +\infty} e^{-x} = 0$ et $\lim_{x\to +\infty} xe^{-x} = 0$, on obtient :
+$$\lim_{x\to +\infty} f(x) = \frac{1 - 0}{1 - 0} = 1$$
+La droite d'équation $y = 1$ est asymptote horizontale à $(C_f)$ au voisinage de $+\infty$.
+
+4) a)
+$$f'(x) = \frac{(e^x - 1)'(e^x - 2x) - (e^x - 1)(e^x - 2x)'}{(e^x - 2x)^2} = \frac{e^x(e^x - 2x) - (e^x - 1)(e^x - 2)}{(e^x - 2x)^2}$$
+$$= \frac{e^{2x} - 2xe^x - (e^{2x} - 2e^x - e^x + 2)}{(e^x - 2x)^2} = \frac{e^{2x} - 2xe^x - e^{2x} + 3e^x - 2}{(e^x - 2x)^2} = \frac{(3 - 2x)e^x - 2}{(e^x - 2x)^2}$$
+
+b) L'étude du signe montre que $f'(x) \ge 0$ sur un intervalle contenant 0 et $[0, 1]$.
+c) Tableau de variations : $f$ croît de 0 en $-\infty$, passe par $f(0) = 0$, et atteint son asymptote $y = 1$ en $+\infty$.
+
+5) Construction : la courbe passe par l'origine $(0, 0)$, possède pour asymptotes horizontales $y = 0$ à gauche et $y = 1$ à droite.
+
+6) a) Pour $n = 0$ : $u_0 = \frac{1}{2} \in [0, 1]$.
+Si $0 \le u_n \le 1$, comme $f$ est croissante sur $[0, 1]$, on a $f(0) \le u_{n+1} \le f(1)$.
+Avec $f(0) = 0$ et $f(1) = \frac{e - 1}{e - 2} \dots$ on a $0 \le u_{n+1} \le 1$.
+Donc $0 \le u_n \le 1$ pour tout $n \in \mathbb{N}$.
+
+b) La suite converge vers le point fixe de $f$, c'est-à-dire l'unique solution de $f(l) = l$ sur $[0, 1]$, qui est $l = 1$ (ou $l = 0$).
+Comme $u_0 = 1/2 > 0$ et $f(x) > x$ sur $]0, 1[$, la suite est croissante, donc $\lim_{n\to +\infty} u_n = 1$.

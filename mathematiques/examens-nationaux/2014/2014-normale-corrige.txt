@@ -1,0 +1,125 @@
+---
+Type: Examen National
+Année: 2014
+Session: Normale
+Nature: Corrigé
+Source: 
+---
+
+## Exercice 1
+
+1) On a $A(0, 0, 1)$, $B(1, 1, 1)$ et $C(2, 1, 0)$.
+Les vecteurs sont $\vec{AB}\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}$ et $\vec{AC}\begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$.
+Le produit vectoriel est :
+$$\vec{AB} \wedge \vec{AC} = \begin{vmatrix} 1 & 1 \\ 0 & -1 \end{vmatrix}\vec{i} - \begin{vmatrix} 1 & 2 \\ 0 & -1 \end{vmatrix}\vec{j} + \begin{vmatrix} 1 & 2 \\ 1 & 1 \end{vmatrix}\vec{k} = -\vec{i} + \vec{j} - \vec{k}$$
+Le vecteur $\vec{n}(-1, 1, -1)$ ou $-\vec{n}(1, -1, 1)$ est un vecteur normal au plan $(ABC)$.
+Une équation cartésienne est :
+$$(x - 0) - (y - 0) + (z - 1) = 0 \iff x - y + z - 1 = 0$$
+
+2) a) L'équation de la sphère $(S)$ est :
+$$x^2 + y^2 + z^2 - 4x + 2y - 2z + 1 = 0 \iff (x - 2)^2 - 4 + (y + 1)^2 - 1 + (z - 1)^2 - 1 + 1 = 0$$
+$$\iff (x - 2)^2 + (y + 1)^2 + (z - 1)^2 = 5$$
+Le centre est $\Omega(2, -1, 1)$ et le rayon est $R = \sqrt{5}$.
+
+b) Distance de $\Omega$ à $(ABC)$ :
+$$d(\Omega, (ABC)) = \frac{|2 - (-1) + 1 - 1|}{\sqrt{1^2 + (-1)^2 + 1^2}} = \frac{3}{\sqrt{3}} = \sqrt{3}$$
+Comme $d = \sqrt{3} < R = \sqrt{5}$, le plan $(ABC)$ coupe la sphère $(S)$ suivant un cercle $(\Gamma)$.
+
+c) Le rayon de $(\Gamma)$ est :
+$$r = \sqrt{R^2 - d^2} = \sqrt{5 - 3} = \sqrt{2}$$
+Le centre $H$ est le projeté orthogonal de $\Omega$ sur $(ABC)$ :
+$$\begin{cases} x = 2 + t \\ y = -1 - t \\ z = 1 + t \end{cases}$$
+Comme $H \in (ABC)$ :
+$$(2 + t) - (-1 - t) + (1 + t) - 1 = 0 \iff 3 + 3t = 0 \iff t = -1$$
+D'où $H(1, 0, 0)$.
+
+3) Les plans parallèles à $(ABC)$ ont pour équation $x - y + z + d = 0$.
+Ils sont tangents à $(S)$ si et seulement si $d(\Omega, P) = R = \sqrt{5}$ :
+$$\frac{|2 - (-1) + 1 + d|}{\sqrt{3}} = \sqrt{5} \iff |4 + d| = \sqrt{15} \iff 4 + d = \sqrt{15} \text{ ou } 4 + d = -\sqrt{15}$$
+D'où $d_1 = -4 + \sqrt{15}$ et $d_2 = -4 - \sqrt{15}$.
+Les équations cartésiennes des deux plans sont :
+$$(P_1) : x - y + z - 4 + \sqrt{15} = 0 \quad \text{et} \quad (P_2) : x - y + z - 4 - \sqrt{15} = 0$$
+
+## Exercice 2
+
+1) Résolution de $z^2 - z\sqrt{2} + 2 = 0$ :
+$$\Delta = (-\sqrt{2})^2 - 4(1)(2) = 2 - 8 = -6 = (i\sqrt{6})^2$$
+Les solutions sont :
+$$z_1 = \frac{\sqrt{2} + i\sqrt{6}}{2} \quad \text{et} \quad z_2 = \frac{\sqrt{2} - i\sqrt{6}}{2}$$
+D'où $S = \left\{\frac{\sqrt{2} - i\sqrt{6}}{2}, \frac{\sqrt{2} + i\sqrt{6}}{2}\right\}$.
+
+2) a) $u = \frac{\sqrt{2}}{2} + i\frac{\sqrt{6}}{2}$ :
+$$|u| = \sqrt{\left(\frac{\sqrt{2}}{2}\right)^2 + \left(\frac{\sqrt{6}}{2}\right)^2} = \sqrt{\frac{2}{4} + \frac{6}{4}} = \sqrt{2}$$
+$$u = \sqrt{2}\left(\frac{1}{2} + i\frac{\sqrt{3}}{2}\right) = \sqrt{2}\left(\cos\frac{\pi}{3} + i\sin\frac{\pi}{3}\right)$$
+b) Par la formule de Moivre :
+$$u^6 = (\sqrt{2})^6 \left(\cos\left(6 \times \frac{\pi}{3}\right) + i\sin\left(6 \times \frac{\pi}{3}\right)\right) = 8(\cos(2\pi) + i\sin(2\pi)) = 8 \in \mathbb{R}$$
+
+3) a) L'écriture complexe de la rotation $R(O, \frac{\pi}{3})$ est :
+$$z' = e^{i\frac{\pi}{3}}z = \left(\frac{1}{2} + i\frac{\sqrt{3}}{2}\right)z$$
+b) Pour $z = a = 2$ :
+$$z' = \left(\frac{1}{2} + i\frac{\sqrt{3}}{2}\right) \times 2 = 1 + i\sqrt{3} = b$$
+Donc l'image de $A$ par $R$ est le point $B$.
+c) Puisque $R(A) = B$, on a $OA = OB$ et $(\vec{OA}, \vec{OB}) \equiv \frac{\pi}{3} \; [2\pi]$.
+Donc le triangle $OAB$ est un triangle équilatéral.
+
+## Exercice 3
+
+Nombre de jetons : 9 (5 impairs : 1, 3, 5, 7, 9 ; 4 pairs : 2, 4, 6, 8).
+Tirage simultané de 3 jetons :
+$$\text{Card}(\Omega) = \binom{9}{3} = 84$$
+
+1) - $A$ : « 3 numéros impairs » :
+$$\text{Card}(A) = \binom{5}{3} = 10 \implies p(A) = \frac{10}{84} = \frac{5}{42}$$
+- $B$ : « Le produit des 3 numéros est pair ».
+L'événement contraire $\overline{B}$ est « le produit est impair », ce qui signifie que les trois numéros sont impairs ($\overline{B} = A$).
+Donc :
+$$p(B) = 1 - p(A) = 1 - \frac{5}{42} = \frac{37}{42}$$
+
+2) a) Les valeurs prises par $X$ sont $0, 1, 2, 3$.
+b) Loi de probabilité de $X$ :
+- $p(X = 0) = p(A) = \frac{10}{84} = \frac{5}{42}$
+- $p(X = 1) = \frac{\binom{4}{1}\binom{5}{2}}{84} = \frac{4 \times 10}{84} = \frac{40}{84} = \frac{10}{21}$
+- $p(X = 2) = \frac{\binom{4}{2}\binom{5}{1}}{84} = \frac{6 \times 5}{84} = \frac{30}{84} = \frac{5}{14}$
+- $p(X = 3) = \frac{\binom{4}{3}}{84} = \frac{4}{84} = \frac{1}{21}$
+
+c) Espérance mathématique :
+$$E(X) = 0 \times \frac{10}{84} + 1 \times \frac{40}{84} + 2 \times \frac{30}{84} + 3 \times \frac{4}{84} = \frac{112}{84} = \frac{4}{3}$$
+
+## Problème
+
+1) a) $f(x) = (x^2 - 4x + 4)e^x = x^2 e^x - 4xe^x + 4e^x$.
+Comme $\lim_{x\to -\infty} x^2 e^x = 0$, $\lim_{x\to -\infty} xe^x = 0$ et $\lim_{x\to -\infty} e^x = 0$, on a :
+$$\lim_{x\to -\infty} f(x) = 0$$
+L'axe des abscisses ($y = 0$) est asymptote horizontale à $(C_f)$ au voisinage de $-\infty$.
+
+b) $\lim_{x\to +\infty} (x - 2)^2 = +\infty$ et $\lim_{x\to +\infty} e^x = +\infty$, donc $\lim_{x\to +\infty} f(x) = +\infty$.
+De plus :
+$$\lim_{x\to +\infty} \frac{f(x)}{x} = \lim_{x\to +\infty} \frac{(x - 2)^2}{x} e^x = \lim_{x\to +\infty} \left(x - 4 + \frac{4}{x}\right)e^x = +\infty$$
+c) La courbe $(C_f)$ admet au voisinage de $+\infty$ une branche parabolique de direction l’axe des ordonnées.
+
+2) a) Pour tout $x \in \mathbb{R}$ :
+$$f'(x) = 2(x - 2)e^x + (x - 2)^2 e^x = (x - 2)e^x [2 + x - 2] = x(x - 2)e^x$$
+b) Comme $e^x > 0$, le signe de $f'(x)$ est celui de $x(x - 2)$ :
+- $f'(x) > 0$ sur $]-\infty, 0[\cup]2, +\infty[$ : $f$ est strictement croissante.
+- $f'(x) < 0$ sur $]0, 2[$ : $f$ est strictement décroissante.
+- $f'(0) = 0$, maximum relatif en $(0, 4)$.
+- $f'(2) = 0$, minimum absolu en $(2, 0)$.
+
+3) a)
+$$f''(x) = (x^2 - 2x)'e^x + (x^2 - 2x)e^x = (2x - 2 + x^2 - 2x)e^x = (x^2 - 2)e^x$$
+b) Comme $e^x > 0$, $f''(x) = 0 \iff x^2 - 2 = 0 \iff x = -\sqrt{2} \text{ ou } x = \sqrt{2}$.
+La dérivée seconde s'annule en ces deux points en changeant de signe, donc $(C_f)$ possède deux points d'inflexion d'abscisses $-\sqrt{2}$ et $\sqrt{2}$.
+
+4) La courbe part de l'asymptote $y = 0$ en $-\infty$, monte jusqu'au sommet $(0, 4)$, descend jusqu'à $(2, 0)$ où elle est tangente à l'axe des abscisses, puis croît rapidement vers $+\infty$.
+
+5) a) Intégration par parties de $I = \int_0^1 (x - 2)^2 e^x dx$ :
+1ère IPP : $u = (x - 2)^2 \implies u' = 2(x - 2)$, $v' = e^x \implies v = e^x$.
+$$I = [(x - 2)^2 e^x]_0^1 - 2\int_0^1 (x - 2)e^x dx = (1 \times e - 4) - 2\int_0^1 (x - 2)e^x dx$$
+2ème IPP pour $J = \int_0^1 (x - 2)e^x dx$ :
+$u = x - 2 \implies u' = 1$, $v' = e^x \implies v = e^x$.
+$$J = [(x - 2)e^x]_0^1 - \int_0^1 e^x dx = (-e + 2) - (e - 1) = 3 - 2e$$
+D'où :
+$$I = (e - 4) - 2(3 - 2e) = e - 4 - 6 + 4e = 5e - 10$$
+
+b) L'aire du domaine plan délimité par $(C_f)$, l'axe des abscisses et les droites $x = 0$ et $x = 1$ est :
+$$\mathcal{A} = \int_0^1 f(x) dx \times (1\text{ cm} \times 1\text{ cm}) = I\text{ cm}^2 = (5e - 10)\text{ cm}^2$$

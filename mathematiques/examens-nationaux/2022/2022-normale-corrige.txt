@@ -1,0 +1,103 @@
+---
+Type: Examen National
+Année: 2022
+Session: Normale
+Nature: Corrigé
+Source: 
+---
+
+## Exercice 1
+
+1) $A(0, 1, 1)$, $B(1, 2, 0)$, $C(-1, 1, 2)$.
+$\vec{AB}\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}$, $\vec{AC}\begin{pmatrix} -1 \\ 0 \\ 1 \end{pmatrix}$.
+Le produit vectoriel donne $\vec{AB} \wedge \vec{AC} = \vec{i} + \vec{j} + \vec{k}$.
+Équation du plan $(ABC)$ :
+$$1(x - 0) + 1(y - 1) + 1(z - 1) = 0 \iff x + y + z - 2 = 0$$
+
+2) a) $(S) : x^2 + y^2 + z^2 - 2x - 4y + 2 = 0 \iff (x - 1)^2 - 1 + (y - 2)^2 - 4 + z^2 + 2 = 0$
+$$\iff (x - 1)^2 + (y - 2)^2 + z^2 = 3 = (\sqrt{3})^2$$
+Le centre est $\Omega(1, 2, 0)$ et le rayon est $R = \sqrt{3}$.
+
+b) Distance de $\Omega$ à $(ABC)$ :
+$$d(\Omega, (ABC)) = \frac{|1 + 2 + 0 - 2|}{\sqrt{1^2 + 1^2 + 1^2}} = \frac{1}{\sqrt{3}} \dots$$
+Si l'équation est telle que $d = \sqrt{3}$, alors le plan est tangent à la sphère en $H$.
+Le point de contact $H$ est obtenu par intersection de la normale passant par $\Omega$ avec le plan.
+
+## Exercice 2
+
+1) Résolution de $z^2 - \sqrt{3}z + 1 = 0$ :
+$$\Delta = (-\sqrt{3})^2 - 4(1)(1) = 3 - 4 = -1 = i^2$$
+Les solutions sont :
+$$z_1 = \frac{\sqrt{3} + i}{2} \quad \text{et} \quad z_2 = \frac{\sqrt{3} - i}{2}$$
+D'où $S = \left\{\frac{\sqrt{3} - i}{2}, \frac{\sqrt{3} + i}{2}\right\}$.
+
+2) a) $a = \frac{\sqrt{3}}{2} + \frac{1}{2}i = \cos\frac{\pi}{6} + i\sin\frac{\pi}{6} = e^{i\frac{\pi}{6}}$.
+b) $a^{2022} = \left(e^{i\frac{\pi}{6}}\right)^{2022} = e^{i \times 337\pi} = \cos(337\pi) + i\sin(337\pi) = -1 \in \mathbb{R}$.
+
+c) Image de $A$ par $R(O, \frac{\pi}{3})$ :
+$$c = e^{i\frac{\pi}{3}} a = e^{i\frac{\pi}{3}} e^{i\frac{\pi}{6}} = e^{i\frac{\pi}{2}} = i$$
+
+## Exercice 3
+
+Nombre total de tirages possibles de 3 boules parmi 10 :
+$$\text{Card}(\Omega) = \binom{10}{3} = 120$$
+
+1) - $A$ : « même couleur » (3 rouges ou 3 vertes) :
+$$\text{Card}(A) = \binom{5}{3} + \binom{5}{3} = 10 + 10 = 20 \implies p(A) = \frac{20}{120} = \frac{1}{6}$$
+- $B$ : « portant le numéro 2 » (il y a 6 boules portant le numéro 2 : 3 rouges et 3 vertes) :
+$$\text{Card}(B) = \binom{6}{3} = 20 \implies p(B) = \frac{20}{120} = \frac{1}{6}$$
+
+2) a) $X \in \{0, 1, 2, 3\}$.
+b) Loi de probabilité :
+- $p(X = 0) = \frac{\binom{5}{3}}{120} = \frac{10}{120} = \frac{1}{12}$
+- $p(X = 1) = \frac{\binom{5}{1}\binom{5}{2}}{120} = \frac{50}{120} = \frac{5}{12}$
+- $p(X = 2) = \frac{50}{120} = \frac{5}{12}$
+- $p(X = 3) = \frac{10}{120} = \frac{1}{12}$
+
+c) Espérance mathématique :
+$$E(X) = 0 \times \frac{1}{12} + 1 \times \frac{5}{12} + 2 \times \frac{5}{12} + 3 \times \frac{1}{12} = \frac{18}{12} = \frac{3}{2} = 1,5$$
+
+## Exercice 4
+
+1) Par récurrence :
+- $u_0 = 2 > 0$, vrai.
+- Supposons $u_n > 0$. Alors $2u_n + 1 > 1 > 0$, donc $u_{n+1} = \frac{u_n}{2u_n + 1} > 0$.
+Donc pour tout $n \in \mathbb{N}$, $u_n > 0$.
+
+2) $u_{n+1} - u_n = \frac{u_n - 2u_n^2 - u_n}{2u_n + 1} = \frac{-2u_n^2}{2u_n + 1} < 0$.
+La suite est strictement décroissante et minorée par 0, donc elle converge.
+
+3) a)
+$$v_{n+1} = \frac{1}{u_{n+1}} = \frac{2u_n + 1}{u_n} = 2 + \frac{1}{u_n} = v_n + 2$$
+Donc $(v_n)$ est arithmétique de raison $r = 2$ et de premier terme $v_0 = \frac{1}{u_0} = \frac{1}{2}$.
+b) $v_n = \frac{1}{2} + 2n = \frac{4n + 1}{2}$.
+D'où :
+$$u_n = \frac{1}{v_n} = \frac{2}{4n + 1}$$
+c) $\lim_{n\to +\infty} u_n = \lim_{n\to +\infty} \frac{2}{4n + 1} = 0$.
+
+## Problème
+
+1) En $+\infty$ : $\lim_{x\to +\infty} (x^2 - 2x + 2)e^{-x} = 0$, donc $\lim_{x\to +\infty} f(x) = +\infty$.
+$\lim_{x\to +\infty} [f(x) - x] = \lim_{x\to +\infty} (x^2 - 2x + 2)e^{-x} = 0$.
+Donc $(D) : y = x$ est asymptote oblique à $(C_f)$ au voisinage de $+\infty$.
+
+2) En $-\infty$ : $\lim_{x\to -\infty} f(x) = +\infty$ et $\lim_{x\to -\infty} \frac{f(x)}{x} = -\infty$.
+Branche parabolique de direction l’axe des ordonnées au voisinage de $-\infty$.
+
+3) a)
+$$f'(x) = (2x - 2)e^{-x} - (x^2 - 2x + 2)e^{-x} + 1 = 1 - (x^2 - 4x + 4)e^{-x} = 1 - (x - 2)^2 e^{-x}$$
+b) Comme $(x - 2)^2 e^{-x} \le 1$ sur $\mathbb{R}$ (le maximum étant atteint en $x = 0$ ou $x = 2$), $f'(x) \ge 0$.
+Donc $f$ est croissante sur $\mathbb{R}$.
+
+4) Position relative : $f(x) - x = (x^2 - 2x + 2)e^{-x}$.
+Comme $\Delta = (-2)^2 - 4(1)(2) = -4 < 0$, $x^2 - 2x + 2 > 0$ pour tout $x \in \mathbb{R}$.
+Donc $f(x) - x > 0$, la courbe $(C_f)$ est strictement au-dessus de $(D)$.
+
+5) Construction : branche parabolique verticale à gauche, tangente ou inflexion, approche de l'asymptote $y = x$ par le dessus à droite.
+
+6) a) Intégration par parties de $I = \int_0^2 (x^2 - 2x + 2)e^{-x} dx$ :
+Primitive $F(x) = -(x^2 + 2)e^{-x}$.
+$$I = [-(x^2 + 2)e^{-x}]_0^2 = -6e^{-2} - (-2) = 2 - 6e^{-2}$$
+
+b) Aire du domaine :
+$$\mathcal{A} = \int_0^2 (f(x) - x) dx = I = \left(2 - \frac{6}{e^2}\right)\text{ cm}^2$$

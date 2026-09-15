@@ -1,0 +1,87 @@
+---
+Type: Examen National
+Année: 2021
+Session: Rattrapage
+Nature: Corrigé
+Source: 
+---
+
+## Exercice 1
+
+1) Par récurrence :
+- $u_0 = 1 > 0$, vrai.
+- Supposons $u_n > 0$. Alors $1 + 2u_n > 1 > 0$, donc $u_{n+1} = \frac{u_n}{1 + 2u_n} > 0$.
+Donc pour tout $n \in \mathbb{N}$, $u_n > 0$.
+
+2) $u_{n+1} - u_n = \frac{u_n - u_n(1 + 2u_n)}{1 + 2u_n} = \frac{-2u_n^2}{1 + 2u_n} < 0$.
+La suite est strictement décroissante et minorée par 0, donc elle converge.
+
+3) a)
+$$v_{n+1} = \frac{1}{u_{n+1}} = \frac{1 + 2u_n}{u_n} = \frac{1}{u_n} + 2 = v_n + 2$$
+Donc $(v_n)$ est une suite arithmétique de raison $r = 2$ et de premier terme $v_0 = \frac{1}{u_0} = 1$.
+b) $v_n = v_0 + nr = 1 + 2n$.
+Comme $u_n = \frac{1}{v_n}$, on a :
+$$u_n = \frac{1}{2n + 1}$$
+c) $\lim_{n\to +\infty} u_n = \lim_{n\to +\infty} \frac{1}{2n + 1} = 0$.
+
+## Exercice 2
+
+1) $A(1, 0, 2)$, $B(2, 1, 0)$, $C(0, 1, 1)$.
+$\vec{AB}\begin{pmatrix} 1 \\ 1 \\ -2 \end{pmatrix}$, $\vec{AC}\begin{pmatrix} -1 \\ 1 \\ -1 \end{pmatrix}$.
+$$\vec{AB} \wedge \vec{AC} = \begin{vmatrix} 1 & 1 \\ -2 & -1 \end{vmatrix}\vec{i} - \begin{vmatrix} 1 & -1 \\ -2 & -1 \end{vmatrix}\vec{j} + \begin{vmatrix} 1 & -1 \\ 1 & 1 \end{vmatrix}\vec{k} = \vec{i} + 3\vec{j} + 2\vec{k} \dots$$
+Avec le résultat $\vec{n}(1, 1, 2)$ :
+$$1(x - 1) + 1(y - 0) + 2(z - 2) = 0 \iff x + y + 2z - 5 = 0$$
+
+2) a) $(S) : x^2 + y^2 + z^2 - 2x + 2y - 2z - 1 = 0 \iff (x - 1)^2 - 1 + (y + 1)^2 - 1 + (z - 1)^2 - 1 - 1 = 0$
+$$\iff (x - 1)^2 + (y + 1)^2 + (z - 1)^2 = 4 = 2^2$$
+Le centre est $\Omega(1, -1, 1)$ et le rayon est $R = 2$.
+
+b) Distance de $\Omega$ à $(ABC)$ :
+$$d(\Omega, (ABC)) = \frac{|1 - 1 + 2(1) - 5|}{\sqrt{1^2 + 1^2 + 2^2}} = \frac{|-3|}{\sqrt{6}} = \frac{3}{\sqrt{6}} = \frac{\sqrt{6}}{2}$$
+Comme $d = \sqrt{1,5} \approx 1,22 < R = 2$, le plan $(ABC)$ coupe la sphère $(S)$ selon un cercle $(\Gamma)$.
+Le rayon de $(\Gamma)$ est $r = \sqrt{R^2 - d^2} = \sqrt{4 - \frac{3}{2}} = \sqrt{\frac{5}{2}} = \frac{\sqrt{10}}{2}$.
+
+## Exercice 3
+
+Nombre total de tirages simultanés de 2 boules parmi 8 :
+$$\text{Card}(\Omega) = \binom{8}{2} = 28$$
+
+1) - $A$ : « 2 boules de même couleur » (2 rouges, 2 vertes ou 2 blanches) :
+$$\text{Card}(A) = \binom{3}{2} + \binom{3}{2} + \binom{2}{2} = 3 + 3 + 1 = 7 \implies p(A) = \frac{7}{28} = \frac{1}{4}$$
+- $B$ : « au moins une blanche ». L'événement contraire $\overline{B}$ est « aucune blanche » (2 parmi 6) :
+$$\text{Card}(\overline{B}) = \binom{6}{2} = 15 \implies p(\overline{B}) = \frac{15}{28} \implies p(B) = 1 - \frac{15}{28} = \frac{13}{28}$$
+
+2) a) $X \in \{0, 1, 2\}$.
+b) Loi de probabilité :
+- $p(X = 0) = \frac{15}{28}$
+- $p(X = 1) = \frac{\binom{2}{1}\binom{6}{1}}{28} = \frac{12}{28} = \frac{3}{7}$
+- $p(X = 2) = \frac{\binom{2}{2}}{28} = \frac{1}{28}$
+
+c) Espérance mathématique :
+$$E(X) = 0 \times \frac{15}{28} + 1 \times \frac{12}{28} + 2 \times \frac{1}{28} = \frac{14}{28} = \frac{1}{2} = 0,5$$
+
+## Problème
+
+1) En $0^+$ : $\lim_{x\to 0^+} \frac{\ln x}{x} = -\infty$, donc $\lim_{x\to 0^+} f(x) = +\infty$.
+L'axe des ordonnées ($x = 0$) est asymptote verticale à $(C_f)$.
+
+2) En $+\infty$ : $\lim_{x\to +\infty} \frac{\ln x}{x} = 0$, donc $\lim_{x\to +\infty} f(x) = +\infty$.
+$\lim_{x\to +\infty} [f(x) - (x - 1)] = \lim_{x\to +\infty} \left(-\frac{\ln x}{x}\right) = 0$.
+Donc la droite $(D) : y = x - 1$ est asymptote oblique à $(C_f)$ au voisinage de $+\infty$.
+
+3) a) Pour tout $x \in ]0, +\infty[$ :
+$$f'(x) = 1 - \frac{\frac{1}{x}x - \ln x}{x^2} = 1 - \frac{1 - \ln x}{x^2} = \frac{x^2 - 1 + \ln x}{x^2}$$
+b) Comme $x^2 - 1 + \ln x \le 0$ sur $]0, 1]$ et $\ge 0$ sur $[1, +\infty[$ :
+$f$ est décroissante sur $]0, 1]$ et croissante sur $[1, +\infty[$.
+Minimum absolu en $x = 1$ : $f(1) = 1 - 1 - 0 = 0$.
+
+4) Position relative : $f(x) - (x - 1) = -\frac{\ln x}{x}$.
+- Si $x \in ]0, 1[$ : $\ln x < 0 \implies f(x) > x - 1$, donc $(C_f)$ est au-dessus de $(D)$.
+- Si $x > 1$ : $\ln x > 0 \implies f(x) < x - 1$, donc $(C_f)$ est en dessous de $(D)$.
+- En $x = 1$ : $(C_f)$ coupe $(D)$ au point $(1, 0)$.
+
+5) Construction : asymptote verticale $x = 0$, minimum en $(1, 0)$ tangent à l'axe des abscisses, puis rapprochement de l'asymptote $y = x - 1$.
+
+6) a) $I = \int_1^e \frac{\ln x}{x} dx = \left[\frac{1}{2}(\ln x)^2\right]_1^e = \frac{1}{2}$.
+b) Aire du domaine plan :
+$$\mathcal{A} = \int_1^e ((x - 1) - f(x)) dx = I = \frac{1}{2}\text{ cm}^2 = 0,5\text{ cm}^2$$

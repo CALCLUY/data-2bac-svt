@@ -1,0 +1,68 @@
+---
+Type: Examen National
+Année: 2017
+Session: Rattrapage
+Nature: Sujet
+Source: 
+---
+
+## Exercice 1 (3 points)
+
+Dans l’espace rapporté à un repère orthonormé direct $(O, \vec{i}, \vec{j}, \vec{k})$, on considère les points $A(2, 2, 1)$, $B(0, -1, 4)$ et $C(5, -1, 4)$ et la sphère $(S)$ d'équation :
+$$x^2 + y^2 + z^2 - 2x + 2y - 4z - 3 = 0$$
+
+1) Montrer que $\vec{AB} \wedge \vec{AC} = 9\vec{j} + 9\vec{k}$ et en déduire que $y + z - 3 = 0$ est une équation cartésienne du plan $(ABC)$.
+2) a) Montrer que la sphère $(S)$ a pour centre le point $\Omega(1, -1, 2)$ et pour rayon $R = 3$.
+b) Calculer la distance $d(\Omega, (ABC))$ et en déduire que le plan $(ABC)$ coupe la sphère $(S)$ suivant un cercle $(\Gamma)$.
+c) Déterminer les coordonnées du centre $H$ du cercle $(\Gamma)$ et calculer son rayon $r$.
+
+## Exercice 2 (3 points)
+
+1) Résoudre dans l'ensemble $\mathbb{C}$ des nombres complexes l’équation :
+$$z^2 - 6z + 34 = 0$$
+
+2) Dans le plan complexe rapporté à un repère orthonormé direct $(O, \vec{u}, \vec{v})$, on considère les points $A, B$ et $C$ d’affixes respectives :
+$$a = 3 + 5i, \quad b = 3 - 5i, \quad c = 7 + 3i$$
+a) Soit $T$ la translation de vecteur $\vec{u}$ d'affixe $4 - 2i$.
+Montrer que l'affixe du point $C'$ image du point $C$ par $T$ est $c' = 11 + i$.
+b) Calculer $\frac{c' - b}{a - b}$ et en déduire que le triangle $ABC'$ est rectangle en $B$.
+
+## Exercice 3 (3 points)
+
+Une urne contient 10 boules indiscernables au toucher : 4 boules rouges, 4 boules vertes et 2 boules blanches.
+On tire au hasard et simultanément 3 boules de l'urne.
+
+1) Calculer la probabilité des événements suivants :
+- $A$ : « Les trois boules tirées sont de la même couleur ».
+- $B$ : « Deux boules rouges exactement sont tirées ».
+2) Soit $X$ la variable aléatoire égale au nombre de boules blanches tirées.
+a) Déterminer les valeurs possibles de la variable aléatoire $X$.
+b) Déterminer la loi de probabilité de la variable aléatoire $X$.
+c) Calculer l'espérance mathématique $E(X)$.
+
+## Exercice 4 (3 points)
+
+On considère la suite numérique $(u_n)$ définie par :
+$$u_0 = 1 \quad \text{et} \quad u_{n+1} = \frac{u_n}{3 - u_n} \quad \text{pour tout } n \in \mathbb{N}$$
+
+1) Montrer par récurrence que pour tout $n \in \mathbb{N}$ : $0 < u_n < 2$.
+2) Montrer que la suite $(u_n)$ est décroissante et en déduire qu'elle est convergente.
+3) Soit $(v_n)$ la suite définie par :
+$$v_n = \frac{2 - u_n}{u_n} \quad \text{pour tout } n \in \mathbb{N}$$
+a) Montrer que $(v_n)$ est une suite géométrique de raison 3.
+b) Exprimer $v_n$ en fonction de $n$ et en déduire la limite de la suite $(u_n)$.
+
+## Problème (8 points)
+
+On considère la fonction numérique $f$ définie sur $\mathbb{R}$ par :
+$$f(x) = (x^2 - 2x + 2)e^{-x}$$
+Soit $(C_f)$ sa courbe dans un repère orthonormé $(O, \vec{i}, \vec{j})$ (unité : $1\text{ cm}$).
+
+1) Montrer que $\lim_{x\to +\infty} f(x) = 0$ et interpréter ce résultat géométriquement.
+2) Calculer $\lim_{x\to -\infty} f(x)$ et $\lim_{x\to -\infty} \frac{f(x)}{x}$, puis donner une interprétation géométrique.
+3) a) Montrer que pour tout $x \in \mathbb{R}$ :
+$$f'(x) = -x(x - 4)e^{-x}$$
+b) Étudier le signe de $f'(x)$ et dresser le tableau de variations de la fonction $f$.
+4) Tracer la courbe $(C_f)$.
+5) a) Montrer que la fonction $F(x) = -(x^2 + 2)e^{-x}$ est une primitive de la fonction $f$ sur $\mathbb{R}$.
+b) En déduire l'aire du domaine plan délimité par $(C_f)$, l'axe des abscisses et les droites d'équations $x = 0$ et $x = 2$.
